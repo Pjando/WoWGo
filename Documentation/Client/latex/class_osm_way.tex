@@ -1,0 +1,152 @@
+\hypertarget{class_osm_way}{}\section{Osm\+Way Class Reference}
+\label{class_osm_way}\index{OsmWay@{OsmWay}}
+
+
+Represents a way which is either a road or building.  
+
+
+
+
+Inheritance diagram for Osm\+Way\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=140pt]{class_osm_way__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Osm\+Way\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=140pt]{class_osm_way__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_osm_way_a4b486f3c7606411894045f470aa882c6}{Osm\+Way}} (Xml\+Node node)
+\begin{DoxyCompactList}\small\item\em Creates a way and identifies its attributes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+ulong \mbox{\hyperlink{class_osm_way_af6ebe7b51c51d19b7b0f384fefca77c6}{id}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Identifier for the way. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_osm_way_a53d64092eb3c266aca3b849519bf18b6}{visible}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Whether the way should be visible/rendered. \end{DoxyCompactList}\item 
+List$<$ ulong $>$ \mbox{\hyperlink{class_osm_way_a39fae3a4cca779c2f96ebeb25cf98631}{node\+I\+Ds}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em List of ids for each point in a way. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_osm_way_a9f13229c863318f4ad890552b685d677}{is\+Boundary}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Whether the way is a boundary. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_osm_way_ac30c4571e778d12b2ee9cfac0c2c4a03}{is\+Building}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Whether the way is a building. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_osm_way_acd037b691fc5bfc5ad39802c369c6347}{height}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The height of the way if it is a building. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_osm_way_a53b5c420fc8da5a3ae30d3a882d9b168}{is\+Road}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Whether the way is a road. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Represents a way which is either a road or building. 
+
+\begin{DoxyAuthor}{Author}
+Sloan Kelly
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_osm_way_a4b486f3c7606411894045f470aa882c6}\label{class_osm_way_a4b486f3c7606411894045f470aa882c6}} 
+\index{OsmWay@{OsmWay}!OsmWay@{OsmWay}}
+\index{OsmWay@{OsmWay}!OsmWay@{OsmWay}}
+\subsubsection{\texorpdfstring{OsmWay()}{OsmWay()}}
+{\footnotesize\ttfamily Osm\+Way.\+Osm\+Way (\begin{DoxyParamCaption}\item[{Xml\+Node}]{node }\end{DoxyParamCaption})}
+
+
+
+Creates a way and identifies its attributes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em node} & The node from which the values are extracted.\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_osm_way_acd037b691fc5bfc5ad39802c369c6347}\label{class_osm_way_acd037b691fc5bfc5ad39802c369c6347}} 
+\index{OsmWay@{OsmWay}!height@{height}}
+\index{height@{height}!OsmWay@{OsmWay}}
+\subsubsection{\texorpdfstring{height}{height}}
+{\footnotesize\ttfamily float Osm\+Way.\+height\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+The height of the way if it is a building. 
+
+\mbox{\Hypertarget{class_osm_way_af6ebe7b51c51d19b7b0f384fefca77c6}\label{class_osm_way_af6ebe7b51c51d19b7b0f384fefca77c6}} 
+\index{OsmWay@{OsmWay}!id@{id}}
+\index{id@{id}!OsmWay@{OsmWay}}
+\subsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily ulong Osm\+Way.\+id\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+Identifier for the way. 
+
+\mbox{\Hypertarget{class_osm_way_a9f13229c863318f4ad890552b685d677}\label{class_osm_way_a9f13229c863318f4ad890552b685d677}} 
+\index{OsmWay@{OsmWay}!isBoundary@{isBoundary}}
+\index{isBoundary@{isBoundary}!OsmWay@{OsmWay}}
+\subsubsection{\texorpdfstring{isBoundary}{isBoundary}}
+{\footnotesize\ttfamily bool Osm\+Way.\+is\+Boundary\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+Whether the way is a boundary. 
+
+\mbox{\Hypertarget{class_osm_way_ac30c4571e778d12b2ee9cfac0c2c4a03}\label{class_osm_way_ac30c4571e778d12b2ee9cfac0c2c4a03}} 
+\index{OsmWay@{OsmWay}!isBuilding@{isBuilding}}
+\index{isBuilding@{isBuilding}!OsmWay@{OsmWay}}
+\subsubsection{\texorpdfstring{isBuilding}{isBuilding}}
+{\footnotesize\ttfamily bool Osm\+Way.\+is\+Building\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+Whether the way is a building. 
+
+\mbox{\Hypertarget{class_osm_way_a53b5c420fc8da5a3ae30d3a882d9b168}\label{class_osm_way_a53b5c420fc8da5a3ae30d3a882d9b168}} 
+\index{OsmWay@{OsmWay}!isRoad@{isRoad}}
+\index{isRoad@{isRoad}!OsmWay@{OsmWay}}
+\subsubsection{\texorpdfstring{isRoad}{isRoad}}
+{\footnotesize\ttfamily bool Osm\+Way.\+is\+Road\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+Whether the way is a road. 
+
+\mbox{\Hypertarget{class_osm_way_a39fae3a4cca779c2f96ebeb25cf98631}\label{class_osm_way_a39fae3a4cca779c2f96ebeb25cf98631}} 
+\index{OsmWay@{OsmWay}!nodeIDs@{nodeIDs}}
+\index{nodeIDs@{nodeIDs}!OsmWay@{OsmWay}}
+\subsubsection{\texorpdfstring{nodeIDs}{nodeIDs}}
+{\footnotesize\ttfamily List$<$ulong$>$ Osm\+Way.\+node\+I\+Ds\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+List of ids for each point in a way. 
+
+\mbox{\Hypertarget{class_osm_way_a53d64092eb3c266aca3b849519bf18b6}\label{class_osm_way_a53d64092eb3c266aca3b849519bf18b6}} 
+\index{OsmWay@{OsmWay}!visible@{visible}}
+\index{visible@{visible}!OsmWay@{OsmWay}}
+\subsubsection{\texorpdfstring{visible}{visible}}
+{\footnotesize\ttfamily bool Osm\+Way.\+visible\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+Whether the way should be visible/rendered. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Documents/\+Unity\+Projects/\+Final Year Game/\+Wo\+W\+Go!/\+Assets/\+Project/\+Scripts/\+Map\+Processing/Osm\+Way.\+cs\end{DoxyCompactItemize}

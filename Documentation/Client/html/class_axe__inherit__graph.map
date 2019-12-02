@@ -1,0 +1,4 @@
+<map id="Axe" name="Axe">
+<area shape="rect" id="node1" title="Axe weapon extends base class Item." alt="" coords="6,80,51,107"/>
+<area shape="rect" id="node2" href="$class_item.html" title="Base class for a weapon." alt="" coords="5,5,52,32"/>
+</map>

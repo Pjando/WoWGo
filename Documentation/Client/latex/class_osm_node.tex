@@ -1,0 +1,151 @@
+\hypertarget{class_osm_node}{}\section{Osm\+Node Class Reference}
+\label{class_osm_node}\index{OsmNode@{OsmNode}}
+
+
+Represents a point on the map.  
+
+
+
+
+Inheritance diagram for Osm\+Node\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=140pt]{class_osm_node__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Osm\+Node\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=140pt]{class_osm_node__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_osm_node_a16217f3d8ba19dc3bab1da4e5b4e7a3a}{Osm\+Node}} (Xml\+Node node)
+\begin{DoxyCompactList}\small\item\em Creates an \mbox{\hyperlink{class_osm_node}{Osm\+Node}} with id, latitude and longitude from the given node. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static implicit \mbox{\hyperlink{class_osm_node_a5745eaf8dbc5fc470a77d83c3f74d308}{operator Vector3}} (\mbox{\hyperlink{class_osm_node}{Osm\+Node}} node)
+\begin{DoxyCompactList}\small\item\em Allows \mbox{\hyperlink{class_osm_node}{Osm\+Node}} objects to be compared and used in calculation with Vector3 objects by returning a new Vector3 with x and y values. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+ulong \mbox{\hyperlink{class_osm_node_a31333793a614f2f7672bdc8b66867c0a}{id}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Identifier for the node. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_osm_node_af5aae5cbf72b4256a6d5fead9252e9bf}{latitude}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Latitude of the node. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_osm_node_a65db270bef3d8c55822b410ed137ec7c}{longitude}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Longitude of the node. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_osm_node_ac27a7d0bdad566917ca5d11dcc311f04}{x}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The x value corresponding to the longitude. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_osm_node_a4873f9b229e3aa49eabaaa4b7feb6666}{y}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The y value corresponding to the latitude. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Represents a point on the map. 
+
+\begin{DoxyAuthor}{Author}
+Sloan Kelly
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_osm_node_a16217f3d8ba19dc3bab1da4e5b4e7a3a}\label{class_osm_node_a16217f3d8ba19dc3bab1da4e5b4e7a3a}} 
+\index{OsmNode@{OsmNode}!OsmNode@{OsmNode}}
+\index{OsmNode@{OsmNode}!OsmNode@{OsmNode}}
+\subsubsection{\texorpdfstring{OsmNode()}{OsmNode()}}
+{\footnotesize\ttfamily Osm\+Node.\+Osm\+Node (\begin{DoxyParamCaption}\item[{Xml\+Node}]{node }\end{DoxyParamCaption})}
+
+
+
+Creates an \mbox{\hyperlink{class_osm_node}{Osm\+Node}} with id, latitude and longitude from the given node. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em node} & The from which the values are extracted.\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_osm_node_a5745eaf8dbc5fc470a77d83c3f74d308}\label{class_osm_node_a5745eaf8dbc5fc470a77d83c3f74d308}} 
+\index{OsmNode@{OsmNode}!operator Vector3@{operator Vector3}}
+\index{operator Vector3@{operator Vector3}!OsmNode@{OsmNode}}
+\subsubsection{\texorpdfstring{operator Vector3()}{operator Vector3()}}
+{\footnotesize\ttfamily static implicit Osm\+Node.\+operator Vector3 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_osm_node}{Osm\+Node}}}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Allows \mbox{\hyperlink{class_osm_node}{Osm\+Node}} objects to be compared and used in calculation with Vector3 objects by returning a new Vector3 with x and y values. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em node} & The \mbox{\hyperlink{class_osm_node}{Osm\+Node}} from which to create a Vector3 object.\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_osm_node_a31333793a614f2f7672bdc8b66867c0a}\label{class_osm_node_a31333793a614f2f7672bdc8b66867c0a}} 
+\index{OsmNode@{OsmNode}!id@{id}}
+\index{id@{id}!OsmNode@{OsmNode}}
+\subsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily ulong Osm\+Node.\+id\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+Identifier for the node. 
+
+\mbox{\Hypertarget{class_osm_node_af5aae5cbf72b4256a6d5fead9252e9bf}\label{class_osm_node_af5aae5cbf72b4256a6d5fead9252e9bf}} 
+\index{OsmNode@{OsmNode}!latitude@{latitude}}
+\index{latitude@{latitude}!OsmNode@{OsmNode}}
+\subsubsection{\texorpdfstring{latitude}{latitude}}
+{\footnotesize\ttfamily float Osm\+Node.\+latitude\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+Latitude of the node. 
+
+\mbox{\Hypertarget{class_osm_node_a65db270bef3d8c55822b410ed137ec7c}\label{class_osm_node_a65db270bef3d8c55822b410ed137ec7c}} 
+\index{OsmNode@{OsmNode}!longitude@{longitude}}
+\index{longitude@{longitude}!OsmNode@{OsmNode}}
+\subsubsection{\texorpdfstring{longitude}{longitude}}
+{\footnotesize\ttfamily float Osm\+Node.\+longitude\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+Longitude of the node. 
+
+\mbox{\Hypertarget{class_osm_node_ac27a7d0bdad566917ca5d11dcc311f04}\label{class_osm_node_ac27a7d0bdad566917ca5d11dcc311f04}} 
+\index{OsmNode@{OsmNode}!x@{x}}
+\index{x@{x}!OsmNode@{OsmNode}}
+\subsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily float Osm\+Node.\+x\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+The x value corresponding to the longitude. 
+
+\mbox{\Hypertarget{class_osm_node_a4873f9b229e3aa49eabaaa4b7feb6666}\label{class_osm_node_a4873f9b229e3aa49eabaaa4b7feb6666}} 
+\index{OsmNode@{OsmNode}!y@{y}}
+\index{y@{y}!OsmNode@{OsmNode}}
+\subsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily float Osm\+Node.\+y\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+The y value corresponding to the latitude. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Documents/\+Unity\+Projects/\+Final Year Game/\+Wo\+W\+Go!/\+Assets/\+Project/\+Scripts/\+Map\+Processing/Osm\+Node.\+cs\end{DoxyCompactItemize}

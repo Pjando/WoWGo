@@ -1,0 +1,149 @@
+\hypertarget{class_model_controller}{}\section{Model\+Controller Class Reference}
+\label{class_model_controller}\index{ModelController@{ModelController}}
+
+
+Controls the models location on the map.  
+
+
+
+
+Inheritance diagram for Model\+Controller\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=164pt]{class_model_controller__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Model\+Controller\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=252pt]{class_model_controller__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_model_controller_aeb277810748a80f9a3b9478d92c91b7b}{Start}} ()
+\begin{DoxyCompactList}\small\item\em Sets the model to the clients G\+PS location. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_model_controller_a267847d6963134144ac1e99e5dcff936}{Update}} ()
+\begin{DoxyCompactList}\small\item\em Updates the models position using G\+PS coordinates. Also creates smooth walking animation between the old model position and new model position. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_model_controller_a04c854f156b7eafee7c558a5da07e7cb}{x}}
+\begin{DoxyCompactList}\small\item\em x and y based on G\+PS coordinates. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_model_controller_ae20cb851b4ac28fd58d4316ca17e236d}\label{class_model_controller_ae20cb851b4ac28fd58d4316ca17e236d}} 
+float {\bfseries y}
+\item 
+float \mbox{\hyperlink{class_model_controller_a8353ec90a68cf11775b83496a1030aea}{v}}
+\begin{DoxyCompactList}\small\item\em Current velocity of the model. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_model_controller_aa3c5bd10d5602786aac268381b727e02}{time}} = 0f
+\begin{DoxyCompactList}\small\item\em The amount the models velocity increases by. \end{DoxyCompactList}\item 
+Vector3 \mbox{\hyperlink{class_model_controller_ab566415f2c4e0984afc36f947cffc6de}{new\+Pos}}
+\begin{DoxyCompactList}\small\item\em The new position of the model. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_map_reader}{Map\+Reader}} \mbox{\hyperlink{class_model_controller_ad1ec83914e19433c15f55c11e12c186d}{map}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_map_reader}{Map\+Reader}} component. \end{DoxyCompactList}\item 
+Animator \mbox{\hyperlink{class_model_controller_a620c1a841b10909184484bf44394486d}{anim}}
+\begin{DoxyCompactList}\small\item\em Animator for the player model. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Controls the models location on the map. 
+
+\begin{DoxyAuthor}{Author}
+Pavan Jando
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_model_controller_aeb277810748a80f9a3b9478d92c91b7b}\label{class_model_controller_aeb277810748a80f9a3b9478d92c91b7b}} 
+\index{ModelController@{ModelController}!Start@{Start}}
+\index{Start@{Start}!ModelController@{ModelController}}
+\subsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Model\+Controller.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Sets the model to the clients G\+PS location. 
+
+\mbox{\Hypertarget{class_model_controller_a267847d6963134144ac1e99e5dcff936}\label{class_model_controller_a267847d6963134144ac1e99e5dcff936}} 
+\index{ModelController@{ModelController}!Update@{Update}}
+\index{Update@{Update}!ModelController@{ModelController}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Model\+Controller.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Updates the models position using G\+PS coordinates. Also creates smooth walking animation between the old model position and new model position. 
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_model_controller_a620c1a841b10909184484bf44394486d}\label{class_model_controller_a620c1a841b10909184484bf44394486d}} 
+\index{ModelController@{ModelController}!anim@{anim}}
+\index{anim@{anim}!ModelController@{ModelController}}
+\subsubsection{\texorpdfstring{anim}{anim}}
+{\footnotesize\ttfamily Animator Model\+Controller.\+anim\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Animator for the player model. 
+
+\mbox{\Hypertarget{class_model_controller_ad1ec83914e19433c15f55c11e12c186d}\label{class_model_controller_ad1ec83914e19433c15f55c11e12c186d}} 
+\index{ModelController@{ModelController}!map@{map}}
+\index{map@{map}!ModelController@{ModelController}}
+\subsubsection{\texorpdfstring{map}{map}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_map_reader}{Map\+Reader}} Model\+Controller.\+map\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\mbox{\hyperlink{class_map_reader}{Map\+Reader}} component. 
+
+\mbox{\Hypertarget{class_model_controller_ab566415f2c4e0984afc36f947cffc6de}\label{class_model_controller_ab566415f2c4e0984afc36f947cffc6de}} 
+\index{ModelController@{ModelController}!newPos@{newPos}}
+\index{newPos@{newPos}!ModelController@{ModelController}}
+\subsubsection{\texorpdfstring{newPos}{newPos}}
+{\footnotesize\ttfamily Vector3 Model\+Controller.\+new\+Pos\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The new position of the model. 
+
+\mbox{\Hypertarget{class_model_controller_aa3c5bd10d5602786aac268381b727e02}\label{class_model_controller_aa3c5bd10d5602786aac268381b727e02}} 
+\index{ModelController@{ModelController}!time@{time}}
+\index{time@{time}!ModelController@{ModelController}}
+\subsubsection{\texorpdfstring{time}{time}}
+{\footnotesize\ttfamily float Model\+Controller.\+time = 0f\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The amount the models velocity increases by. 
+
+\mbox{\Hypertarget{class_model_controller_a8353ec90a68cf11775b83496a1030aea}\label{class_model_controller_a8353ec90a68cf11775b83496a1030aea}} 
+\index{ModelController@{ModelController}!v@{v}}
+\index{v@{v}!ModelController@{ModelController}}
+\subsubsection{\texorpdfstring{v}{v}}
+{\footnotesize\ttfamily float Model\+Controller.\+v\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Current velocity of the model. 
+
+\mbox{\Hypertarget{class_model_controller_a04c854f156b7eafee7c558a5da07e7cb}\label{class_model_controller_a04c854f156b7eafee7c558a5da07e7cb}} 
+\index{ModelController@{ModelController}!x@{x}}
+\index{x@{x}!ModelController@{ModelController}}
+\subsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily float Model\+Controller.\+x\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+x and y based on G\+PS coordinates. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Documents/\+Unity\+Projects/\+Final Year Game/\+Wo\+W\+Go!/\+Assets/\+Project/\+Scripts/Model\+Controller.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,8 @@
+<map id="Inventory" name="Inventory">
+<area shape="rect" id="node1" title="Manages the inventory and which weapon is equipped." alt="" coords="171,171,244,197"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,81,116,108"/>
+<area shape="rect" id="node3" href="$class_mace.html" title="Mace weapon extends base class Item." alt="" coords="140,81,195,108"/>
+<area shape="rect" id="node4" href="$class_item.html" title="Base class for a weapon." alt="" coords="227,5,273,32"/>
+<area shape="rect" id="node5" href="$class_dagger.html" title="Dagger weapon extends base class Item." alt="" coords="219,81,281,108"/>
+<area shape="rect" id="node6" href="$class_axe.html" title="Axe weapon extends base class Item." alt="" coords="306,81,351,108"/>
+</map>

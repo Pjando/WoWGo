@@ -1,0 +1,433 @@
+\hypertarget{class_byte_buffer}{}\section{Byte\+Buffer Class Reference}
+\label{class_byte_buffer}\index{ByteBuffer@{ByteBuffer}}
+
+
+Used to serialise data into a byte array to send over the network.  
+
+
+
+
+Inheritance diagram for Byte\+Buffer\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=147pt]{class_byte_buffer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Byte\+Buffer\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=147pt]{class_byte_buffer__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_byte_buffer_aa1b95c150b581b8e0cf15b650e162f54}{Byte\+Buffer}} ()
+\begin{DoxyCompactList}\small\item\em Creates a Byte Buffer object initialsing readpos to 0. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_byte_buffer_ad73900a2c6d3ee2efcc6d07f66340497}{Get\+Read\+Pos}} ()
+\begin{DoxyCompactList}\small\item\em Get the current read position of the buffer. \end{DoxyCompactList}\item 
+byte \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_byte_buffer_a52290714c9deb79ac6f7039aa566147c}{To\+Array}} ()
+\begin{DoxyCompactList}\small\item\em Get a byte array of the data in the buffer. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_byte_buffer_ab599e90a3d53e05e8e04e2388f444873}{Count}} ()
+\begin{DoxyCompactList}\small\item\em Gets the number of elements in the buff list. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_byte_buffer_a45c99a0058fc2d9d38b5829bf34f6317}{Length}} ()
+\begin{DoxyCompactList}\small\item\em The length of buffer from the read position. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_byte_buffer_a879ab4931f4225b40611c56c9d3781f0}{Clear}} ()
+\begin{DoxyCompactList}\small\item\em Clears the buffer and resets read position to 0. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_byte_buffer_a7650f89f25ac6d9770a502c294a4f6a8}{Write\+Byte}} (byte input)
+\begin{DoxyCompactList}\small\item\em Writes a byte to the buffer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_byte_buffer_abbb2d979bae5a3d06df65de86979aa75}{Write\+Bytes}} (byte\mbox{[}$\,$\mbox{]} input)
+\begin{DoxyCompactList}\small\item\em Writes a byte array to the buffer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_byte_buffer_a1b3f0df4368105492833d48b8c35b7e6}{Write\+Short}} (short input)
+\begin{DoxyCompactList}\small\item\em Converts a short to a byte array and writes it to the buffer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_byte_buffer_a9343c632b31720770d4ea3bcabaac296}{Write\+Integer}} (int input)
+\begin{DoxyCompactList}\small\item\em Converts an integer to a byte array and writes it to the buffer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_byte_buffer_a256bb398a33dc7469c3b2c498414b61d}{Write\+Float}} (float input)
+\begin{DoxyCompactList}\small\item\em Converts a float to a byte array and writes it to the buffer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_byte_buffer_a0f46a523deadb0d47ad0bd5bd9ab58ba}{Write\+String}} (string input)
+\begin{DoxyCompactList}\small\item\em Converts a string to a byte array and writes it to the buffer. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_byte_buffer_a31b45da0084d7c7917292b151f01b69a}{Read\+Integer}} (bool peek=true)
+\begin{DoxyCompactList}\small\item\em Reads an integer from the buffer. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_byte_buffer_a2dc74466e4ca3e68bdcb7b4fdc8c0f3a}{Read\+String}} (bool peek=true)
+\begin{DoxyCompactList}\small\item\em Reads a string from the buffer. \end{DoxyCompactList}\item 
+byte \mbox{\hyperlink{class_byte_buffer_a3d3bf87754a8bba775bbba0cc7ab3ce4}{Read\+Byte}} (bool peek=true)
+\begin{DoxyCompactList}\small\item\em Reads a byte from the buffer. \end{DoxyCompactList}\item 
+byte \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_byte_buffer_ab43ff1cbc334a11dfbc59b7b57cfd551}{Read\+Bytes}} (int length, bool peek=true)
+\begin{DoxyCompactList}\small\item\em Reads a byte array from the buffer. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_byte_buffer_a52fda75f3b1d2203e9f3429b5c5e393d}{Read\+Float}} (bool peek=true)
+\begin{DoxyCompactList}\small\item\em Reads a float from the buffer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_byte_buffer_a65980af32cd7622f530cc5a30c3b23ea}{Dispose}} ()
+\begin{DoxyCompactList}\small\item\em Public method for virtual dispose() method. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_byte_buffer_aad8eb7dab24ee09d89f47c47f424e536}{Dispose}} (bool disposing)
+\begin{DoxyCompactList}\small\item\em Disposes unmanaged and managed resources. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ byte $>$ \mbox{\hyperlink{class_byte_buffer_a0315ca3f2cc48d70d23e6307c80b10df}{buff}}
+\begin{DoxyCompactList}\small\item\em List of type byte used to write data. \end{DoxyCompactList}\item 
+byte \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_byte_buffer_a596083ce90920715bc128859314bfd1f}{read\+Buff}}
+\begin{DoxyCompactList}\small\item\em Byte array used to read values from the buffer. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_byte_buffer_a266fa418f19f51b4929a7d38c8edef3d}{readpos}}
+\begin{DoxyCompactList}\small\item\em The index in the array that is being read from. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_byte_buffer_ac044a6c428d4cda3ac745180dad00ef8}{buff\+Update}} = false
+\begin{DoxyCompactList}\small\item\em Indicates whether the buffer has been written to. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_byte_buffer_a0fb55465ef850201cd378011f4bee87f}{disposed\+Value}} = false
+\begin{DoxyCompactList}\small\item\em Track whether Dispose has been called. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Used to serialise data into a byte array to send over the network. 
+
+\begin{DoxyAuthor}{Author}
+Kevin Kaymak
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_byte_buffer_aa1b95c150b581b8e0cf15b650e162f54}\label{class_byte_buffer_aa1b95c150b581b8e0cf15b650e162f54}} 
+\index{ByteBuffer@{ByteBuffer}!ByteBuffer@{ByteBuffer}}
+\index{ByteBuffer@{ByteBuffer}!ByteBuffer@{ByteBuffer}}
+\subsubsection{\texorpdfstring{ByteBuffer()}{ByteBuffer()}}
+{\footnotesize\ttfamily Byte\+Buffer.\+Byte\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates a Byte Buffer object initialsing readpos to 0. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_byte_buffer_a879ab4931f4225b40611c56c9d3781f0}\label{class_byte_buffer_a879ab4931f4225b40611c56c9d3781f0}} 
+\index{ByteBuffer@{ByteBuffer}!Clear@{Clear}}
+\index{Clear@{Clear}!ByteBuffer@{ByteBuffer}}
+\subsubsection{\texorpdfstring{Clear()}{Clear()}}
+{\footnotesize\ttfamily void Byte\+Buffer.\+Clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Clears the buffer and resets read position to 0. 
+
+\mbox{\Hypertarget{class_byte_buffer_ab599e90a3d53e05e8e04e2388f444873}\label{class_byte_buffer_ab599e90a3d53e05e8e04e2388f444873}} 
+\index{ByteBuffer@{ByteBuffer}!Count@{Count}}
+\index{Count@{Count}!ByteBuffer@{ByteBuffer}}
+\subsubsection{\texorpdfstring{Count()}{Count()}}
+{\footnotesize\ttfamily int Byte\+Buffer.\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the number of elements in the buff list. 
+
+\begin{DoxyReturn}{Returns}
+Integer number of elements.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_byte_buffer_aad8eb7dab24ee09d89f47c47f424e536}\label{class_byte_buffer_aad8eb7dab24ee09d89f47c47f424e536}} 
+\index{ByteBuffer@{ByteBuffer}!Dispose@{Dispose}}
+\index{Dispose@{Dispose}!ByteBuffer@{ByteBuffer}}
+\subsubsection{\texorpdfstring{Dispose()}{Dispose()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void Byte\+Buffer.\+Dispose (\begin{DoxyParamCaption}\item[{bool}]{disposing }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Disposes unmanaged and managed resources. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em disposing} & Disposes both managed and unmanaged resources if true, only unmanaged if false.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_byte_buffer_a65980af32cd7622f530cc5a30c3b23ea}\label{class_byte_buffer_a65980af32cd7622f530cc5a30c3b23ea}} 
+\index{ByteBuffer@{ByteBuffer}!Dispose@{Dispose}}
+\index{Dispose@{Dispose}!ByteBuffer@{ByteBuffer}}
+\subsubsection{\texorpdfstring{Dispose()}{Dispose()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Byte\+Buffer.\+Dispose (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Public method for virtual dispose() method. 
+
+\mbox{\Hypertarget{class_byte_buffer_ad73900a2c6d3ee2efcc6d07f66340497}\label{class_byte_buffer_ad73900a2c6d3ee2efcc6d07f66340497}} 
+\index{ByteBuffer@{ByteBuffer}!GetReadPos@{GetReadPos}}
+\index{GetReadPos@{GetReadPos}!ByteBuffer@{ByteBuffer}}
+\subsubsection{\texorpdfstring{GetReadPos()}{GetReadPos()}}
+{\footnotesize\ttfamily int Byte\+Buffer.\+Get\+Read\+Pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the current read position of the buffer. 
+
+\begin{DoxyReturn}{Returns}
+Integer of the read position.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_byte_buffer_a45c99a0058fc2d9d38b5829bf34f6317}\label{class_byte_buffer_a45c99a0058fc2d9d38b5829bf34f6317}} 
+\index{ByteBuffer@{ByteBuffer}!Length@{Length}}
+\index{Length@{Length}!ByteBuffer@{ByteBuffer}}
+\subsubsection{\texorpdfstring{Length()}{Length()}}
+{\footnotesize\ttfamily int Byte\+Buffer.\+Length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The length of buffer from the read position. 
+
+\begin{DoxyReturn}{Returns}
+Integer length \mbox{\hyperlink{class_byte_buffer_ab599e90a3d53e05e8e04e2388f444873}{Count()}}-\/readpos
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_byte_buffer_a3d3bf87754a8bba775bbba0cc7ab3ce4}\label{class_byte_buffer_a3d3bf87754a8bba775bbba0cc7ab3ce4}} 
+\index{ByteBuffer@{ByteBuffer}!ReadByte@{ReadByte}}
+\index{ReadByte@{ReadByte}!ByteBuffer@{ByteBuffer}}
+\subsubsection{\texorpdfstring{ReadByte()}{ReadByte()}}
+{\footnotesize\ttfamily byte Byte\+Buffer.\+Read\+Byte (\begin{DoxyParamCaption}\item[{bool}]{peek = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+Reads a byte from the buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em peek} & Whether the read position should be incremented after reading. True by default.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns a byte from the buffer.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_byte_buffer_ab43ff1cbc334a11dfbc59b7b57cfd551}\label{class_byte_buffer_ab43ff1cbc334a11dfbc59b7b57cfd551}} 
+\index{ByteBuffer@{ByteBuffer}!ReadBytes@{ReadBytes}}
+\index{ReadBytes@{ReadBytes}!ByteBuffer@{ByteBuffer}}
+\subsubsection{\texorpdfstring{ReadBytes()}{ReadBytes()}}
+{\footnotesize\ttfamily byte \mbox{[}$\,$\mbox{]} Byte\+Buffer.\+Read\+Bytes (\begin{DoxyParamCaption}\item[{int}]{length,  }\item[{bool}]{peek = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+Reads a byte array from the buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em length} & The length of the byte array to be read.\\
+\hline
+{\em peek} & Whether the read position should be incremented after reading. True by default.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns a byte array from the buffer.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_byte_buffer_a52fda75f3b1d2203e9f3429b5c5e393d}\label{class_byte_buffer_a52fda75f3b1d2203e9f3429b5c5e393d}} 
+\index{ByteBuffer@{ByteBuffer}!ReadFloat@{ReadFloat}}
+\index{ReadFloat@{ReadFloat}!ByteBuffer@{ByteBuffer}}
+\subsubsection{\texorpdfstring{ReadFloat()}{ReadFloat()}}
+{\footnotesize\ttfamily float Byte\+Buffer.\+Read\+Float (\begin{DoxyParamCaption}\item[{bool}]{peek = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+Reads a float from the buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em peek} & Whether the read position should be incremented after reading. True by default.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns a float from the buffer.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_byte_buffer_a31b45da0084d7c7917292b151f01b69a}\label{class_byte_buffer_a31b45da0084d7c7917292b151f01b69a}} 
+\index{ByteBuffer@{ByteBuffer}!ReadInteger@{ReadInteger}}
+\index{ReadInteger@{ReadInteger}!ByteBuffer@{ByteBuffer}}
+\subsubsection{\texorpdfstring{ReadInteger()}{ReadInteger()}}
+{\footnotesize\ttfamily int Byte\+Buffer.\+Read\+Integer (\begin{DoxyParamCaption}\item[{bool}]{peek = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+Reads an integer from the buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em peek} & Whether the read position should be incremented after reading. True by default.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns integer from the buffer.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_byte_buffer_a2dc74466e4ca3e68bdcb7b4fdc8c0f3a}\label{class_byte_buffer_a2dc74466e4ca3e68bdcb7b4fdc8c0f3a}} 
+\index{ByteBuffer@{ByteBuffer}!ReadString@{ReadString}}
+\index{ReadString@{ReadString}!ByteBuffer@{ByteBuffer}}
+\subsubsection{\texorpdfstring{ReadString()}{ReadString()}}
+{\footnotesize\ttfamily string Byte\+Buffer.\+Read\+String (\begin{DoxyParamCaption}\item[{bool}]{peek = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+Reads a string from the buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em peek} & Whether the read position should be incremented after reading. True by default.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns a string from the buffer.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_byte_buffer_a52290714c9deb79ac6f7039aa566147c}\label{class_byte_buffer_a52290714c9deb79ac6f7039aa566147c}} 
+\index{ByteBuffer@{ByteBuffer}!ToArray@{ToArray}}
+\index{ToArray@{ToArray}!ByteBuffer@{ByteBuffer}}
+\subsubsection{\texorpdfstring{ToArray()}{ToArray()}}
+{\footnotesize\ttfamily byte \mbox{[}$\,$\mbox{]} Byte\+Buffer.\+To\+Array (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get a byte array of the data in the buffer. 
+
+\begin{DoxyReturn}{Returns}
+Byte array containg buffer data.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_byte_buffer_a7650f89f25ac6d9770a502c294a4f6a8}\label{class_byte_buffer_a7650f89f25ac6d9770a502c294a4f6a8}} 
+\index{ByteBuffer@{ByteBuffer}!WriteByte@{WriteByte}}
+\index{WriteByte@{WriteByte}!ByteBuffer@{ByteBuffer}}
+\subsubsection{\texorpdfstring{WriteByte()}{WriteByte()}}
+{\footnotesize\ttfamily void Byte\+Buffer.\+Write\+Byte (\begin{DoxyParamCaption}\item[{byte}]{input }\end{DoxyParamCaption})}
+
+
+
+Writes a byte to the buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & Byte to be written to the buffer.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_byte_buffer_abbb2d979bae5a3d06df65de86979aa75}\label{class_byte_buffer_abbb2d979bae5a3d06df65de86979aa75}} 
+\index{ByteBuffer@{ByteBuffer}!WriteBytes@{WriteBytes}}
+\index{WriteBytes@{WriteBytes}!ByteBuffer@{ByteBuffer}}
+\subsubsection{\texorpdfstring{WriteBytes()}{WriteBytes()}}
+{\footnotesize\ttfamily void Byte\+Buffer.\+Write\+Bytes (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{input }\end{DoxyParamCaption})}
+
+
+
+Writes a byte array to the buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & Byte array to be written to buffer.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_byte_buffer_a256bb398a33dc7469c3b2c498414b61d}\label{class_byte_buffer_a256bb398a33dc7469c3b2c498414b61d}} 
+\index{ByteBuffer@{ByteBuffer}!WriteFloat@{WriteFloat}}
+\index{WriteFloat@{WriteFloat}!ByteBuffer@{ByteBuffer}}
+\subsubsection{\texorpdfstring{WriteFloat()}{WriteFloat()}}
+{\footnotesize\ttfamily void Byte\+Buffer.\+Write\+Float (\begin{DoxyParamCaption}\item[{float}]{input }\end{DoxyParamCaption})}
+
+
+
+Converts a float to a byte array and writes it to the buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & Float to be written to the buffer.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_byte_buffer_a9343c632b31720770d4ea3bcabaac296}\label{class_byte_buffer_a9343c632b31720770d4ea3bcabaac296}} 
+\index{ByteBuffer@{ByteBuffer}!WriteInteger@{WriteInteger}}
+\index{WriteInteger@{WriteInteger}!ByteBuffer@{ByteBuffer}}
+\subsubsection{\texorpdfstring{WriteInteger()}{WriteInteger()}}
+{\footnotesize\ttfamily void Byte\+Buffer.\+Write\+Integer (\begin{DoxyParamCaption}\item[{int}]{input }\end{DoxyParamCaption})}
+
+
+
+Converts an integer to a byte array and writes it to the buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & Integer to be written to the buffer.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_byte_buffer_a1b3f0df4368105492833d48b8c35b7e6}\label{class_byte_buffer_a1b3f0df4368105492833d48b8c35b7e6}} 
+\index{ByteBuffer@{ByteBuffer}!WriteShort@{WriteShort}}
+\index{WriteShort@{WriteShort}!ByteBuffer@{ByteBuffer}}
+\subsubsection{\texorpdfstring{WriteShort()}{WriteShort()}}
+{\footnotesize\ttfamily void Byte\+Buffer.\+Write\+Short (\begin{DoxyParamCaption}\item[{short}]{input }\end{DoxyParamCaption})}
+
+
+
+Converts a short to a byte array and writes it to the buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & Short variable to be written to the buffer.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_byte_buffer_a0f46a523deadb0d47ad0bd5bd9ab58ba}\label{class_byte_buffer_a0f46a523deadb0d47ad0bd5bd9ab58ba}} 
+\index{ByteBuffer@{ByteBuffer}!WriteString@{WriteString}}
+\index{WriteString@{WriteString}!ByteBuffer@{ByteBuffer}}
+\subsubsection{\texorpdfstring{WriteString()}{WriteString()}}
+{\footnotesize\ttfamily void Byte\+Buffer.\+Write\+String (\begin{DoxyParamCaption}\item[{string}]{input }\end{DoxyParamCaption})}
+
+
+
+Converts a string to a byte array and writes it to the buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & String to be written to the buffer.\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_byte_buffer_a0315ca3f2cc48d70d23e6307c80b10df}\label{class_byte_buffer_a0315ca3f2cc48d70d23e6307c80b10df}} 
+\index{ByteBuffer@{ByteBuffer}!buff@{buff}}
+\index{buff@{buff}!ByteBuffer@{ByteBuffer}}
+\subsubsection{\texorpdfstring{buff}{buff}}
+{\footnotesize\ttfamily List$<$byte$>$ Byte\+Buffer.\+buff\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+List of type byte used to write data. 
+
+\mbox{\Hypertarget{class_byte_buffer_ac044a6c428d4cda3ac745180dad00ef8}\label{class_byte_buffer_ac044a6c428d4cda3ac745180dad00ef8}} 
+\index{ByteBuffer@{ByteBuffer}!buffUpdate@{buffUpdate}}
+\index{buffUpdate@{buffUpdate}!ByteBuffer@{ByteBuffer}}
+\subsubsection{\texorpdfstring{buffUpdate}{buffUpdate}}
+{\footnotesize\ttfamily bool Byte\+Buffer.\+buff\+Update = false\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Indicates whether the buffer has been written to. 
+
+\mbox{\Hypertarget{class_byte_buffer_a0fb55465ef850201cd378011f4bee87f}\label{class_byte_buffer_a0fb55465ef850201cd378011f4bee87f}} 
+\index{ByteBuffer@{ByteBuffer}!disposedValue@{disposedValue}}
+\index{disposedValue@{disposedValue}!ByteBuffer@{ByteBuffer}}
+\subsubsection{\texorpdfstring{disposedValue}{disposedValue}}
+{\footnotesize\ttfamily bool Byte\+Buffer.\+disposed\+Value = false\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Track whether Dispose has been called. 
+
+\mbox{\Hypertarget{class_byte_buffer_a596083ce90920715bc128859314bfd1f}\label{class_byte_buffer_a596083ce90920715bc128859314bfd1f}} 
+\index{ByteBuffer@{ByteBuffer}!readBuff@{readBuff}}
+\index{readBuff@{readBuff}!ByteBuffer@{ByteBuffer}}
+\subsubsection{\texorpdfstring{readBuff}{readBuff}}
+{\footnotesize\ttfamily byte \mbox{[}$\,$\mbox{]} Byte\+Buffer.\+read\+Buff\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Byte array used to read values from the buffer. 
+
+\mbox{\Hypertarget{class_byte_buffer_a266fa418f19f51b4929a7d38c8edef3d}\label{class_byte_buffer_a266fa418f19f51b4929a7d38c8edef3d}} 
+\index{ByteBuffer@{ByteBuffer}!readpos@{readpos}}
+\index{readpos@{readpos}!ByteBuffer@{ByteBuffer}}
+\subsubsection{\texorpdfstring{readpos}{readpos}}
+{\footnotesize\ttfamily int Byte\+Buffer.\+readpos\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The index in the array that is being read from. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Documents/\+Unity\+Projects/\+Final Year Game/\+Wo\+W\+Go!/\+Assets/\+Project/\+Scripts/\+Networking/Byte\+Buffer.\+cs\end{DoxyCompactItemize}

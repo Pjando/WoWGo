@@ -1,0 +1,5 @@
+<map id="Enemy" name="Enemy">
+<area shape="rect" id="node1" title="Base class for the enemies in the game." alt="" coords="56,5,119,32"/>
+<area shape="rect" id="node2" href="$class_skeleton.html" title="Skeleton enemy extends base class enemy." alt="" coords="5,80,79,107"/>
+<area shape="rect" id="node3" href="$class_wizard.html" title="Wizard enemy extends base class enemy." alt="" coords="103,80,165,107"/>
+</map>

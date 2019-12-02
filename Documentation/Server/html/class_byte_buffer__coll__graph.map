@@ -1,0 +1,4 @@
+<map id="ByteBuffer" name="ByteBuffer">
+<area shape="rect" id="node1" title="Used to serialise data into a byte array to send over the network." alt="" coords="9,80,91,107"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,5,95,32"/>
+</map>

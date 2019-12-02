@@ -1,0 +1,107 @@
+\hypertarget{class_server_send_data}{}\section{Server\+Send\+Data Class Reference}
+\label{class_server_send_data}\index{ServerSendData@{ServerSendData}}
+
+
+Used to send data to clients.  
+
+
+
+
+Collaboration diagram for Server\+Send\+Data\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=224pt]{class_server_send_data__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_server_send_data_a7fb6d84bdffbfca0424dd92841988a9c}{Send\+Data\+To}} (int index, byte\mbox{[}$\,$\mbox{]} data)
+\begin{DoxyCompactList}\small\item\em Base class for sending byte array data to a client. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_server_send_data_ae281214f153a330d64faa820ff55c3b7}{Send\+Enemies}} (int index, List$<$ \mbox{\hyperlink{class_enemy}{Enemy}} $>$ enemies)
+\begin{DoxyCompactList}\small\item\em Sends the current list of enemies to the specified client. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_server_send_data_a360f11f9f0c66245d98ee14a6da70218}{Send\+Message}} (int index, string message)
+\begin{DoxyCompactList}\small\item\em Sends a string message to the specified client. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_server_send_data}{Server\+Send\+Data}} \mbox{\hyperlink{class_server_send_data_a6857a6a98dddeec22456fe8a362c7c30}{instance}} = new \mbox{\hyperlink{class_server_send_data}{Server\+Send\+Data}}()
+\begin{DoxyCompactList}\small\item\em Global variable. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Used to send data to clients. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_server_send_data_a7fb6d84bdffbfca0424dd92841988a9c}\label{class_server_send_data_a7fb6d84bdffbfca0424dd92841988a9c}} 
+\index{ServerSendData@{ServerSendData}!SendDataTo@{SendDataTo}}
+\index{SendDataTo@{SendDataTo}!ServerSendData@{ServerSendData}}
+\subsubsection{\texorpdfstring{SendDataTo()}{SendDataTo()}}
+{\footnotesize\ttfamily void Server\+Send\+Data.\+Send\+Data\+To (\begin{DoxyParamCaption}\item[{int}]{index,  }\item[{byte \mbox{[}$\,$\mbox{]}}]{data }\end{DoxyParamCaption})}
+
+
+
+Base class for sending byte array data to a client. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & Integer index of the client from the list of clients.\\
+\hline
+{\em data} & Data retrieved from the client.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_server_send_data_ae281214f153a330d64faa820ff55c3b7}\label{class_server_send_data_ae281214f153a330d64faa820ff55c3b7}} 
+\index{ServerSendData@{ServerSendData}!SendEnemies@{SendEnemies}}
+\index{SendEnemies@{SendEnemies}!ServerSendData@{ServerSendData}}
+\subsubsection{\texorpdfstring{SendEnemies()}{SendEnemies()}}
+{\footnotesize\ttfamily void Server\+Send\+Data.\+Send\+Enemies (\begin{DoxyParamCaption}\item[{int}]{index,  }\item[{List$<$ \mbox{\hyperlink{class_enemy}{Enemy}} $>$}]{enemies }\end{DoxyParamCaption})}
+
+
+
+Sends the current list of enemies to the specified client. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & Integer index of the client from the list of clients.\\
+\hline
+{\em enemies} & Data retrieved from the client.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_server_send_data_a360f11f9f0c66245d98ee14a6da70218}\label{class_server_send_data_a360f11f9f0c66245d98ee14a6da70218}} 
+\index{ServerSendData@{ServerSendData}!SendMessage@{SendMessage}}
+\index{SendMessage@{SendMessage}!ServerSendData@{ServerSendData}}
+\subsubsection{\texorpdfstring{SendMessage()}{SendMessage()}}
+{\footnotesize\ttfamily void Server\+Send\+Data.\+Send\+Message (\begin{DoxyParamCaption}\item[{int}]{index,  }\item[{string}]{message }\end{DoxyParamCaption})}
+
+
+
+Sends a string message to the specified client. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & Integer index of the client from the list of clients.\\
+\hline
+{\em message} & Data retrieved from the client.\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_server_send_data_a6857a6a98dddeec22456fe8a362c7c30}\label{class_server_send_data_a6857a6a98dddeec22456fe8a362c7c30}} 
+\index{ServerSendData@{ServerSendData}!instance@{instance}}
+\index{instance@{instance}!ServerSendData@{ServerSendData}}
+\subsubsection{\texorpdfstring{instance}{instance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_server_send_data}{Server\+Send\+Data}} Server\+Send\+Data.\+instance = new \mbox{\hyperlink{class_server_send_data}{Server\+Send\+Data}}()\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Global variable. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Documents/\+Unity\+Projects/\+Final Year Game/\+Server/\+Server/\+Server\+Application/Server\+Send\+Data.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,143 @@
+\hypertarget{class_camera_controller}{}\section{Camera\+Controller Class Reference}
+\label{class_camera_controller}\index{CameraController@{CameraController}}
+
+
+Used to control the camera position in the map scene.  
+
+
+
+
+Inheritance diagram for Camera\+Controller\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=172pt]{class_camera_controller__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Camera\+Controller\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=172pt]{class_camera_controller__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Game\+Object \mbox{\hyperlink{class_camera_controller_ae690a4bedc4d8c38e4f26b446fb072da}{model}}
+\begin{DoxyCompactList}\small\item\em The game object of the model. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Events}
+\begin{DoxyCompactItemize}
+\item 
+static Action$<$ string $>$ \mbox{\hyperlink{class_camera_controller_ad2d7bdece6ed6b583da7cda47cb83097}{Trigger}}
+\begin{DoxyCompactList}\small\item\em Event that is triggered when the user taps on an enemy model. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_camera_controller_a266b0fde6845020de831bbd9bbcbc6a9}{Awake}} ()
+\begin{DoxyCompactList}\small\item\em Calculates the offset between the camera and the model. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_camera_controller_afcd241727886518c21b9609193e32d18}{Late\+Update}} ()
+\begin{DoxyCompactList}\small\item\em Rotates and moves the camera when the user swipes on screen. Detects if an enemy has been tapped to initiate battle. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const float \mbox{\hyperlink{class_camera_controller_a8035ecea5e795b25f55bb1f727618535}{S\+P\+E\+ED}} = 1.\+5f
+\begin{DoxyCompactList}\small\item\em The speed at which the camera rotates. \end{DoxyCompactList}\item 
+Vector3 \mbox{\hyperlink{class_camera_controller_aff80d2275dae360196361c39078bfda4}{offset}}
+\begin{DoxyCompactList}\small\item\em The offset vector between the camera and the model. \end{DoxyCompactList}\item 
+Quaternion \mbox{\hyperlink{class_camera_controller_a785468828eec45dd16939c35cc5687a5}{rotation}}
+\begin{DoxyCompactList}\small\item\em The angle the camera is to be rotated. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Used to control the camera position in the map scene. 
+
+\begin{DoxyAuthor}{Author}
+Pavan Jando
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_camera_controller_a266b0fde6845020de831bbd9bbcbc6a9}\label{class_camera_controller_a266b0fde6845020de831bbd9bbcbc6a9}} 
+\index{CameraController@{CameraController}!Awake@{Awake}}
+\index{Awake@{Awake}!CameraController@{CameraController}}
+\subsubsection{\texorpdfstring{Awake()}{Awake()}}
+{\footnotesize\ttfamily void Camera\+Controller.\+Awake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Calculates the offset between the camera and the model. 
+
+\mbox{\Hypertarget{class_camera_controller_afcd241727886518c21b9609193e32d18}\label{class_camera_controller_afcd241727886518c21b9609193e32d18}} 
+\index{CameraController@{CameraController}!LateUpdate@{LateUpdate}}
+\index{LateUpdate@{LateUpdate}!CameraController@{CameraController}}
+\subsubsection{\texorpdfstring{LateUpdate()}{LateUpdate()}}
+{\footnotesize\ttfamily void Camera\+Controller.\+Late\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Rotates and moves the camera when the user swipes on screen. Detects if an enemy has been tapped to initiate battle. 
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_camera_controller_ae690a4bedc4d8c38e4f26b446fb072da}\label{class_camera_controller_ae690a4bedc4d8c38e4f26b446fb072da}} 
+\index{CameraController@{CameraController}!model@{model}}
+\index{model@{model}!CameraController@{CameraController}}
+\subsubsection{\texorpdfstring{model}{model}}
+{\footnotesize\ttfamily Game\+Object Camera\+Controller.\+model}
+
+
+
+The game object of the model. 
+
+\mbox{\Hypertarget{class_camera_controller_aff80d2275dae360196361c39078bfda4}\label{class_camera_controller_aff80d2275dae360196361c39078bfda4}} 
+\index{CameraController@{CameraController}!offset@{offset}}
+\index{offset@{offset}!CameraController@{CameraController}}
+\subsubsection{\texorpdfstring{offset}{offset}}
+{\footnotesize\ttfamily Vector3 Camera\+Controller.\+offset\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The offset vector between the camera and the model. 
+
+\mbox{\Hypertarget{class_camera_controller_a785468828eec45dd16939c35cc5687a5}\label{class_camera_controller_a785468828eec45dd16939c35cc5687a5}} 
+\index{CameraController@{CameraController}!rotation@{rotation}}
+\index{rotation@{rotation}!CameraController@{CameraController}}
+\subsubsection{\texorpdfstring{rotation}{rotation}}
+{\footnotesize\ttfamily Quaternion Camera\+Controller.\+rotation\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The angle the camera is to be rotated. 
+
+\mbox{\Hypertarget{class_camera_controller_a8035ecea5e795b25f55bb1f727618535}\label{class_camera_controller_a8035ecea5e795b25f55bb1f727618535}} 
+\index{CameraController@{CameraController}!SPEED@{SPEED}}
+\index{SPEED@{SPEED}!CameraController@{CameraController}}
+\subsubsection{\texorpdfstring{SPEED}{SPEED}}
+{\footnotesize\ttfamily const float Camera\+Controller.\+S\+P\+E\+ED = 1.\+5f\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The speed at which the camera rotates. 
+
+
+
+\subsection{Event Documentation}
+\mbox{\Hypertarget{class_camera_controller_ad2d7bdece6ed6b583da7cda47cb83097}\label{class_camera_controller_ad2d7bdece6ed6b583da7cda47cb83097}} 
+\index{CameraController@{CameraController}!Trigger@{Trigger}}
+\index{Trigger@{Trigger}!CameraController@{CameraController}}
+\subsubsection{\texorpdfstring{Trigger}{Trigger}}
+{\footnotesize\ttfamily Action$<$string$>$ Camera\+Controller.\+Trigger\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Event that is triggered when the user taps on an enemy model. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Documents/\+Unity\+Projects/\+Final Year Game/\+Wo\+W\+Go!/\+Assets/\+Project/\+Scripts/Camera\+Controller.\+cs\end{DoxyCompactItemize}

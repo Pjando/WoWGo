@@ -1,0 +1,121 @@
+\hypertarget{class_network}{}\section{Network Class Reference}
+\label{class_network}\index{Network@{Network}}
+
+
+Responsible for establishing connection with the clients.  
+
+
+
+
+Collaboration diagram for Network\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{class_network__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_network_a22cabc15681adaf99a76dc9ff3106d1a}{Server\+Start}} ()
+\begin{DoxyCompactList}\small\item\em Starts the server intialising the server socket. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Tcp\+Listener \mbox{\hyperlink{class_network_ad3a8c496428c641ab10b4c0925762155}{server\+Socket}}
+\begin{DoxyCompactList}\small\item\em The socket for the server. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{class_network_a728ae99fddeb1561e1e521d134d92582}{no\+Of\+Clients}} = 100
+\begin{DoxyCompactList}\small\item\em Number of clients that can connect to the server. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_network}{Network}} \mbox{\hyperlink{class_network_af63d25c25873f9220c94d6250a1c9242}{instance}} = new \mbox{\hyperlink{class_network}{Network}}()
+\begin{DoxyCompactList}\small\item\em Global variable. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_client}{Client}} \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_network_a6c14090f7cbb47a16695fd832498d83a}{clients}} = new \mbox{\hyperlink{class_client}{Client}}\mbox{[}\mbox{\hyperlink{class_network_a728ae99fddeb1561e1e521d134d92582}{no\+Of\+Clients}}\mbox{]}
+\begin{DoxyCompactList}\small\item\em List of all clients. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_network_a15f803d40cbbf25b37d279f9637ec614}{On\+Client\+Connect}} (I\+Async\+Result result)
+\begin{DoxyCompactList}\small\item\em Callback method used when a client connects to the server. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Responsible for establishing connection with the clients. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_network_a15f803d40cbbf25b37d279f9637ec614}\label{class_network_a15f803d40cbbf25b37d279f9637ec614}} 
+\index{Network@{Network}!OnClientConnect@{OnClientConnect}}
+\index{OnClientConnect@{OnClientConnect}!Network@{Network}}
+\subsubsection{\texorpdfstring{OnClientConnect()}{OnClientConnect()}}
+{\footnotesize\ttfamily void Network.\+On\+Client\+Connect (\begin{DoxyParamCaption}\item[{I\+Async\+Result}]{result }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Callback method used when a client connects to the server. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em result} & The result of an asynchronous operation.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_network_a22cabc15681adaf99a76dc9ff3106d1a}\label{class_network_a22cabc15681adaf99a76dc9ff3106d1a}} 
+\index{Network@{Network}!ServerStart@{ServerStart}}
+\index{ServerStart@{ServerStart}!Network@{Network}}
+\subsubsection{\texorpdfstring{ServerStart()}{ServerStart()}}
+{\footnotesize\ttfamily void Network.\+Server\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Starts the server intialising the server socket. 
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_network_a6c14090f7cbb47a16695fd832498d83a}\label{class_network_a6c14090f7cbb47a16695fd832498d83a}} 
+\index{Network@{Network}!clients@{clients}}
+\index{clients@{clients}!Network@{Network}}
+\subsubsection{\texorpdfstring{clients}{clients}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_client}{Client}} \mbox{[}$\,$\mbox{]} Network.\+clients = new \mbox{\hyperlink{class_client}{Client}}\mbox{[}\mbox{\hyperlink{class_network_a728ae99fddeb1561e1e521d134d92582}{no\+Of\+Clients}}\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+List of all clients. 
+
+\mbox{\Hypertarget{class_network_af63d25c25873f9220c94d6250a1c9242}\label{class_network_af63d25c25873f9220c94d6250a1c9242}} 
+\index{Network@{Network}!instance@{instance}}
+\index{instance@{instance}!Network@{Network}}
+\subsubsection{\texorpdfstring{instance}{instance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_network}{Network}} Network.\+instance = new \mbox{\hyperlink{class_network}{Network}}()\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Global variable. 
+
+\mbox{\Hypertarget{class_network_a728ae99fddeb1561e1e521d134d92582}\label{class_network_a728ae99fddeb1561e1e521d134d92582}} 
+\index{Network@{Network}!noOfClients@{noOfClients}}
+\index{noOfClients@{noOfClients}!Network@{Network}}
+\subsubsection{\texorpdfstring{noOfClients}{noOfClients}}
+{\footnotesize\ttfamily int Network.\+no\+Of\+Clients = 100\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Number of clients that can connect to the server. 
+
+\mbox{\Hypertarget{class_network_ad3a8c496428c641ab10b4c0925762155}\label{class_network_ad3a8c496428c641ab10b4c0925762155}} 
+\index{Network@{Network}!serverSocket@{serverSocket}}
+\index{serverSocket@{serverSocket}!Network@{Network}}
+\subsubsection{\texorpdfstring{serverSocket}{serverSocket}}
+{\footnotesize\ttfamily Tcp\+Listener Network.\+server\+Socket}
+
+
+
+The socket for the server. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Documents/\+Unity\+Projects/\+Final Year Game/\+Server/\+Server/\+Server\+Application/Network.\+cs\end{DoxyCompactItemize}

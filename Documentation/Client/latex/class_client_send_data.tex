@@ -1,0 +1,145 @@
+\hypertarget{class_client_send_data}{}\section{Client\+Send\+Data Class Reference}
+\label{class_client_send_data}\index{ClientSendData@{ClientSendData}}
+
+
+Used to send data from the client to the server.  
+
+
+
+
+Inheritance diagram for Client\+Send\+Data\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=164pt]{class_client_send_data__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Client\+Send\+Data\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=222pt]{class_client_send_data__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_client_send_data_aed0b71505a76cb58a2b0c58ad239748b}{Send\+G\+PS}} (float lat, float lon)
+\begin{DoxyCompactList}\small\item\em Sends G\+PS location to the server. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_client_send_data_abea10903c98ebd507bbb48b80a7c1b6f}{Send\+Login}} ()
+\begin{DoxyCompactList}\small\item\em Send username to the server. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+T\+M\+P\+\_\+\+Input\+Field \mbox{\hyperlink{class_client_send_data_a849beae9051bf483a4dd446b74d50812}{username}}
+\begin{DoxyCompactList}\small\item\em Input field for user to enter username. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_client_send_data}{Client\+Send\+Data}} \mbox{\hyperlink{class_client_send_data_acdad1498e2dc672310edae72ad9a655e}{instance}}
+\begin{DoxyCompactList}\small\item\em Global Singleton instance of class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_client_send_data_a67973243537e3ae28dd54c8d27d1dba0}{Awake}} ()
+\begin{DoxyCompactList}\small\item\em Initialises Singleton instance. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_client_send_data_aad890f1086f0ac1b345b353cf1f9710e}{Send\+Data\+To\+Server}} (byte\mbox{[}$\,$\mbox{]} data)
+\begin{DoxyCompactList}\small\item\em Base method for sending data to server. Sends a byte array data to server. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Used to send data from the client to the server. 
+
+\begin{DoxyAuthor}{Author}
+Kevin Kaymak 
+
+Modified By Pavan Jando
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_client_send_data_a67973243537e3ae28dd54c8d27d1dba0}\label{class_client_send_data_a67973243537e3ae28dd54c8d27d1dba0}} 
+\index{ClientSendData@{ClientSendData}!Awake@{Awake}}
+\index{Awake@{Awake}!ClientSendData@{ClientSendData}}
+\subsubsection{\texorpdfstring{Awake()}{Awake()}}
+{\footnotesize\ttfamily void Client\+Send\+Data.\+Awake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Initialises Singleton instance. 
+
+\mbox{\Hypertarget{class_client_send_data_aad890f1086f0ac1b345b353cf1f9710e}\label{class_client_send_data_aad890f1086f0ac1b345b353cf1f9710e}} 
+\index{ClientSendData@{ClientSendData}!SendDataToServer@{SendDataToServer}}
+\index{SendDataToServer@{SendDataToServer}!ClientSendData@{ClientSendData}}
+\subsubsection{\texorpdfstring{SendDataToServer()}{SendDataToServer()}}
+{\footnotesize\ttfamily void Client\+Send\+Data.\+Send\+Data\+To\+Server (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Base method for sending data to server. Sends a byte array data to server. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Data to be sent to the server.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_client_send_data_aed0b71505a76cb58a2b0c58ad239748b}\label{class_client_send_data_aed0b71505a76cb58a2b0c58ad239748b}} 
+\index{ClientSendData@{ClientSendData}!SendGPS@{SendGPS}}
+\index{SendGPS@{SendGPS}!ClientSendData@{ClientSendData}}
+\subsubsection{\texorpdfstring{SendGPS()}{SendGPS()}}
+{\footnotesize\ttfamily void Client\+Send\+Data.\+Send\+G\+PS (\begin{DoxyParamCaption}\item[{float}]{lat,  }\item[{float}]{lon }\end{DoxyParamCaption})}
+
+
+
+Sends G\+PS location to the server. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lat} & \\
+\hline
+{\em lon} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_client_send_data_abea10903c98ebd507bbb48b80a7c1b6f}\label{class_client_send_data_abea10903c98ebd507bbb48b80a7c1b6f}} 
+\index{ClientSendData@{ClientSendData}!SendLogin@{SendLogin}}
+\index{SendLogin@{SendLogin}!ClientSendData@{ClientSendData}}
+\subsubsection{\texorpdfstring{SendLogin()}{SendLogin()}}
+{\footnotesize\ttfamily bool Client\+Send\+Data.\+Send\+Login (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Send username to the server. 
+
+\begin{DoxyReturn}{Returns}
+Returns true if username was sent, false if username is empty.
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_client_send_data_acdad1498e2dc672310edae72ad9a655e}\label{class_client_send_data_acdad1498e2dc672310edae72ad9a655e}} 
+\index{ClientSendData@{ClientSendData}!instance@{instance}}
+\index{instance@{instance}!ClientSendData@{ClientSendData}}
+\subsubsection{\texorpdfstring{instance}{instance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_client_send_data}{Client\+Send\+Data}} Client\+Send\+Data.\+instance\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Global Singleton instance of class. 
+
+\mbox{\Hypertarget{class_client_send_data_a849beae9051bf483a4dd446b74d50812}\label{class_client_send_data_a849beae9051bf483a4dd446b74d50812}} 
+\index{ClientSendData@{ClientSendData}!username@{username}}
+\index{username@{username}!ClientSendData@{ClientSendData}}
+\subsubsection{\texorpdfstring{username}{username}}
+{\footnotesize\ttfamily T\+M\+P\+\_\+\+Input\+Field Client\+Send\+Data.\+username}
+
+
+
+Input field for user to enter username. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Documents/\+Unity\+Projects/\+Final Year Game/\+Wo\+W\+Go!/\+Assets/\+Project/\+Scripts/\+Networking/Client\+Send\+Data.\+cs\end{DoxyCompactItemize}

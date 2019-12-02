@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>460</x>
+      <y>340</y>
+      <w>240</w>
+      <h>220</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;BaseOsm&gt;&gt;
+OsmBounds
+--
+-float: MinLat
+-float: MaxLat 
+-float: MinLon
+-float: MaxLon 
+-Vector3: Centre
+--
+Constructor:
++OsmBounds(XmlNode node) 
+--
+Responsibilities:
+-Take XML node and get the 
+boundaries of map data.</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>750</x>
+      <y>120</y>
+      <w>240</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>BaseOsm
+--
+Methods:
++T GetAttribute&lt;T&gt;
+(string s, XmlAttributeCollection a)
+--
+Responsibilities:
+-Return values from XML attributes
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>570</x>
+      <y>210</y>
+      <w>200</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>180.0;10.0;10.0;10.0;10.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>750</x>
+      <y>340</y>
+      <w>240</w>
+      <h>290</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;BaseOsm&gt;&gt;
+OsmNode
+--
+-ulong: ID
+-float: latitude 
+-float: longitude
+-float: X
+-float: Y
+--
+Implicit Operator:
++Vector3(OsmNode node)
+--
+Constructor:
++OsmNode(XmlNode node) 
+--
+Responsibilities:
+-Take XML node and create
+OsmNode object from its data.
+-Return Vector3 when OsmNode is
+compared to a Vector3</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>860</x>
+      <y>230</y>
+      <w>30</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1050</x>
+      <y>340</y>
+      <w>240</w>
+      <h>310</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;BaseOsm&gt;&gt;
+OsmWay
+--
+-ulong ID
+-List&lt;ulong&gt;: nodeIDs
+-bool: visible
+-bool: isBoundary
+-bool: isBuilding
+-bool: isRoad
+-float: height
+--
+Constructor:
++OsmWay(XmlNode node) 
+--
+Responsibilities:
+-Take XML node and create an
+OsmWay object with its data
+-Determine whether way is a building
+or a road.
+-Get height of building or set default
+height</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>980</x>
+      <y>210</y>
+      <w>210</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;190.0;10.0;190.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1300</x>
+      <y>110</y>
+      <w>240</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;MonoBehaviour&gt;&gt;
+InfrastructureBehaviour
+--
+-MapReader: map
+--
+Methods:
++void Awake()
++Vector3 GetCentre(OsmWay way)
+--
+Responsibilities:
+-Allow road and building maker
+classes to use these methods</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1140</x>
+      <y>730</y>
+      <w>240</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;InfrastructureBehaviour&gt;&gt;
+RoadMaker
+--
+-Material: road
+--
+Methods:
+++void Awake()
+++Vector3 GetCentre(OsmWay way)
++IEnumerator Start()
+--
+Responsibilities:
+-Create meshes and polygons for 
+ways that are roads using the 
+road material.</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1460</x>
+      <y>730</y>
+      <w>240</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;InfrastructureBehaviour&gt;&gt;
+BuildingMaker
+--
+-Material: building
+--
+Methods:
+++void Awake()
+++Vector3 GetCentre(OsmWay way)
++IEnumerator Start()
+--
+Responsibilities:
+-Create meshes and polygons for 
+ways that are buildings using the 
+building material.</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1370</x>
+      <y>270</y>
+      <w>50</w>
+      <h>530</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>30.0;10.0;30.0;510.0;10.0;510.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1430</x>
+      <y>270</y>
+      <w>50</w>
+      <h>530</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;510.0;30.0;510.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>730</x>
+      <y>730</y>
+      <w>290</w>
+      <h>340</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;MonoBehaviour&gt;&gt;
+MapReader
+--
+-Dictionary&lt;ulong, OsmNode&gt;: nodes
+-OsmBounds: bounds
+-List&lt;OsmWay&gt;: ways
+-string: resourceFile
+-GameObject: model
+-bool: isReady
+--
+Methods:
++void start()
++void update()
++void getWays(XmlNodeList xmlNodeList)
++void getNodes(XmlNodeList xmlNodeList)
++void setBounds(XmlNode xmlNode)
+--
+Responsibilities:
+-Load text file as xml document
+-getWays() create list of ways
+-setBounds() to create OsmBounds
+-getNodes() create dictionary of OsmNodes
+-Update model position</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>860</x>
+      <y>620</y>
+      <w>30</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>570</x>
+      <y>550</y>
+      <w>180</w>
+      <h>220</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;200.0;160.0;200.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1010</x>
+      <y>640</y>
+      <w>180</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>160.0;10.0;160.0;50.0;30.0;50.0;30.0;110.0;10.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1210</x>
+      <y>1110</y>
+      <w>100</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>GameObject
+Map</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>870</x>
+      <y>1060</y>
+      <w>360</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0;340.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1250</x>
+      <y>920</y>
+      <w>30</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;190.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1300</x>
+      <y>920</y>
+      <w>310</w>
+      <h>230</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>290.0;10.0;290.0;210.0;10.0;210.0</additional_attributes>
+  </element>
+</diagram>

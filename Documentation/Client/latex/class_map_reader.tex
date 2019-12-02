@@ -1,0 +1,184 @@
+\hypertarget{class_map_reader}{}\section{Map\+Reader Class Reference}
+\label{class_map_reader}\index{MapReader@{MapReader}}
+
+
+Used to read the map data from the xml map data.  
+
+
+
+
+Inheritance diagram for Map\+Reader\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=163pt]{class_map_reader__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Map\+Reader\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=252pt]{class_map_reader__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_map_reader_aff566165f4af74a7e11ea3df1aa4a78e}{resource\+File}}
+\begin{DoxyCompactList}\small\item\em Name of the file to be processed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_map_reader_a32d4f6e5c247548b2780e4103a389ed7}{Is\+Ready}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Signifies whether all the data has been read. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_map_reader_abd81ae4208520c05740a0c6e9123f0c7}{Awake}} ()
+\begin{DoxyCompactList}\small\item\em Loads the resource file and finds the finds the boundaries, the nodes and ways in the file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_map_reader_a483bef8b5e6eb6a495e6be83891cadb0}{Get\+Ways}} (Xml\+Node\+List xml\+Node\+List)
+\begin{DoxyCompactList}\small\item\em Creates and adds ways to the list from the resource file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_map_reader_a30a5de63f453fd1f3e2160916126331b}{Get\+Nodes}} (Xml\+Node\+List xml\+Node\+List)
+\begin{DoxyCompactList}\small\item\em Creates and adds nodes to the dictionary from the resource file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_map_reader_a35c17d19f80254a34257192f90688592}{Set\+Bounds}} (Xml\+Node xml\+Node)
+\begin{DoxyCompactList}\small\item\em Creates the bounds of the map data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+internal Dictionary$<$ ulong, \mbox{\hyperlink{class_osm_node}{Osm\+Node}} $>$ \mbox{\hyperlink{class_map_reader_a78e9d00aa1f8cb21772e2f9453002d8e}{nodes}}
+\begin{DoxyCompactList}\small\item\em Dictionary mapping ids to Osm\+Nodes. \end{DoxyCompactList}\item 
+internal \mbox{\hyperlink{class_osm_bounds}{Osm\+Bounds}} \mbox{\hyperlink{class_map_reader_a9cc55dac60d0505e98e0161f8cf103ec}{bounds}}
+\begin{DoxyCompactList}\small\item\em The boundaries of the map data. \end{DoxyCompactList}\item 
+internal List$<$ \mbox{\hyperlink{class_osm_way}{Osm\+Way}} $>$ \mbox{\hyperlink{class_map_reader_a785edd952542f996b0897dc8b4bde67b}{ways}}
+\begin{DoxyCompactList}\small\item\em List of all the ways from file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Used to read the map data from the xml map data. 
+
+\begin{DoxyAuthor}{Author}
+Sloan Kelly 
+
+Modified by Pavan Jando
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_map_reader_abd81ae4208520c05740a0c6e9123f0c7}\label{class_map_reader_abd81ae4208520c05740a0c6e9123f0c7}} 
+\index{MapReader@{MapReader}!Awake@{Awake}}
+\index{Awake@{Awake}!MapReader@{MapReader}}
+\subsubsection{\texorpdfstring{Awake()}{Awake()}}
+{\footnotesize\ttfamily void Map\+Reader.\+Awake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Loads the resource file and finds the finds the boundaries, the nodes and ways in the file. 
+
+\mbox{\Hypertarget{class_map_reader_a30a5de63f453fd1f3e2160916126331b}\label{class_map_reader_a30a5de63f453fd1f3e2160916126331b}} 
+\index{MapReader@{MapReader}!GetNodes@{GetNodes}}
+\index{GetNodes@{GetNodes}!MapReader@{MapReader}}
+\subsubsection{\texorpdfstring{GetNodes()}{GetNodes()}}
+{\footnotesize\ttfamily void Map\+Reader.\+Get\+Nodes (\begin{DoxyParamCaption}\item[{Xml\+Node\+List}]{xml\+Node\+List }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Creates and adds nodes to the dictionary from the resource file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em xml\+Node\+List} & Identifies nodes marked \char`\"{}node\char`\"{} to process from the file\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_map_reader_a483bef8b5e6eb6a495e6be83891cadb0}\label{class_map_reader_a483bef8b5e6eb6a495e6be83891cadb0}} 
+\index{MapReader@{MapReader}!GetWays@{GetWays}}
+\index{GetWays@{GetWays}!MapReader@{MapReader}}
+\subsubsection{\texorpdfstring{GetWays()}{GetWays()}}
+{\footnotesize\ttfamily void Map\+Reader.\+Get\+Ways (\begin{DoxyParamCaption}\item[{Xml\+Node\+List}]{xml\+Node\+List }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Creates and adds ways to the list from the resource file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em xml\+Node\+List} & Identifies nodes marked \char`\"{}way\char`\"{} to process from the file\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_map_reader_a35c17d19f80254a34257192f90688592}\label{class_map_reader_a35c17d19f80254a34257192f90688592}} 
+\index{MapReader@{MapReader}!SetBounds@{SetBounds}}
+\index{SetBounds@{SetBounds}!MapReader@{MapReader}}
+\subsubsection{\texorpdfstring{SetBounds()}{SetBounds()}}
+{\footnotesize\ttfamily void Map\+Reader.\+Set\+Bounds (\begin{DoxyParamCaption}\item[{Xml\+Node}]{xml\+Node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Creates the bounds of the map data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em xml\+Node} & Identifies nodes marked \char`\"{}bounds\char`\"{} to process from the file\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_map_reader_a9cc55dac60d0505e98e0161f8cf103ec}\label{class_map_reader_a9cc55dac60d0505e98e0161f8cf103ec}} 
+\index{MapReader@{MapReader}!bounds@{bounds}}
+\index{bounds@{bounds}!MapReader@{MapReader}}
+\subsubsection{\texorpdfstring{bounds}{bounds}}
+{\footnotesize\ttfamily internal \mbox{\hyperlink{class_osm_bounds}{Osm\+Bounds}} Map\+Reader.\+bounds\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The boundaries of the map data. 
+
+\mbox{\Hypertarget{class_map_reader_a78e9d00aa1f8cb21772e2f9453002d8e}\label{class_map_reader_a78e9d00aa1f8cb21772e2f9453002d8e}} 
+\index{MapReader@{MapReader}!nodes@{nodes}}
+\index{nodes@{nodes}!MapReader@{MapReader}}
+\subsubsection{\texorpdfstring{nodes}{nodes}}
+{\footnotesize\ttfamily internal Dictionary$<$ulong, \mbox{\hyperlink{class_osm_node}{Osm\+Node}}$>$ Map\+Reader.\+nodes\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Dictionary mapping ids to Osm\+Nodes. 
+
+\mbox{\Hypertarget{class_map_reader_aff566165f4af74a7e11ea3df1aa4a78e}\label{class_map_reader_aff566165f4af74a7e11ea3df1aa4a78e}} 
+\index{MapReader@{MapReader}!resourceFile@{resourceFile}}
+\index{resourceFile@{resourceFile}!MapReader@{MapReader}}
+\subsubsection{\texorpdfstring{resourceFile}{resourceFile}}
+{\footnotesize\ttfamily string Map\+Reader.\+resource\+File}
+
+
+
+Name of the file to be processed. 
+
+\mbox{\Hypertarget{class_map_reader_a785edd952542f996b0897dc8b4bde67b}\label{class_map_reader_a785edd952542f996b0897dc8b4bde67b}} 
+\index{MapReader@{MapReader}!ways@{ways}}
+\index{ways@{ways}!MapReader@{MapReader}}
+\subsubsection{\texorpdfstring{ways}{ways}}
+{\footnotesize\ttfamily internal List$<$\mbox{\hyperlink{class_osm_way}{Osm\+Way}}$>$ Map\+Reader.\+ways\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+List of all the ways from file. 
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_map_reader_a32d4f6e5c247548b2780e4103a389ed7}\label{class_map_reader_a32d4f6e5c247548b2780e4103a389ed7}} 
+\index{MapReader@{MapReader}!IsReady@{IsReady}}
+\index{IsReady@{IsReady}!MapReader@{MapReader}}
+\subsubsection{\texorpdfstring{IsReady}{IsReady}}
+{\footnotesize\ttfamily bool Map\+Reader.\+Is\+Ready\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+Signifies whether all the data has been read. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Documents/\+Unity\+Projects/\+Final Year Game/\+Wo\+W\+Go!/\+Assets/\+Project/\+Scripts/\+Map\+Processing/Map\+Reader.\+cs\end{DoxyCompactItemize}

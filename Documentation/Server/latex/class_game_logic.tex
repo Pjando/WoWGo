@@ -1,0 +1,129 @@
+\hypertarget{class_game_logic}{}\section{Game\+Logic Class Reference}
+\label{class_game_logic}\index{GameLogic@{GameLogic}}
+
+
+Outlines the basic logic of the game, mainly enemy spawning.  
+
+
+
+
+Collaboration diagram for Game\+Logic\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{class_game_logic__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_game_logic_aecfe8ccaaf740e73c68068f089b282a5}{Server\+Loop}} ()
+\begin{DoxyCompactList}\small\item\em Starts the timer and executes Ten\+Second\+Function every ten seconds. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_logic_a3a11f40bd998b28362e0a1770d6ae3ba}{Set\+Enemies}} (List$<$ \mbox{\hyperlink{class_enemy}{Enemy}} $>$ e)
+\begin{DoxyCompactList}\small\item\em Sets the current list of enemies \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Timer \mbox{\hyperlink{class_game_logic_a06a60d253f3ee354c41747c6269c9e0c}{timer10seconds}}
+\begin{DoxyCompactList}\small\item\em Ten second timer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_game_logic}{Game\+Logic}} \mbox{\hyperlink{class_game_logic_a96f4021dff11e0f67601a58893aafdff}{instance}} = new \mbox{\hyperlink{class_game_logic}{Game\+Logic}}()
+\begin{DoxyCompactList}\small\item\em Global variable. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_game_logic_a8dff4358d9aa75a58a2bc8dcbea4453a}{Ten\+Second\+Function}} (Object o)
+\begin{DoxyCompactList}\small\item\em Sends the current list of enemies to all connected clients. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \mbox{\hyperlink{class_enemy}{Enemy}} $>$ \mbox{\hyperlink{class_game_logic_a6545efc0f0cde3c2227195d7d74a2140}{enemies}} = new List$<$\mbox{\hyperlink{class_enemy}{Enemy}}$>$()
+\begin{DoxyCompactList}\small\item\em List of enemies that are currently spawned. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Outlines the basic logic of the game, mainly enemy spawning. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_logic_aecfe8ccaaf740e73c68068f089b282a5}\label{class_game_logic_aecfe8ccaaf740e73c68068f089b282a5}} 
+\index{GameLogic@{GameLogic}!ServerLoop@{ServerLoop}}
+\index{ServerLoop@{ServerLoop}!GameLogic@{GameLogic}}
+\subsubsection{\texorpdfstring{ServerLoop()}{ServerLoop()}}
+{\footnotesize\ttfamily void Game\+Logic.\+Server\+Loop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Starts the timer and executes Ten\+Second\+Function every ten seconds. 
+
+\mbox{\Hypertarget{class_game_logic_a3a11f40bd998b28362e0a1770d6ae3ba}\label{class_game_logic_a3a11f40bd998b28362e0a1770d6ae3ba}} 
+\index{GameLogic@{GameLogic}!SetEnemies@{SetEnemies}}
+\index{SetEnemies@{SetEnemies}!GameLogic@{GameLogic}}
+\subsubsection{\texorpdfstring{SetEnemies()}{SetEnemies()}}
+{\footnotesize\ttfamily void Game\+Logic.\+Set\+Enemies (\begin{DoxyParamCaption}\item[{List$<$ \mbox{\hyperlink{class_enemy}{Enemy}} $>$}]{e }\end{DoxyParamCaption})}
+
+
+
+Sets the current list of enemies 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & List of enemies to append.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_logic_a8dff4358d9aa75a58a2bc8dcbea4453a}\label{class_game_logic_a8dff4358d9aa75a58a2bc8dcbea4453a}} 
+\index{GameLogic@{GameLogic}!TenSecondFunction@{TenSecondFunction}}
+\index{TenSecondFunction@{TenSecondFunction}!GameLogic@{GameLogic}}
+\subsubsection{\texorpdfstring{TenSecondFunction()}{TenSecondFunction()}}
+{\footnotesize\ttfamily void Game\+Logic.\+Ten\+Second\+Function (\begin{DoxyParamCaption}\item[{Object}]{o }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Sends the current list of enemies to all connected clients. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_game_logic_a6545efc0f0cde3c2227195d7d74a2140}\label{class_game_logic_a6545efc0f0cde3c2227195d7d74a2140}} 
+\index{GameLogic@{GameLogic}!enemies@{enemies}}
+\index{enemies@{enemies}!GameLogic@{GameLogic}}
+\subsubsection{\texorpdfstring{enemies}{enemies}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_enemy}{Enemy}}$>$ Game\+Logic.\+enemies = new List$<$\mbox{\hyperlink{class_enemy}{Enemy}}$>$()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+List of enemies that are currently spawned. 
+
+\mbox{\Hypertarget{class_game_logic_a96f4021dff11e0f67601a58893aafdff}\label{class_game_logic_a96f4021dff11e0f67601a58893aafdff}} 
+\index{GameLogic@{GameLogic}!instance@{instance}}
+\index{instance@{instance}!GameLogic@{GameLogic}}
+\subsubsection{\texorpdfstring{instance}{instance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_logic}{Game\+Logic}} Game\+Logic.\+instance = new \mbox{\hyperlink{class_game_logic}{Game\+Logic}}()\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Global variable. 
+
+\mbox{\Hypertarget{class_game_logic_a06a60d253f3ee354c41747c6269c9e0c}\label{class_game_logic_a06a60d253f3ee354c41747c6269c9e0c}} 
+\index{GameLogic@{GameLogic}!timer10seconds@{timer10seconds}}
+\index{timer10seconds@{timer10seconds}!GameLogic@{GameLogic}}
+\subsubsection{\texorpdfstring{timer10seconds}{timer10seconds}}
+{\footnotesize\ttfamily Timer Game\+Logic.\+timer10seconds}
+
+
+
+Ten second timer. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Documents/\+Unity\+Projects/\+Final Year Game/\+Server/\+Server/\+Server\+Application/Game\+Logic.\+cs\end{DoxyCompactItemize}

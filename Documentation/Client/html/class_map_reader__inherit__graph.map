@@ -1,0 +1,4 @@
+<map id="MapReader" name="MapReader">
+<area shape="rect" id="node1" title="Used to read the map data from the xml map data." alt="" coords="17,80,105,107"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,5,116,32"/>
+</map>

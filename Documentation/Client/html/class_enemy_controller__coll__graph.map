@@ -1,0 +1,8 @@
+<map id="EnemyController" name="EnemyController">
+<area shape="rect" id="node1" title="Controls the enemy&#39;s actions during the battle phase." alt="" coords="5,349,124,376"/>
+<area shape="rect" id="node2" title=" " alt="" coords="13,81,124,108"/>
+<area shape="rect" id="node3" href="$class_enemy_manager.html" title="Manages which enemy prefabs to spawn." alt="" coords="68,260,181,287"/>
+<area shape="rect" id="node4" href="$class_map_reader.html" title="Used to read the map data from the xml map data." alt="" coords="118,171,206,197"/>
+<area shape="rect" id="node5" href="$class_osm_bounds.html" title="Represents the boudaries of the map data." alt="" coords="148,81,243,108"/>
+<area shape="rect" id="node6" href="$class_base_osm.html" title="The base class for each Osm attribute." alt="" coords="155,5,235,32"/>
+</map>

@@ -1,0 +1,201 @@
+\hypertarget{class_swipe_manager}{}\section{Swipe\+Manager Class Reference}
+\label{class_swipe_manager}\index{SwipeManager@{SwipeManager}}
+
+
+Inheritance diagram for Swipe\+Manager\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=163pt]{class_swipe_manager__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Swipe\+Manager\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{class_swipe_manager__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_swipe_manager_a822e0bd724cfd6c74035e5da426bb542}\label{class_swipe_manager_a822e0bd724cfd6c74035e5da426bb542}} 
+delegate void {\bfseries On\+Swipe\+Detected\+Handler} (Swipe swipe\+Direction, Vector2 swipe\+Velocity)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_swipe_manager_a7a22694e414b3b71087d0d68b99f045b}\label{class_swipe_manager_a7a22694e414b3b71087d0d68b99f045b}} 
+static Vector3 {\bfseries Get\+Swipe\+Distance} ()
+\item 
+\mbox{\Hypertarget{class_swipe_manager_a124541a6618d86640ccd6df46405047a}\label{class_swipe_manager_a124541a6618d86640ccd6df46405047a}} 
+static bool {\bfseries Is\+Swiping} ()
+\item 
+\mbox{\Hypertarget{class_swipe_manager_a8d55d81ba6e9bacaaefdb7849bc14801}\label{class_swipe_manager_a8d55d81ba6e9bacaaefdb7849bc14801}} 
+static bool {\bfseries Is\+Swiping\+Right} ()
+\item 
+\mbox{\Hypertarget{class_swipe_manager_ac59cc2b722121f775f1ba475e5082912}\label{class_swipe_manager_ac59cc2b722121f775f1ba475e5082912}} 
+static bool {\bfseries Is\+Swiping\+Left} ()
+\item 
+\mbox{\Hypertarget{class_swipe_manager_a2f633b1fc223073ead16a8eac2773322}\label{class_swipe_manager_a2f633b1fc223073ead16a8eac2773322}} 
+static bool {\bfseries Is\+Swiping\+Up} ()
+\item 
+\mbox{\Hypertarget{class_swipe_manager_a66e6afb513de6211c68b34c7b1048705}\label{class_swipe_manager_a66e6afb513de6211c68b34c7b1048705}} 
+static bool {\bfseries Is\+Swiping\+Down} ()
+\item 
+\mbox{\Hypertarget{class_swipe_manager_a292788978194a704164d954860195cff}\label{class_swipe_manager_a292788978194a704164d954860195cff}} 
+static bool {\bfseries Is\+Swiping\+Down\+Left} ()
+\item 
+\mbox{\Hypertarget{class_swipe_manager_a2d3e5f154505de6c8ac442b6b18eada3}\label{class_swipe_manager_a2d3e5f154505de6c8ac442b6b18eada3}} 
+static bool {\bfseries Is\+Swiping\+Down\+Right} ()
+\item 
+\mbox{\Hypertarget{class_swipe_manager_a164e288f21fb799a5b35a844d5ab6589}\label{class_swipe_manager_a164e288f21fb799a5b35a844d5ab6589}} 
+static bool {\bfseries Is\+Swiping\+Up\+Left} ()
+\item 
+\mbox{\Hypertarget{class_swipe_manager_aac7a52f77ee8d303e19f798a4beb0113}\label{class_swipe_manager_aac7a52f77ee8d303e19f798a4beb0113}} 
+static bool {\bfseries Is\+Swiping\+Up\+Right} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_swipe_manager_a4682860346ce2fc8bfa16b46e35fc81c}\label{class_swipe_manager_a4682860346ce2fc8bfa16b46e35fc81c}} 
+static Vector2 {\bfseries swipe\+Velocity}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_swipe_manager_aa84559b4367c9364679763b89ac08d6d}\label{class_swipe_manager_aa84559b4367c9364679763b89ac08d6d}} 
+static On\+Swipe\+Detected\+Handler {\bfseries On\+Swipe\+Detected}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_swipe_manager_a3445c1c974b355439267328664d47ae0}\label{class_swipe_manager_a3445c1c974b355439267328664d47ae0}} 
+void {\bfseries Awake} ()
+\item 
+\mbox{\Hypertarget{class_swipe_manager_ae1e01d1b0c66ccf4e8fe6b1c84210739}\label{class_swipe_manager_ae1e01d1b0c66ccf4e8fe6b1c84210739}} 
+void {\bfseries Update} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_swipe_manager_aba02a3bfacb5b0b8f6511bdf625158a5}{Detect\+Swipe}} ()
+\begin{DoxyCompactList}\small\item\em Attempts to detect the current swipe direction. Should be called over multiple frames in an Update-\/like loop. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_swipe_manager_a4fbc4f757be9e28031689e12061faccb}\label{class_swipe_manager_a4fbc4f757be9e28031689e12061faccb}} 
+static bool {\bfseries Get\+Touch\+Input} ()
+\item 
+\mbox{\Hypertarget{class_swipe_manager_a4385f3e9d6f93d611dba28793764201e}\label{class_swipe_manager_a4385f3e9d6f93d611dba28793764201e}} 
+static bool {\bfseries Get\+Mouse\+Input} ()
+\item 
+\mbox{\Hypertarget{class_swipe_manager_ad453edd0d555b713e307621a16cd39da}\label{class_swipe_manager_ad453edd0d555b713e307621a16cd39da}} 
+static bool {\bfseries Is\+Direction} (Vector2 direction, Vector2 cardinal\+Direction)
+\item 
+\mbox{\Hypertarget{class_swipe_manager_af103ce035646fb75186f021903a71bff}\label{class_swipe_manager_af103ce035646fb75186f021903a71bff}} 
+static Swipe {\bfseries Get\+Swipe\+Dir\+By\+Touch} (Vector2 current\+Swipe)
+\item 
+\mbox{\Hypertarget{class_swipe_manager_aa877bc8744e08690a29cc301ee1bd1ef}\label{class_swipe_manager_aa877bc8744e08690a29cc301ee1bd1ef}} 
+static bool {\bfseries Is\+Swiping\+Direction} (Swipe swipe\+Dir)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_swipe_manager_a4e7f7164b8adeafced7c5e32da625141}\label{class_swipe_manager_a4e7f7164b8adeafced7c5e32da625141}} 
+float {\bfseries min\+Swipe\+Length} = 0.\+5f
+\item 
+\mbox{\Hypertarget{class_swipe_manager_a4a20d05c6bcc8f9e2e85f99a9ad3126f}\label{class_swipe_manager_a4a20d05c6bcc8f9e2e85f99a9ad3126f}} 
+bool {\bfseries trigger\+Swipe\+At\+Min\+Length} = false
+\item 
+\mbox{\Hypertarget{class_swipe_manager_a99ba80c5e02da98d3bd8a026cd7547e6}\label{class_swipe_manager_a99ba80c5e02da98d3bd8a026cd7547e6}} 
+bool {\bfseries use\+Eight\+Directions} = false
+\item 
+\mbox{\Hypertarget{class_swipe_manager_aa5d3cca7ac3b6c9f851d3478b7886e3a}\label{class_swipe_manager_aa5d3cca7ac3b6c9f851d3478b7886e3a}} 
+const float {\bfseries eight\+Dir\+Angle} = 0.\+906f
+\item 
+\mbox{\Hypertarget{class_swipe_manager_ae996763d41a0b3417db718d9a74e8fe5}\label{class_swipe_manager_ae996763d41a0b3417db718d9a74e8fe5}} 
+const float {\bfseries four\+Dir\+Angle} = 0.\+5f
+\item 
+\mbox{\Hypertarget{class_swipe_manager_adfa0317d2f847a83f88cc5d79be010ea}\label{class_swipe_manager_adfa0317d2f847a83f88cc5d79be010ea}} 
+const float {\bfseries default\+D\+PI} = 72f
+\item 
+\mbox{\Hypertarget{class_swipe_manager_a478dbded620892962c8254d87b979cd9}\label{class_swipe_manager_a478dbded620892962c8254d87b979cd9}} 
+const float {\bfseries dpcm\+Factor} = 2.\+54f
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static Dictionary$<$ Swipe, Vector2 $>$ {\bfseries cardinal\+Directions}
+\item 
+\mbox{\Hypertarget{class_swipe_manager_a4af8b31879fa242abf79be1ee5c05dbf}\label{class_swipe_manager_a4af8b31879fa242abf79be1ee5c05dbf}} 
+static On\+Swipe\+Detected\+Handler {\bfseries \+\_\+\+On\+Swipe\+Detected}
+\item 
+\mbox{\Hypertarget{class_swipe_manager_a0fbeff49cfb4ec957cf800148aeed52e}\label{class_swipe_manager_a0fbeff49cfb4ec957cf800148aeed52e}} 
+static float {\bfseries dpcm}
+\item 
+\mbox{\Hypertarget{class_swipe_manager_a86798141e99e514bf033864c462f0782}\label{class_swipe_manager_a86798141e99e514bf033864c462f0782}} 
+static float {\bfseries swipe\+Start\+Time}
+\item 
+\mbox{\Hypertarget{class_swipe_manager_a1586ae6da77f1c184aff633510f9bafd}\label{class_swipe_manager_a1586ae6da77f1c184aff633510f9bafd}} 
+static float {\bfseries swipe\+End\+Time}
+\item 
+\mbox{\Hypertarget{class_swipe_manager_aa578483b62432e177583367459ef6bfa}\label{class_swipe_manager_aa578483b62432e177583367459ef6bfa}} 
+static bool {\bfseries auto\+Detect\+Swipes}
+\item 
+\mbox{\Hypertarget{class_swipe_manager_a8416faf936a2cef35c19d5014ed36e79}\label{class_swipe_manager_a8416faf936a2cef35c19d5014ed36e79}} 
+static bool {\bfseries swipe\+Ended}
+\item 
+\mbox{\Hypertarget{class_swipe_manager_afe429cdd931eaba6a404df7468b39685}\label{class_swipe_manager_afe429cdd931eaba6a404df7468b39685}} 
+static Swipe {\bfseries swipe\+Direction}
+\item 
+\mbox{\Hypertarget{class_swipe_manager_a010278d06c008cdfc7f5cc62c941b144}\label{class_swipe_manager_a010278d06c008cdfc7f5cc62c941b144}} 
+static Vector2 {\bfseries first\+Press\+Pos}
+\item 
+\mbox{\Hypertarget{class_swipe_manager_a42f7b5999b102be423ee7a0b42afbe69}\label{class_swipe_manager_a42f7b5999b102be423ee7a0b42afbe69}} 
+static Vector2 {\bfseries second\+Press\+Pos}
+\item 
+\mbox{\Hypertarget{class_swipe_manager_a2a8bbd10a2200887c9bade496b8d9252}\label{class_swipe_manager_a2a8bbd10a2200887c9bade496b8d9252}} 
+static \mbox{\hyperlink{class_swipe_manager}{Swipe\+Manager}} {\bfseries instance}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_swipe_manager_aba02a3bfacb5b0b8f6511bdf625158a5}\label{class_swipe_manager_aba02a3bfacb5b0b8f6511bdf625158a5}} 
+\index{SwipeManager@{SwipeManager}!DetectSwipe@{DetectSwipe}}
+\index{DetectSwipe@{DetectSwipe}!SwipeManager@{SwipeManager}}
+\subsubsection{\texorpdfstring{DetectSwipe()}{DetectSwipe()}}
+{\footnotesize\ttfamily static void Swipe\+Manager.\+Detect\+Swipe (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Attempts to detect the current swipe direction. Should be called over multiple frames in an Update-\/like loop. 
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_swipe_manager_a2f95e1ff771757aade55920e63a9f4e5}\label{class_swipe_manager_a2f95e1ff771757aade55920e63a9f4e5}} 
+\index{SwipeManager@{SwipeManager}!cardinalDirections@{cardinalDirections}}
+\index{cardinalDirections@{cardinalDirections}!SwipeManager@{SwipeManager}}
+\subsubsection{\texorpdfstring{cardinalDirections}{cardinalDirections}}
+{\footnotesize\ttfamily Dictionary$<$Swipe, Vector2$>$ Swipe\+Manager.\+cardinal\+Directions\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} Dictionary<Swipe, Vector2>()}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \{ Swipe.Up,         \mbox{\hyperlink{class_cardinal_direction}{CardinalDirection}}.Up                 \},}
+\DoxyCodeLine{        \{ Swipe.Down,         \mbox{\hyperlink{class_cardinal_direction}{CardinalDirection}}.Down             \},}
+\DoxyCodeLine{        \{ Swipe.Right,         \mbox{\hyperlink{class_cardinal_direction}{CardinalDirection}}.Right             \},}
+\DoxyCodeLine{        \{ Swipe.Left,         \mbox{\hyperlink{class_cardinal_direction}{CardinalDirection}}.Left             \},}
+\DoxyCodeLine{        \{ Swipe.UpRight,     \mbox{\hyperlink{class_cardinal_direction}{CardinalDirection}}.UpRight             \},}
+\DoxyCodeLine{        \{ Swipe.UpLeft,     \mbox{\hyperlink{class_cardinal_direction}{CardinalDirection}}.UpLeft             \},}
+\DoxyCodeLine{        \{ Swipe.DownRight,     \mbox{\hyperlink{class_cardinal_direction}{CardinalDirection}}.DownRight         \},}
+\DoxyCodeLine{        \{ Swipe.DownLeft,     \mbox{\hyperlink{class_cardinal_direction}{CardinalDirection}}.DownLeft         \}}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Documents/\+Unity\+Projects/\+Final Year Game/\+Wo\+W\+Go!/\+Assets/\+Project/\+Scripts/Swipe\+Manager.\+cs\end{DoxyCompactItemize}

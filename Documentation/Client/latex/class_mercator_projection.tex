@@ -1,0 +1,79 @@
+\hypertarget{class_mercator_projection}{}\section{Mercator\+Projection Class Reference}
+\label{class_mercator_projection}\index{MercatorProjection@{MercatorProjection}}
+
+
+Used to convert longitude and latitude to x an y coordinates. For more see here\+: \href{https://wiki.openstreetmap.org/wiki/Mercator\#C.23}{\texttt{ https\+://wiki.\+openstreetmap.\+org/wiki/\+Mercator\#\+C.\+23}}  
+
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_mercator_projection_aa0d983984c933089ab2ecd2c311e5705}\label{class_mercator_projection_aa0d983984c933089ab2ecd2c311e5705}} 
+static double \mbox{[}$\,$\mbox{]} {\bfseries to\+Pixel} (double lon, double lat)
+\item 
+\mbox{\Hypertarget{class_mercator_projection_a46056d2161792e5607bd4e81595addcc}\label{class_mercator_projection_a46056d2161792e5607bd4e81595addcc}} 
+static double \mbox{[}$\,$\mbox{]} {\bfseries to\+Geo\+Coord} (double x, double y)
+\item 
+\mbox{\Hypertarget{class_mercator_projection_ab08db85ca345829917613a5aa4fef18b}\label{class_mercator_projection_ab08db85ca345829917613a5aa4fef18b}} 
+static double {\bfseries lon\+ToX} (double lon)
+\item 
+\mbox{\Hypertarget{class_mercator_projection_a01d3863738c0708df73a0e954f83944a}\label{class_mercator_projection_a01d3863738c0708df73a0e954f83944a}} 
+static double {\bfseries lat\+ToY} (double lat)
+\item 
+\mbox{\Hypertarget{class_mercator_projection_ad9b69ce79101c0a642421f1659e7acfb}\label{class_mercator_projection_ad9b69ce79101c0a642421f1659e7acfb}} 
+static double {\bfseries x\+To\+Lon} (double x)
+\item 
+\mbox{\Hypertarget{class_mercator_projection_aed6ac45adb3e4b97c29569c344f19424}\label{class_mercator_projection_aed6ac45adb3e4b97c29569c344f19424}} 
+static double {\bfseries y\+To\+Lat} (double y)
+\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_mercator_projection_a01e3698fcf9d66ec04dcbea8a3aec6d9}\label{class_mercator_projection_a01e3698fcf9d66ec04dcbea8a3aec6d9}} 
+static double {\bfseries Rad\+To\+Deg} (double rad)
+\item 
+\mbox{\Hypertarget{class_mercator_projection_a436471e275b62ddec88e2697539ee40d}\label{class_mercator_projection_a436471e275b62ddec88e2697539ee40d}} 
+static double {\bfseries Deg\+To\+Rad} (double deg)
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_mercator_projection_a68ee9a5cb453072e303f1ed6a4928ad4}\label{class_mercator_projection_a68ee9a5cb453072e303f1ed6a4928ad4}} 
+static readonly double {\bfseries R\+\_\+\+M\+A\+J\+OR} = 6378137.\+0
+\item 
+\mbox{\Hypertarget{class_mercator_projection_a8ddf9c3841452f1669e9f086a63a0660}\label{class_mercator_projection_a8ddf9c3841452f1669e9f086a63a0660}} 
+static readonly double {\bfseries R\+\_\+\+M\+I\+N\+OR} = 6356752.\+3142
+\item 
+\mbox{\Hypertarget{class_mercator_projection_a56e34a362762f6a07456f8a9fe84b7e0}\label{class_mercator_projection_a56e34a362762f6a07456f8a9fe84b7e0}} 
+static readonly double {\bfseries R\+A\+T\+IO} = R\+\_\+\+M\+I\+N\+OR / R\+\_\+\+M\+A\+J\+OR
+\item 
+\mbox{\Hypertarget{class_mercator_projection_a488fc90a52aa4feef3c1f5f24c1df714}\label{class_mercator_projection_a488fc90a52aa4feef3c1f5f24c1df714}} 
+static readonly double {\bfseries E\+C\+C\+E\+NT} = Math.\+Sqrt(1.\+0 -\/ (R\+A\+T\+IO $\ast$ R\+A\+T\+IO))
+\item 
+\mbox{\Hypertarget{class_mercator_projection_a0e424122a881e32704357c66417f8b7c}\label{class_mercator_projection_a0e424122a881e32704357c66417f8b7c}} 
+static readonly double {\bfseries C\+OM} = 0.\+5 $\ast$ E\+C\+C\+E\+NT
+\item 
+\mbox{\Hypertarget{class_mercator_projection_a7672295cba80fcc85141626e2d54e8a4}\label{class_mercator_projection_a7672295cba80fcc85141626e2d54e8a4}} 
+static readonly double {\bfseries D\+E\+G2\+R\+AD} = Math.\+PI / 180.\+0
+\item 
+\mbox{\Hypertarget{class_mercator_projection_a2df9659e3bdfaa1e36d3b4d9df5b2a60}\label{class_mercator_projection_a2df9659e3bdfaa1e36d3b4d9df5b2a60}} 
+static readonly double {\bfseries R\+A\+D2\+Deg} = 180.\+0 / Math.\+PI
+\item 
+\mbox{\Hypertarget{class_mercator_projection_a5480d18ad3ae690a4c708f1fccdee636}\label{class_mercator_projection_a5480d18ad3ae690a4c708f1fccdee636}} 
+static readonly double {\bfseries P\+I\+\_\+2} = Math.\+PI / 2.\+0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Used to convert longitude and latitude to x an y coordinates. For more see here\+: \href{https://wiki.openstreetmap.org/wiki/Mercator\#C.23}{\texttt{ https\+://wiki.\+openstreetmap.\+org/wiki/\+Mercator\#\+C.\+23}} 
+
+\begin{DoxyAuthor}{Author}
+Florian Müller, 20.\+6.\+2008 
+
+Updated by David Schmitt, 23.\+4.\+2010
+\end{DoxyAuthor}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Documents/\+Unity\+Projects/\+Final Year Game/\+Wo\+W\+Go!/\+Assets/\+Project/\+Scripts/\+Map\+Processing/Mercator\+Projection.\+cs\end{DoxyCompactItemize}

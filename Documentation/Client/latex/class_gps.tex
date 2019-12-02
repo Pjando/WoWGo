@@ -1,0 +1,154 @@
+\hypertarget{class_gps}{}\section{Gps Class Reference}
+\label{class_gps}\index{Gps@{Gps}}
+
+
+Gets the G\+PS longitude and latitude of the client.  
+
+
+
+
+Inheritance diagram for Gps\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=163pt]{class_gps__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Gps\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=163pt]{class_gps__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_gps}{Gps}} \mbox{\hyperlink{class_gps_aad45dcf4709abee18351879d03668108}{instance}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Global Singleton instance of class. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_gps_ad60149a07acd29cb3a7084143edbbf62}{latitude}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Latitude of the client. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_gps_a49d352c8f5b59c35272483e6aef7aea2}{longitude}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Longitude of the client. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_gps_a13244891c04234f5c7351779bfa20bae}{Awake}} ()
+\begin{DoxyCompactList}\small\item\em Initialises Singleton instance. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gps_a18ae27d5aa990af06a42dd8d44f188ee}{Start}} ()
+\begin{DoxyCompactList}\small\item\em Starts the \mbox{\hyperlink{class_gps_aa67e567c766cc77fa070956e39ff9f73}{Start\+Location\+Service()}} coroutine. \end{DoxyCompactList}\item 
+I\+Enumerator \mbox{\hyperlink{class_gps_aa67e567c766cc77fa070956e39ff9f73}{Start\+Location\+Service}} ()
+\begin{DoxyCompactList}\small\item\em Starts the location service if the user has authorised it. \end{DoxyCompactList}\item 
+I\+Enumerator \mbox{\hyperlink{class_gps_a6e153f3ff7ee313f35978f0484872f30}{Update\+Gps}} ()
+\begin{DoxyCompactList}\small\item\em Updates every second and gets the G\+PS coordinates of the client. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gps_a8bbfefeb0421b171d4ee9f7abf0474aa}{On\+Disable}} ()
+\begin{DoxyCompactList}\small\item\em When the behaviour is disabled stop location service. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Gets the G\+PS longitude and latitude of the client. 
+
+\begin{DoxyAuthor}{Author}
+N3K EN 
+
+Modified By Pavan Jando
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_gps_a13244891c04234f5c7351779bfa20bae}\label{class_gps_a13244891c04234f5c7351779bfa20bae}} 
+\index{Gps@{Gps}!Awake@{Awake}}
+\index{Awake@{Awake}!Gps@{Gps}}
+\subsubsection{\texorpdfstring{Awake()}{Awake()}}
+{\footnotesize\ttfamily void Gps.\+Awake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Initialises Singleton instance. 
+
+\mbox{\Hypertarget{class_gps_a8bbfefeb0421b171d4ee9f7abf0474aa}\label{class_gps_a8bbfefeb0421b171d4ee9f7abf0474aa}} 
+\index{Gps@{Gps}!OnDisable@{OnDisable}}
+\index{OnDisable@{OnDisable}!Gps@{Gps}}
+\subsubsection{\texorpdfstring{OnDisable()}{OnDisable()}}
+{\footnotesize\ttfamily void Gps.\+On\+Disable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+When the behaviour is disabled stop location service. 
+
+\mbox{\Hypertarget{class_gps_a18ae27d5aa990af06a42dd8d44f188ee}\label{class_gps_a18ae27d5aa990af06a42dd8d44f188ee}} 
+\index{Gps@{Gps}!Start@{Start}}
+\index{Start@{Start}!Gps@{Gps}}
+\subsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Gps.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Starts the \mbox{\hyperlink{class_gps_aa67e567c766cc77fa070956e39ff9f73}{Start\+Location\+Service()}} coroutine. 
+
+\mbox{\Hypertarget{class_gps_aa67e567c766cc77fa070956e39ff9f73}\label{class_gps_aa67e567c766cc77fa070956e39ff9f73}} 
+\index{Gps@{Gps}!StartLocationService@{StartLocationService}}
+\index{StartLocationService@{StartLocationService}!Gps@{Gps}}
+\subsubsection{\texorpdfstring{StartLocationService()}{StartLocationService()}}
+{\footnotesize\ttfamily I\+Enumerator Gps.\+Start\+Location\+Service (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Starts the location service if the user has authorised it. 
+
+\begin{DoxyReturn}{Returns}
+Breaks if error occurred in starting location service, otherwise starts Update\+G\+P\+S() coroutine.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_gps_a6e153f3ff7ee313f35978f0484872f30}\label{class_gps_a6e153f3ff7ee313f35978f0484872f30}} 
+\index{Gps@{Gps}!UpdateGps@{UpdateGps}}
+\index{UpdateGps@{UpdateGps}!Gps@{Gps}}
+\subsubsection{\texorpdfstring{UpdateGps()}{UpdateGps()}}
+{\footnotesize\ttfamily I\+Enumerator Gps.\+Update\+Gps (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Updates every second and gets the G\+PS coordinates of the client. 
+
+\begin{DoxyReturn}{Returns}
+Returns every second
+\end{DoxyReturn}
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_gps_aad45dcf4709abee18351879d03668108}\label{class_gps_aad45dcf4709abee18351879d03668108}} 
+\index{Gps@{Gps}!instance@{instance}}
+\index{instance@{instance}!Gps@{Gps}}
+\subsubsection{\texorpdfstring{instance}{instance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gps}{Gps}} Gps.\+instance\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Global Singleton instance of class. 
+
+\mbox{\Hypertarget{class_gps_ad60149a07acd29cb3a7084143edbbf62}\label{class_gps_ad60149a07acd29cb3a7084143edbbf62}} 
+\index{Gps@{Gps}!latitude@{latitude}}
+\index{latitude@{latitude}!Gps@{Gps}}
+\subsubsection{\texorpdfstring{latitude}{latitude}}
+{\footnotesize\ttfamily float Gps.\+latitude\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+Latitude of the client. 
+
+\mbox{\Hypertarget{class_gps_a49d352c8f5b59c35272483e6aef7aea2}\label{class_gps_a49d352c8f5b59c35272483e6aef7aea2}} 
+\index{Gps@{Gps}!longitude@{longitude}}
+\index{longitude@{longitude}!Gps@{Gps}}
+\subsubsection{\texorpdfstring{longitude}{longitude}}
+{\footnotesize\ttfamily float Gps.\+longitude\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+Longitude of the client. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Documents/\+Unity\+Projects/\+Final Year Game/\+Wo\+W\+Go!/\+Assets/\+Project/\+Scripts/Gps.\+cs\end{DoxyCompactItemize}

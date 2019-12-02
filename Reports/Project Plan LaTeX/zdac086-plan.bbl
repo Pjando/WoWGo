@@ -1,0 +1,62 @@
+\begin{thebibliography}{1}
+
+\bibitem{Maps}
+Aleks Buczkowski.
+\newblock Why would you use openstreetmap if there is google maps?
+\newblock
+  \url{http://geoawesomeness.com/why-would-you-use-openstreetmap-if-there-is-google-maps/}.
+\newblock October 23, 2015.
+
+\bibitem{Engines}
+New Generation Applications~Pvt Ltd.
+\newblock Top 5 tools for mobile game development.
+\newblock
+  \url{https://www.newgenapps.com/blog/top-sdk-tools-for-mobile-game-development}.
+\newblock October 25, 2017.
+
+\bibitem{server}
+Aaron McIver.
+\newblock Best approach to designing multi-client applications.
+\newblock
+  \url{https://softwareengineering.stackexchange.com/questions/34577/best-approach-to-designing-multi-client-applications}.
+\newblock January 7, 2011.
+
+\bibitem{Flyweight}
+Robert Nystrom.
+\newblock {\em Game Programming Patterns}.
+\newblock November 2, 2014.
+
+\bibitem{API}
+Open-Source.
+\newblock Api v0.6.
+\newblock \url{https://wiki.openstreetmap.org/wiki/API_v0.6}.
+\newblock August 1, 2018.
+
+\bibitem{github}
+Open-Source.
+\newblock How to use the osmdroid library.
+\newblock
+  \url{https://github.com/osmdroid/osmdroid/wiki/How-to-use-the-osmdroid-library}.
+\newblock May 18, 2018.
+
+\bibitem{Loop}
+Anni Rautakopra.
+\newblock {\em GAME DESIGN PATTERNS Utilizing Design Patterns in Game
+  Programming}.
+\newblock June, 2018.
+
+\bibitem{Unity}
+Unity.
+\newblock Unity user manual.
+\newblock \url{https://docs.unity3d.com/Manual/index.html}.
+\newblock October 2, 2018.
+
+\bibitem{MultiClient}
+Yunming Zhang.
+\newblock Multithreaded server (multiple clients to a single server)
+  programming in java with examples.
+\newblock
+  \url{https://yunmingzhang.wordpress.com/2013/12/18/multithreaded-server-multiple-clients-to-a-single-server-programming-in-java/}.
+\newblock December 18, 2013.
+
+\end{thebibliography}

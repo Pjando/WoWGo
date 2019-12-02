@@ -1,0 +1,272 @@
+\hypertarget{class_network}{}\section{Network Class Reference}
+\label{class_network}\index{Network@{Network}}
+
+
+Main class used to establish connection with the server.  
+
+
+
+
+Inheritance diagram for Network\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=163pt]{class_network__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Network\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{class_network__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_network_a7b66965653988950efaf3ec4de0f6cdd}{server\+IP}} = \char`\"{}127.\+0.\+0.\+1\char`\"{}
+\begin{DoxyCompactList}\small\item\em IP of the server. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_network_a871eb8ca681b377dc341b4bf4df08367}{server\+Port}} = 5500
+\begin{DoxyCompactList}\small\item\em Port to connect to on the server. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_network_a52a8a42e75c5dea2078f8a20a4293607}{is\+Connected}}
+\begin{DoxyCompactList}\small\item\em Whether the client has connected to the server. \end{DoxyCompactList}\item 
+Tcp\+Client \mbox{\hyperlink{class_network_ab009762179a0fc5916b8bebeb8f0a32f}{player\+Socket}}
+\begin{DoxyCompactList}\small\item\em The client socket \end{DoxyCompactList}\item 
+Stream\+Reader \mbox{\hyperlink{class_network_ae8836ce514687bd3c43e16aad880d248}{my\+Reader}}
+\begin{DoxyCompactList}\small\item\em Used to read data from the stream. \end{DoxyCompactList}\item 
+Stream\+Writer \mbox{\hyperlink{class_network_a1fa8240fd7edc4368301ad87f2c1ebf5}{my\+Writer}}
+\begin{DoxyCompactList}\small\item\em Used to write data to the stream. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_network_a1df7f2025ab9462bf56814c17d5be87b}{should\+Handle\+Data}}
+\begin{DoxyCompactList}\small\item\em Whether there is data to be handled. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_network}{Network}} \mbox{\hyperlink{class_network_af63d25c25873f9220c94d6250a1c9242}{instance}}
+\begin{DoxyCompactList}\small\item\em Global Singleton instance of class. \end{DoxyCompactList}\item 
+static Network\+Stream \mbox{\hyperlink{class_network_ac9848301f17c819897dc89fce29b8e6a}{my\+Stream}}
+\begin{DoxyCompactList}\small\item\em Stream used to transmit data read and write data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_network_a06900213a71f1f8d61c67ca99cb78df9}{Awake}} ()
+\begin{DoxyCompactList}\small\item\em Initialises Singleton instance. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_network_a52a8cefa1ecd639175ae18f217342783}{Start}} ()
+\begin{DoxyCompactList}\small\item\em Starts the connection to the server. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_network_aace0678d55f269c25983131dd673e857}{Connect\+Game\+Server}} ()
+\begin{DoxyCompactList}\small\item\em Establishes a connection with the server and initiates callback methods. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_network_ac1b0ebf3c19d645003a1238a0fa1ad64}{Connect\+Callback}} (I\+Async\+Result result)
+\begin{DoxyCompactList}\small\item\em Callback method used when connected to the server. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_network_ace78b88ac04b110eeaa5f51fdd643780}{Update}} ()
+\begin{DoxyCompactList}\small\item\em Offloads data to \mbox{\hyperlink{class_client_handle_data}{Client\+Handle\+Data}} instance if should\+Handle\+Data = true. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_network_af1c962bbf03c6221e052ed8fd5c174a9}{On\+Receive}} (I\+Async\+Result result)
+\begin{DoxyCompactList}\small\item\em Callback used when the server sends data to the client. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+byte \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_network_a514e88f1b6a82d1c2de4e3e3b197c529}{async\+Buff}}
+\begin{DoxyCompactList}\small\item\em Stores data read from the server. \end{DoxyCompactList}\item 
+byte \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_network_af6127d2e2616cfd231e2456e995e334a}{my\+Bytes}}
+\begin{DoxyCompactList}\small\item\em Copy of the async buff to prevent data being overwritten. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Main class used to establish connection with the server. 
+
+\begin{DoxyAuthor}{Author}
+Kevin Kaymak 
+
+Modified By\+: Pavan Jando
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_network_a06900213a71f1f8d61c67ca99cb78df9}\label{class_network_a06900213a71f1f8d61c67ca99cb78df9}} 
+\index{Network@{Network}!Awake@{Awake}}
+\index{Awake@{Awake}!Network@{Network}}
+\subsubsection{\texorpdfstring{Awake()}{Awake()}}
+{\footnotesize\ttfamily void Network.\+Awake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Initialises Singleton instance. 
+
+\mbox{\Hypertarget{class_network_ac1b0ebf3c19d645003a1238a0fa1ad64}\label{class_network_ac1b0ebf3c19d645003a1238a0fa1ad64}} 
+\index{Network@{Network}!ConnectCallback@{ConnectCallback}}
+\index{ConnectCallback@{ConnectCallback}!Network@{Network}}
+\subsubsection{\texorpdfstring{ConnectCallback()}{ConnectCallback()}}
+{\footnotesize\ttfamily void Network.\+Connect\+Callback (\begin{DoxyParamCaption}\item[{I\+Async\+Result}]{result }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Callback method used when connected to the server. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em result} & The result of the asynchronous operation.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_network_aace0678d55f269c25983131dd673e857}\label{class_network_aace0678d55f269c25983131dd673e857}} 
+\index{Network@{Network}!ConnectGameServer@{ConnectGameServer}}
+\index{ConnectGameServer@{ConnectGameServer}!Network@{Network}}
+\subsubsection{\texorpdfstring{ConnectGameServer()}{ConnectGameServer()}}
+{\footnotesize\ttfamily void Network.\+Connect\+Game\+Server (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Establishes a connection with the server and initiates callback methods. 
+
+\mbox{\Hypertarget{class_network_af1c962bbf03c6221e052ed8fd5c174a9}\label{class_network_af1c962bbf03c6221e052ed8fd5c174a9}} 
+\index{Network@{Network}!OnReceive@{OnReceive}}
+\index{OnReceive@{OnReceive}!Network@{Network}}
+\subsubsection{\texorpdfstring{OnReceive()}{OnReceive()}}
+{\footnotesize\ttfamily void Network.\+On\+Receive (\begin{DoxyParamCaption}\item[{I\+Async\+Result}]{result }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Callback used when the server sends data to the client. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em result} & The result of the asynchronous operation.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_network_a52a8cefa1ecd639175ae18f217342783}\label{class_network_a52a8cefa1ecd639175ae18f217342783}} 
+\index{Network@{Network}!Start@{Start}}
+\index{Start@{Start}!Network@{Network}}
+\subsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Network.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Starts the connection to the server. 
+
+\mbox{\Hypertarget{class_network_ace78b88ac04b110eeaa5f51fdd643780}\label{class_network_ace78b88ac04b110eeaa5f51fdd643780}} 
+\index{Network@{Network}!Update@{Update}}
+\index{Update@{Update}!Network@{Network}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Network.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Offloads data to \mbox{\hyperlink{class_client_handle_data}{Client\+Handle\+Data}} instance if should\+Handle\+Data = true. 
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_network_a514e88f1b6a82d1c2de4e3e3b197c529}\label{class_network_a514e88f1b6a82d1c2de4e3e3b197c529}} 
+\index{Network@{Network}!asyncBuff@{asyncBuff}}
+\index{asyncBuff@{asyncBuff}!Network@{Network}}
+\subsubsection{\texorpdfstring{asyncBuff}{asyncBuff}}
+{\footnotesize\ttfamily byte \mbox{[}$\,$\mbox{]} Network.\+async\+Buff\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Stores data read from the server. 
+
+\mbox{\Hypertarget{class_network_af63d25c25873f9220c94d6250a1c9242}\label{class_network_af63d25c25873f9220c94d6250a1c9242}} 
+\index{Network@{Network}!instance@{instance}}
+\index{instance@{instance}!Network@{Network}}
+\subsubsection{\texorpdfstring{instance}{instance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_network}{Network}} Network.\+instance\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Global Singleton instance of class. 
+
+\mbox{\Hypertarget{class_network_a52a8a42e75c5dea2078f8a20a4293607}\label{class_network_a52a8a42e75c5dea2078f8a20a4293607}} 
+\index{Network@{Network}!isConnected@{isConnected}}
+\index{isConnected@{isConnected}!Network@{Network}}
+\subsubsection{\texorpdfstring{isConnected}{isConnected}}
+{\footnotesize\ttfamily bool Network.\+is\+Connected}
+
+
+
+Whether the client has connected to the server. 
+
+\mbox{\Hypertarget{class_network_af6127d2e2616cfd231e2456e995e334a}\label{class_network_af6127d2e2616cfd231e2456e995e334a}} 
+\index{Network@{Network}!myBytes@{myBytes}}
+\index{myBytes@{myBytes}!Network@{Network}}
+\subsubsection{\texorpdfstring{myBytes}{myBytes}}
+{\footnotesize\ttfamily byte \mbox{[}$\,$\mbox{]} Network.\+my\+Bytes\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Copy of the async buff to prevent data being overwritten. 
+
+\mbox{\Hypertarget{class_network_ae8836ce514687bd3c43e16aad880d248}\label{class_network_ae8836ce514687bd3c43e16aad880d248}} 
+\index{Network@{Network}!myReader@{myReader}}
+\index{myReader@{myReader}!Network@{Network}}
+\subsubsection{\texorpdfstring{myReader}{myReader}}
+{\footnotesize\ttfamily Stream\+Reader Network.\+my\+Reader}
+
+
+
+Used to read data from the stream. 
+
+\mbox{\Hypertarget{class_network_ac9848301f17c819897dc89fce29b8e6a}\label{class_network_ac9848301f17c819897dc89fce29b8e6a}} 
+\index{Network@{Network}!myStream@{myStream}}
+\index{myStream@{myStream}!Network@{Network}}
+\subsubsection{\texorpdfstring{myStream}{myStream}}
+{\footnotesize\ttfamily Network\+Stream Network.\+my\+Stream\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Stream used to transmit data read and write data. 
+
+\mbox{\Hypertarget{class_network_a1fa8240fd7edc4368301ad87f2c1ebf5}\label{class_network_a1fa8240fd7edc4368301ad87f2c1ebf5}} 
+\index{Network@{Network}!myWriter@{myWriter}}
+\index{myWriter@{myWriter}!Network@{Network}}
+\subsubsection{\texorpdfstring{myWriter}{myWriter}}
+{\footnotesize\ttfamily Stream\+Writer Network.\+my\+Writer}
+
+
+
+Used to write data to the stream. 
+
+\mbox{\Hypertarget{class_network_ab009762179a0fc5916b8bebeb8f0a32f}\label{class_network_ab009762179a0fc5916b8bebeb8f0a32f}} 
+\index{Network@{Network}!playerSocket@{playerSocket}}
+\index{playerSocket@{playerSocket}!Network@{Network}}
+\subsubsection{\texorpdfstring{playerSocket}{playerSocket}}
+{\footnotesize\ttfamily Tcp\+Client Network.\+player\+Socket}
+
+
+
+The client socket 
+
+\mbox{\Hypertarget{class_network_a7b66965653988950efaf3ec4de0f6cdd}\label{class_network_a7b66965653988950efaf3ec4de0f6cdd}} 
+\index{Network@{Network}!serverIP@{serverIP}}
+\index{serverIP@{serverIP}!Network@{Network}}
+\subsubsection{\texorpdfstring{serverIP}{serverIP}}
+{\footnotesize\ttfamily string Network.\+server\+IP = \char`\"{}127.\+0.\+0.\+1\char`\"{}}
+
+
+
+IP of the server. 
+
+\mbox{\Hypertarget{class_network_a871eb8ca681b377dc341b4bf4df08367}\label{class_network_a871eb8ca681b377dc341b4bf4df08367}} 
+\index{Network@{Network}!serverPort@{serverPort}}
+\index{serverPort@{serverPort}!Network@{Network}}
+\subsubsection{\texorpdfstring{serverPort}{serverPort}}
+{\footnotesize\ttfamily int Network.\+server\+Port = 5500}
+
+
+
+Port to connect to on the server. 
+
+\mbox{\Hypertarget{class_network_a1df7f2025ab9462bf56814c17d5be87b}\label{class_network_a1df7f2025ab9462bf56814c17d5be87b}} 
+\index{Network@{Network}!shouldHandleData@{shouldHandleData}}
+\index{shouldHandleData@{shouldHandleData}!Network@{Network}}
+\subsubsection{\texorpdfstring{shouldHandleData}{shouldHandleData}}
+{\footnotesize\ttfamily bool Network.\+should\+Handle\+Data}
+
+
+
+Whether there is data to be handled. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Documents/\+Unity\+Projects/\+Final Year Game/\+Wo\+W\+Go!/\+Assets/\+Project/\+Scripts/\+Networking/Network.\+cs\end{DoxyCompactItemize}

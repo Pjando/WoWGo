@@ -1,0 +1,156 @@
+\hypertarget{class_enemy_controller}{}\section{Enemy\+Controller Class Reference}
+\label{class_enemy_controller}\index{EnemyController@{EnemyController}}
+
+
+Controls the enemy\textquotesingle{}s actions during the battle phase.  
+
+
+
+
+Inheritance diagram for Enemy\+Controller\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=169pt]{class_enemy_controller__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Enemy\+Controller\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=270pt]{class_enemy_controller__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+T\+M\+P\+\_\+\+Text \mbox{\hyperlink{class_enemy_controller_aef0e1e53df1d60d8593064278827ce6a}{name}}
+\begin{DoxyCompactList}\small\item\em Name of the enemy. \end{DoxyCompactList}\item 
+Game\+Object \mbox{\hyperlink{class_enemy_controller_af94df5444352df3bd0751887b7e39c94}{wizard}}
+\begin{DoxyCompactList}\small\item\em The prefab used to spawn the wizard model. \end{DoxyCompactList}\item 
+Game\+Object \mbox{\hyperlink{class_enemy_controller_a553a3551c8acbbc10c03de3d63f4671f}{skeleton}}
+\begin{DoxyCompactList}\small\item\em The prefab used to spawn the skeleton model. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_enemy_controller_af64c9a5242284f2b4794e8e471e60f4c}{Awake}} ()
+\begin{DoxyCompactList}\small\item\em Checks to see which is the enemy the user clicked on and spawns it in idle animation for the main battle phase. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_enemy_controller_a461addd95c41f6c754415cc6ef660856}{Move\+To\+Layer}} (Transform root, int layer)
+\begin{DoxyCompactList}\small\item\em Recursive function that sets the layer for a root transform and all child transforms Layer used to render the model before the background. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+internal Game\+Object \mbox{\hyperlink{class_enemy_controller_ad0b526d9df2f637161b6dd2a6738c71b}{current\+Enemy}}
+\begin{DoxyCompactList}\small\item\em Holds the current enemy that needs to be spawned. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_enemy_manager}{Enemy\+Manager}} \mbox{\hyperlink{class_enemy_controller_a3faca011d32d7cdca33f05f27f1c431e}{em}}
+\begin{DoxyCompactList}\small\item\em Contains the \mbox{\hyperlink{class_enemy}{Enemy}} Manager component used to get the current enemy. \end{DoxyCompactList}\item 
+Animator \mbox{\hyperlink{class_enemy_controller_a8eba5438edc982ca7aa19493d0376412}{animator}}
+\begin{DoxyCompactList}\small\item\em The animator for the given model. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Controls the enemy\textquotesingle{}s actions during the battle phase. 
+
+\begin{DoxyAuthor}{Author}
+Pavan Jando
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_enemy_controller_af64c9a5242284f2b4794e8e471e60f4c}\label{class_enemy_controller_af64c9a5242284f2b4794e8e471e60f4c}} 
+\index{EnemyController@{EnemyController}!Awake@{Awake}}
+\index{Awake@{Awake}!EnemyController@{EnemyController}}
+\subsubsection{\texorpdfstring{Awake()}{Awake()}}
+{\footnotesize\ttfamily void Enemy\+Controller.\+Awake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Checks to see which is the enemy the user clicked on and spawns it in idle animation for the main battle phase. 
+
+\mbox{\Hypertarget{class_enemy_controller_a461addd95c41f6c754415cc6ef660856}\label{class_enemy_controller_a461addd95c41f6c754415cc6ef660856}} 
+\index{EnemyController@{EnemyController}!MoveToLayer@{MoveToLayer}}
+\index{MoveToLayer@{MoveToLayer}!EnemyController@{EnemyController}}
+\subsubsection{\texorpdfstring{MoveToLayer()}{MoveToLayer()}}
+{\footnotesize\ttfamily void Enemy\+Controller.\+Move\+To\+Layer (\begin{DoxyParamCaption}\item[{Transform}]{root,  }\item[{int}]{layer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Recursive function that sets the layer for a root transform and all child transforms Layer used to render the model before the background. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em root} & The root transform\\
+\hline
+{\em layer} & The layer to apply to the root and children transforms\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_enemy_controller_a8eba5438edc982ca7aa19493d0376412}\label{class_enemy_controller_a8eba5438edc982ca7aa19493d0376412}} 
+\index{EnemyController@{EnemyController}!animator@{animator}}
+\index{animator@{animator}!EnemyController@{EnemyController}}
+\subsubsection{\texorpdfstring{animator}{animator}}
+{\footnotesize\ttfamily Animator Enemy\+Controller.\+animator\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The animator for the given model. 
+
+\mbox{\Hypertarget{class_enemy_controller_ad0b526d9df2f637161b6dd2a6738c71b}\label{class_enemy_controller_ad0b526d9df2f637161b6dd2a6738c71b}} 
+\index{EnemyController@{EnemyController}!currentEnemy@{currentEnemy}}
+\index{currentEnemy@{currentEnemy}!EnemyController@{EnemyController}}
+\subsubsection{\texorpdfstring{currentEnemy}{currentEnemy}}
+{\footnotesize\ttfamily internal Game\+Object Enemy\+Controller.\+current\+Enemy\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Holds the current enemy that needs to be spawned. 
+
+\mbox{\Hypertarget{class_enemy_controller_a3faca011d32d7cdca33f05f27f1c431e}\label{class_enemy_controller_a3faca011d32d7cdca33f05f27f1c431e}} 
+\index{EnemyController@{EnemyController}!em@{em}}
+\index{em@{em}!EnemyController@{EnemyController}}
+\subsubsection{\texorpdfstring{em}{em}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_enemy_manager}{Enemy\+Manager}} Enemy\+Controller.\+em\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Contains the \mbox{\hyperlink{class_enemy}{Enemy}} Manager component used to get the current enemy. 
+
+\mbox{\Hypertarget{class_enemy_controller_aef0e1e53df1d60d8593064278827ce6a}\label{class_enemy_controller_aef0e1e53df1d60d8593064278827ce6a}} 
+\index{EnemyController@{EnemyController}!name@{name}}
+\index{name@{name}!EnemyController@{EnemyController}}
+\subsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily T\+M\+P\+\_\+\+Text Enemy\+Controller.\+name}
+
+
+
+Name of the enemy. 
+
+\mbox{\Hypertarget{class_enemy_controller_a553a3551c8acbbc10c03de3d63f4671f}\label{class_enemy_controller_a553a3551c8acbbc10c03de3d63f4671f}} 
+\index{EnemyController@{EnemyController}!skeleton@{skeleton}}
+\index{skeleton@{skeleton}!EnemyController@{EnemyController}}
+\subsubsection{\texorpdfstring{skeleton}{skeleton}}
+{\footnotesize\ttfamily Game\+Object Enemy\+Controller.\+skeleton}
+
+
+
+The prefab used to spawn the skeleton model. 
+
+\mbox{\Hypertarget{class_enemy_controller_af94df5444352df3bd0751887b7e39c94}\label{class_enemy_controller_af94df5444352df3bd0751887b7e39c94}} 
+\index{EnemyController@{EnemyController}!wizard@{wizard}}
+\index{wizard@{wizard}!EnemyController@{EnemyController}}
+\subsubsection{\texorpdfstring{wizard}{wizard}}
+{\footnotesize\ttfamily Game\+Object Enemy\+Controller.\+wizard}
+
+
+
+The prefab used to spawn the wizard model. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Documents/\+Unity\+Projects/\+Final Year Game/\+Wo\+W\+Go!/\+Assets/\+Project/\+Scripts/\+Battle/Enemy\+Controller.\+cs\end{DoxyCompactItemize}

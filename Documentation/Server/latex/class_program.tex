@@ -1,0 +1,77 @@
+\hypertarget{class_program}{}\section{Program Class Reference}
+\label{class_program}\index{Program@{Program}}
+
+
+The main thread of the server, intitalises other server components.  
+
+
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_program_ada72f8d1518f89bc2e6ad807d5059564}{Main}} (string\mbox{[}$\,$\mbox{]} args)
+\begin{DoxyCompactList}\small\item\em Main program starts the console thread and starts other server components. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_program_a26b88087186eee007cda56afadba413b}{Console\+Thread}} ()
+\begin{DoxyCompactList}\small\item\em Console thread, closes server upon detecting empty read line. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static Thread \mbox{\hyperlink{class_program_ae9e0fdfd8f03f67dd94c12d12c27381c}{thread\+Console}}
+\begin{DoxyCompactList}\small\item\em Thread for accepting user input, server side. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_program_a35293fe7c6f7bb00df67b738216dbb88}{console\+Running}}
+\begin{DoxyCompactList}\small\item\em Whether the console/\+Server is running. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The main thread of the server, intitalises other server components. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_program_a26b88087186eee007cda56afadba413b}\label{class_program_a26b88087186eee007cda56afadba413b}} 
+\index{Program@{Program}!ConsoleThread@{ConsoleThread}}
+\index{ConsoleThread@{ConsoleThread}!Program@{Program}}
+\subsubsection{\texorpdfstring{ConsoleThread()}{ConsoleThread()}}
+{\footnotesize\ttfamily static void Program.\+Console\+Thread (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Console thread, closes server upon detecting empty read line. 
+
+\mbox{\Hypertarget{class_program_ada72f8d1518f89bc2e6ad807d5059564}\label{class_program_ada72f8d1518f89bc2e6ad807d5059564}} 
+\index{Program@{Program}!Main@{Main}}
+\index{Main@{Main}!Program@{Program}}
+\subsubsection{\texorpdfstring{Main()}{Main()}}
+{\footnotesize\ttfamily static void Program.\+Main (\begin{DoxyParamCaption}\item[{string \mbox{[}$\,$\mbox{]}}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Main program starts the console thread and starts other server components. 
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_program_a35293fe7c6f7bb00df67b738216dbb88}\label{class_program_a35293fe7c6f7bb00df67b738216dbb88}} 
+\index{Program@{Program}!consoleRunning@{consoleRunning}}
+\index{consoleRunning@{consoleRunning}!Program@{Program}}
+\subsubsection{\texorpdfstring{consoleRunning}{consoleRunning}}
+{\footnotesize\ttfamily bool Program.\+console\+Running\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Whether the console/\+Server is running. 
+
+\mbox{\Hypertarget{class_program_ae9e0fdfd8f03f67dd94c12d12c27381c}\label{class_program_ae9e0fdfd8f03f67dd94c12d12c27381c}} 
+\index{Program@{Program}!threadConsole@{threadConsole}}
+\index{threadConsole@{threadConsole}!Program@{Program}}
+\subsubsection{\texorpdfstring{threadConsole}{threadConsole}}
+{\footnotesize\ttfamily Thread Program.\+thread\+Console\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Thread for accepting user input, server side. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Documents/\+Unity\+Projects/\+Final Year Game/\+Server/\+Server/\+Server\+Application/Program.\+cs\end{DoxyCompactItemize}

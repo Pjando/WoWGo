@@ -1,0 +1,4 @@
+<map id="Network" name="Network">
+<area shape="rect" id="node1" title="Responsible for establishing connection with the clients." alt="" coords="5,95,75,121"/>
+<area shape="rect" id="node2" href="$class_client.html" title="Represents a client connected to the server." alt="" coords="13,5,67,32"/>
+</map>

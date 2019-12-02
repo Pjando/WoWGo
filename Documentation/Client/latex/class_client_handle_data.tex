@@ -1,0 +1,203 @@
+\hypertarget{class_client_handle_data}{}\section{Client\+Handle\+Data Class Reference}
+\label{class_client_handle_data}\index{ClientHandleData@{ClientHandleData}}
+
+
+Handles incoming data from the server.  
+
+
+
+
+Inheritance diagram for Client\+Handle\+Data\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=172pt]{class_client_handle_data__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Client\+Handle\+Data\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{class_client_handle_data__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_client_handle_data_a42e1bc45eb24e69881b07c1c128252fc}{Handle\+Data}} (byte\mbox{[}$\,$\mbox{]} data)
+\begin{DoxyCompactList}\small\item\em Extracts the identifier for the data from the byte array and calls the \mbox{\hyperlink{class_client_handle_data_a2b973713df73e2e1bd53c70557fdcd34}{Handle\+Messages()}} to call the right method. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_client_handle_data_af0be33dc4530a4f632b6ef6d7e01f59d}{Handle\+Message}} (int packet\+Num, byte\mbox{[}$\,$\mbox{]} data)
+\begin{DoxyCompactList}\small\item\em Writes data to a buffer and reads a string message from the server. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \mbox{\hyperlink{class_enemy}{Enemy}} $>$ \mbox{\hyperlink{class_client_handle_data_a9c713b4e3487f59dd8298eb1184249b9}{enemies}}
+\begin{DoxyCompactList}\small\item\em List of type \mbox{\hyperlink{class_enemy}{Enemy}} that is received from the server. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_client_handle_data}{Client\+Handle\+Data}} \mbox{\hyperlink{class_client_handle_data_a473fc5c804badc1de65ef3b0a4b74889}{instance}}
+\begin{DoxyCompactList}\small\item\em Global Singleton instance of class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Events}
+\begin{DoxyCompactItemize}
+\item 
+static Action$<$ List$<$ \mbox{\hyperlink{class_enemy}{Enemy}} $>$ $>$ \mbox{\hyperlink{class_client_handle_data_ab147321855bab2a2d26b681d4f62869e}{On\+New\+Enemies}}
+\begin{DoxyCompactList}\small\item\em Event that is triggered when new enemies are received from the server. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_client_handle_data_aa64ba3f18a724bd131ac488e2fa0e744}{Awake}} ()
+\begin{DoxyCompactList}\small\item\em Initialises Singleton instance. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_client_handle_data_a2b973713df73e2e1bd53c70557fdcd34}{Handle\+Messages}} (int packet\+Num, byte\mbox{[}$\,$\mbox{]} data)
+\begin{DoxyCompactList}\small\item\em Decides which method to execute based on the packet\+Num value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_client_handle_data_a82bf56e38f140f42f31cc54b77e6719a}{Handle\+Enemies}} (int packet\+Num, byte\mbox{[}$\,$\mbox{]} data)
+\begin{DoxyCompactList}\small\item\em Deserialises the data using Deserialise() and invokes On\+New\+Enemies event. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_client_handle_data_a1c02a29592a27b304e7f465dada3f92f}{Desserialise}} (byte\mbox{[}$\,$\mbox{]} data)
+\begin{DoxyCompactList}\small\item\em Deserialises the byte array and converts the data into enemy object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Handles incoming data from the server. 
+
+\begin{DoxyAuthor}{Author}
+Kevin Kaymak 
+
+Modified By\+: Pavan Jando
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_client_handle_data_aa64ba3f18a724bd131ac488e2fa0e744}\label{class_client_handle_data_aa64ba3f18a724bd131ac488e2fa0e744}} 
+\index{ClientHandleData@{ClientHandleData}!Awake@{Awake}}
+\index{Awake@{Awake}!ClientHandleData@{ClientHandleData}}
+\subsubsection{\texorpdfstring{Awake()}{Awake()}}
+{\footnotesize\ttfamily void Client\+Handle\+Data.\+Awake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Initialises Singleton instance. 
+
+\mbox{\Hypertarget{class_client_handle_data_a1c02a29592a27b304e7f465dada3f92f}\label{class_client_handle_data_a1c02a29592a27b304e7f465dada3f92f}} 
+\index{ClientHandleData@{ClientHandleData}!Desserialise@{Desserialise}}
+\index{Desserialise@{Desserialise}!ClientHandleData@{ClientHandleData}}
+\subsubsection{\texorpdfstring{Desserialise()}{Desserialise()}}
+{\footnotesize\ttfamily void Client\+Handle\+Data.\+Desserialise (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Deserialises the byte array and converts the data into enemy object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Byte array sent from the server.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_client_handle_data_a42e1bc45eb24e69881b07c1c128252fc}\label{class_client_handle_data_a42e1bc45eb24e69881b07c1c128252fc}} 
+\index{ClientHandleData@{ClientHandleData}!HandleData@{HandleData}}
+\index{HandleData@{HandleData}!ClientHandleData@{ClientHandleData}}
+\subsubsection{\texorpdfstring{HandleData()}{HandleData()}}
+{\footnotesize\ttfamily void Client\+Handle\+Data.\+Handle\+Data (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{data }\end{DoxyParamCaption})}
+
+
+
+Extracts the identifier for the data from the byte array and calls the \mbox{\hyperlink{class_client_handle_data_a2b973713df73e2e1bd53c70557fdcd34}{Handle\+Messages()}} to call the right method. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Byte array sent from the server.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_client_handle_data_a82bf56e38f140f42f31cc54b77e6719a}\label{class_client_handle_data_a82bf56e38f140f42f31cc54b77e6719a}} 
+\index{ClientHandleData@{ClientHandleData}!HandleEnemies@{HandleEnemies}}
+\index{HandleEnemies@{HandleEnemies}!ClientHandleData@{ClientHandleData}}
+\subsubsection{\texorpdfstring{HandleEnemies()}{HandleEnemies()}}
+{\footnotesize\ttfamily void Client\+Handle\+Data.\+Handle\+Enemies (\begin{DoxyParamCaption}\item[{int}]{packet\+Num,  }\item[{byte \mbox{[}$\,$\mbox{]}}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Deserialises the data using Deserialise() and invokes On\+New\+Enemies event. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em packet\+Num} & Number used to identify the data.\\
+\hline
+{\em data} & Byte array sent from the server.$<$\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_client_handle_data_af0be33dc4530a4f632b6ef6d7e01f59d}\label{class_client_handle_data_af0be33dc4530a4f632b6ef6d7e01f59d}} 
+\index{ClientHandleData@{ClientHandleData}!HandleMessage@{HandleMessage}}
+\index{HandleMessage@{HandleMessage}!ClientHandleData@{ClientHandleData}}
+\subsubsection{\texorpdfstring{HandleMessage()}{HandleMessage()}}
+{\footnotesize\ttfamily void Client\+Handle\+Data.\+Handle\+Message (\begin{DoxyParamCaption}\item[{int}]{packet\+Num,  }\item[{byte \mbox{[}$\,$\mbox{]}}]{data }\end{DoxyParamCaption})}
+
+
+
+Writes data to a buffer and reads a string message from the server. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em packet\+Num} & Number used to identify the data.\\
+\hline
+{\em data} & Byte array sent from the server.$<$\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_client_handle_data_a2b973713df73e2e1bd53c70557fdcd34}\label{class_client_handle_data_a2b973713df73e2e1bd53c70557fdcd34}} 
+\index{ClientHandleData@{ClientHandleData}!HandleMessages@{HandleMessages}}
+\index{HandleMessages@{HandleMessages}!ClientHandleData@{ClientHandleData}}
+\subsubsection{\texorpdfstring{HandleMessages()}{HandleMessages()}}
+{\footnotesize\ttfamily void Client\+Handle\+Data.\+Handle\+Messages (\begin{DoxyParamCaption}\item[{int}]{packet\+Num,  }\item[{byte \mbox{[}$\,$\mbox{]}}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Decides which method to execute based on the packet\+Num value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em packet\+Num} & Number used to identify the data.\\
+\hline
+{\em data} & Byte array sent from the server.\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_client_handle_data_a9c713b4e3487f59dd8298eb1184249b9}\label{class_client_handle_data_a9c713b4e3487f59dd8298eb1184249b9}} 
+\index{ClientHandleData@{ClientHandleData}!enemies@{enemies}}
+\index{enemies@{enemies}!ClientHandleData@{ClientHandleData}}
+\subsubsection{\texorpdfstring{enemies}{enemies}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_enemy}{Enemy}}$>$ Client\+Handle\+Data.\+enemies}
+
+
+
+List of type \mbox{\hyperlink{class_enemy}{Enemy}} that is received from the server. 
+
+\mbox{\Hypertarget{class_client_handle_data_a473fc5c804badc1de65ef3b0a4b74889}\label{class_client_handle_data_a473fc5c804badc1de65ef3b0a4b74889}} 
+\index{ClientHandleData@{ClientHandleData}!instance@{instance}}
+\index{instance@{instance}!ClientHandleData@{ClientHandleData}}
+\subsubsection{\texorpdfstring{instance}{instance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_client_handle_data}{Client\+Handle\+Data}} Client\+Handle\+Data.\+instance\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Global Singleton instance of class. 
+
+
+
+\subsection{Event Documentation}
+\mbox{\Hypertarget{class_client_handle_data_ab147321855bab2a2d26b681d4f62869e}\label{class_client_handle_data_ab147321855bab2a2d26b681d4f62869e}} 
+\index{ClientHandleData@{ClientHandleData}!OnNewEnemies@{OnNewEnemies}}
+\index{OnNewEnemies@{OnNewEnemies}!ClientHandleData@{ClientHandleData}}
+\subsubsection{\texorpdfstring{OnNewEnemies}{OnNewEnemies}}
+{\footnotesize\ttfamily Action$<$List$<$\mbox{\hyperlink{class_enemy}{Enemy}}$>$ $>$ Client\+Handle\+Data.\+On\+New\+Enemies\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Event that is triggered when new enemies are received from the server. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Documents/\+Unity\+Projects/\+Final Year Game/\+Wo\+W\+Go!/\+Assets/\+Project/\+Scripts/\+Networking/Client\+Handle\+Data.\+cs\end{DoxyCompactItemize}

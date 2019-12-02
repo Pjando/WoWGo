@@ -1,0 +1,36 @@
+\contentsline {section}{\numberline {1}Introduction}{2}
+\contentsline {subsection}{\numberline {1.1}The Game}{2}
+\contentsline {section}{\numberline {2}Literature Review}{2}
+\contentsline {section}{\numberline {3}Unity}{3}
+\contentsline {subsection}{\numberline {3.1}Game Engines}{3}
+\contentsline {subsection}{\numberline {3.2}Installing Unity}{3}
+\contentsline {subsection}{\numberline {3.3}User Interface}{4}
+\contentsline {subsubsection}{Game View}{4}
+\contentsline {subsubsection}{Scene View}{4}
+\contentsline {subsubsection}{Hierarchy Window}{5}
+\contentsline {subsubsection}{Inspector Window}{5}
+\contentsline {subsubsection}{The Project Window}{6}
+\contentsline {subsection}{\numberline {3.4}C\# and Game Objects}{6}
+\contentsline {subsection}{\numberline {3.5}Conclusion}{7}
+\contentsline {section}{\numberline {4}Design Patterns}{7}
+\contentsline {subsection}{\numberline {4.1}Game Loop}{7}
+\contentsline {subsection}{\numberline {4.2}Flyweight}{7}
+\contentsline {subsection}{\numberline {4.3}Factory}{8}
+\contentsline {subsection}{\numberline {4.4}Singleton}{8}
+\contentsline {subsection}{\numberline {4.5}Observer}{8}
+\contentsline {section}{\numberline {5}OpenStreetMap}{9}
+\contentsline {subsection}{\numberline {5.1}Map Data}{9}
+\contentsline {subsection}{\numberline {5.2}Processing the Data}{9}
+\contentsline {subsection}{\numberline {5.3}Drawing the Map}{10}
+\contentsline {subsection}{\numberline {5.4}Real time Map Updates}{10}
+\contentsline {subsection}{\numberline {5.5}Conclusion}{10}
+\contentsline {section}{\numberline {6}Proof of Concepts}{10}
+\contentsline {subsection}{\numberline {6.1}Creating the Map}{11}
+\contentsline {subsection}{\numberline {6.2}GPS Location}{12}
+\contentsline {subsection}{\numberline {6.3}Server - Client Connection}{13}
+\contentsline {subsection}{\numberline {6.4}Camera Movement}{14}
+\contentsline {section}{\numberline {7}Project Diary}{14}
+\contentsline {subsection}{\numberline {7.1}September}{14}
+\contentsline {subsection}{\numberline {7.2}October}{14}
+\contentsline {subsection}{\numberline {7.3}November}{14}
+\contentsline {subsection}{\numberline {7.4}December}{14}

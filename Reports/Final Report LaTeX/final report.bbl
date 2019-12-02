@@ -1,0 +1,120 @@
+\begin{thebibliography}{10}
+
+\bibitem{PGO}
+Ajinkya.
+\newblock How to play pokemon go without moving on android 2019.
+\newblock
+  \url{https://devsjournal.com/how-to-play-pokemon-go-without-moving-no-root-required.html}.
+\newblock March 21, 2019.
+
+\bibitem{TCP}
+Neal Allen.
+\newblock {\em Network Maintenance and Troubleshooting Guide, Second Edition}.
+\newblock October 18, 2009.
+
+\bibitem{UnityPlatforms}
+Matheus Amazonas.
+\newblock How does unity export to so many platforms?
+\newblock
+  \url{https://sometimesicode.wordpress.com/2014/02/19/how-does-unity-export-to-so-many-platforms/}.
+\newblock February 19, 2014.
+
+\bibitem{Apple}
+Apple.
+\newblock The app life cycle.
+\newblock
+  \url{https://developer.apple.com/library/archive/documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/TheAppLifeCycle/TheAppLifeCycle.html}.
+\newblock March 27, 2017.
+
+\bibitem{Tdd}
+Sophia Clarke.
+\newblock Testing test-driven development with the unity test runner.
+\newblock
+  \url{https://blogs.unity3d.com/2018/11/02/testing-test-driven-development-with-the-unity-test-runner/}.
+\newblock November 2, 2018.
+
+\bibitem{GPS}
+N3K EN.
+\newblock Unity mobile gps - real world location - unity 3d [tutorial].
+\newblock \url{https://www.youtube.com/watch?v=g04jaC-Tpn0}.
+\newblock February 12, 2017.
+
+\bibitem{GOF}
+Ralph Johnson Richard~Helm Erich~Gamma, John~Vlissides.
+\newblock {\em Design Patterns: Elements of Reusable Object-Oriented Software}.
+\newblock October 21, 1994.
+
+\bibitem{Android}
+Google.
+\newblock Understand the activity lifecycle.
+\newblock
+  \url{https://developer.android.com/guide/components/activities/activity-lifecycle}.
+\newblock 2019.
+
+\bibitem{GA}
+Jason Gregory.
+\newblock {\em Game Engine Architectures}.
+\newblock 2009.
+
+\bibitem{Kaymak}
+Kevin Kaymak.
+\newblock Youtube.
+\newblock \url{https://www.youtube.com/user/AndroidRetro/}.
+\newblock 2019.
+
+\bibitem{Sloan}
+Sloan Kelly.
+\newblock Gta in unity!? use real world maps!
+\newblock \url{https://www.youtube.com/watch?v=780Ia5e8LHQ}.
+\newblock March 9, 2017.
+
+\bibitem{Server}
+Microsoft.
+\newblock Microsoft docs.
+\newblock
+  \url{https://docs.microsoft.com/en-us/dotnet/framework/network-programming/}.
+\newblock March 30, 2017.
+
+\bibitem{Mono}
+Mono.
+\newblock About mono.
+\newblock \url{https://www.mono-project.com/docs/about-mono/}.
+\newblock 2018.
+
+\bibitem{GPP}
+Robert Nystrom.
+\newblock {\em Game Programming Patterns}.
+\newblock November 2, 2014.
+
+\bibitem{API}
+Open-Source.
+\newblock Api v0.6.
+\newblock \url{https://wiki.openstreetmap.org/wiki/}.
+\newblock August 1, 2018.
+
+\bibitem{Factory}
+Ranjeet Patra.
+\newblock Factory method design pattern in c.
+\newblock
+  \url{https://www.c-sharpcorner.com/article/factory-method-design-pattern-in-c-sharp/}.
+\newblock September 5, 2018.
+
+\bibitem{MRE}
+Dot~Net Pattern.
+\newblock Manualresetevent.
+\newblock \url{http://dotnetpattern.com/threading-manualresetevent}.
+\newblock 2018.
+
+\bibitem{Unity}
+Unity Technologies.
+\newblock Unity manual.
+\newblock \url{https://docs.unity3d.com/Manual/index.html/}.
+\newblock February, 2018.
+
+\bibitem{Brackeys}
+Asbjørn Thirslund.
+\newblock Survival game assets.
+\newblock \url{http://devassets.com/assets/survival-game-assets/}.
+\newblock 2019.
+
+\end{thebibliography}

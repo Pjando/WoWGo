@@ -1,0 +1,6 @@
+<map id="InfrastructureBehaviour" name="InfrastructureBehaviour">
+<area shape="rect" id="node1" title="Base class for rendering roads and buildings." alt="" coords="41,80,194,107"/>
+<area shape="rect" id="node3" href="$class_building_maker.html" title="Renders the buildings on the map." alt="" coords="5,155,109,181"/>
+<area shape="rect" id="node4" href="$class_road_maker.html" title="Renders the roads on the map." alt="" coords="133,155,221,181"/>
+<area shape="rect" id="node2" title=" " alt="" coords="62,5,173,32"/>
+</map>

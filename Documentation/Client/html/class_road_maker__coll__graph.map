@@ -1,0 +1,8 @@
+<map id="RoadMaker" name="RoadMaker">
+<area shape="rect" id="node1" title="Renders the roads on the map." alt="" coords="47,336,135,363"/>
+<area shape="rect" id="node2" href="$class_infrastructure_behaviour.html" title="Base class for rendering roads and buildings." alt="" coords="15,260,168,287"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,81,116,108"/>
+<area shape="rect" id="node4" href="$class_map_reader.html" title="Used to read the map data from the xml map data." alt="" coords="98,171,186,197"/>
+<area shape="rect" id="node5" href="$class_osm_bounds.html" title="Represents the boudaries of the map data." alt="" coords="140,81,235,108"/>
+<area shape="rect" id="node6" href="$class_base_osm.html" title="The base class for each Osm attribute." alt="" coords="147,5,227,32"/>
+</map>

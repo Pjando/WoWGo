@@ -1,0 +1,46 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: final report.aux
+The style file: plain.bst
+Database file #1: references.bib
+Warning--entry type for "Unity" isn't style-file defined
+--line 25 of file references.bib
+Warning--entry type for "Mono" isn't style-file defined
+--line 32 of file references.bib
+Warning--entry type for "API" isn't style-file defined
+--line 39 of file references.bib
+Warning--entry type for "Factory" isn't style-file defined
+--line 46 of file references.bib
+Warning--entry type for "Server" isn't style-file defined
+--line 53 of file references.bib
+Warning--entry type for "MRE" isn't style-file defined
+--line 60 of file references.bib
+Warning--entry type for "Sloan" isn't style-file defined
+--line 67 of file references.bib
+Warning--entry type for "Kaymak" isn't style-file defined
+--line 74 of file references.bib
+Warning--entry type for "GPS" isn't style-file defined
+--line 81 of file references.bib
+Warning--entry type for "Android" isn't style-file defined
+--line 88 of file references.bib
+Warning--entry type for "Apple" isn't style-file defined
+--line 95 of file references.bib
+Warning--entry type for "UnityPlatforms" isn't style-file defined
+--line 102 of file references.bib
+Warning--entry type for "PGO" isn't style-file defined
+--line 109 of file references.bib
+Warning--entry type for "Tdd" isn't style-file defined
+--line 116 of file references.bib
+Warning--entry type for "Brackeys" isn't style-file defined
+--line 123 of file references.bib
+Too many commas in name 1 of "Erich Gamma, John Vlissides, Ralph Johnson, Richard Helm" for entry GOF
+while executing---line 1049 of file plain.bst
+Warning--empty publisher in TCP
+Warning--empty year in TCP
+Too many commas in name 1 of "Erich Gamma, John Vlissides, Ralph Johnson, Richard Helm" for entry GOF
+while executing---line 1090 of file plain.bst
+Warning--empty publisher in GOF
+Warning--empty year in GOF
+Warning--empty publisher in GA
+Warning--empty year in GA
+Warning--empty publisher in GPP
+Warning--empty year in GPP
+(There were 2 error messages)

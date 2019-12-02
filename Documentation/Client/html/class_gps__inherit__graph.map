@@ -1,0 +1,4 @@
+<map id="Gps" name="Gps">
+<area shape="rect" id="node1" title="Gets the GPS longitude and latitude of the client." alt="" coords="37,80,84,107"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,5,116,32"/>
+</map>

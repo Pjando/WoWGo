@@ -1,0 +1,169 @@
+\hypertarget{class_client}{}\section{Client Class Reference}
+\label{class_client}\index{Client@{Client}}
+
+
+Represents a client connected to the server.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_client_a4d27949eb305b5b84772396a3dac9c76}{Start}} ()
+\begin{DoxyCompactList}\small\item\em Begins the callback method used to listen for incoming data from the client. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_client_a0853fff639f944efdb84e2537dd79328}{Close\+Connection}} ()
+\begin{DoxyCompactList}\small\item\em Closes the connection between server and client. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_client_aec3eb642e59dcdd301840d640a773165}{On\+Receive\+Data}} (I\+Async\+Result result)
+\begin{DoxyCompactList}\small\item\em Receives data from client and offloads data to \mbox{\hyperlink{class_server_handle_data}{Server\+Handle\+Data}} instance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+internal string \mbox{\hyperlink{class_client_a39cd630c426203cd9b745af7e69260a9}{username}}
+\begin{DoxyCompactList}\small\item\em The username the client entered. \end{DoxyCompactList}\item 
+internal int \mbox{\hyperlink{class_client_a6ab52bf1fa672997e9243de8387e7571}{index}}
+\begin{DoxyCompactList}\small\item\em The index of the client in the list of clients. \end{DoxyCompactList}\item 
+internal string \mbox{\hyperlink{class_client_a0dd1d2611594605d76dc9c6b99182edd}{ip}}
+\begin{DoxyCompactList}\small\item\em IP address of the client. \end{DoxyCompactList}\item 
+internal Tcp\+Client \mbox{\hyperlink{class_client_a01727b6e955e0735f26d6ccc8ba7b4c0}{socket}}
+\begin{DoxyCompactList}\small\item\em The socket that connects to the client. \end{DoxyCompactList}\item 
+internal Network\+Stream \mbox{\hyperlink{class_client_ac49f1e7df64018a7f6589fa216f1628e}{my\+Stream}}
+\begin{DoxyCompactList}\small\item\em The stream used to read and write data between the server and client. \end{DoxyCompactList}\item 
+byte \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_client_ab0bcc2e82b84e460013e0789e485bb05}{read\+Buff}}
+\begin{DoxyCompactList}\small\item\em Used to store incoming data from the client. \end{DoxyCompactList}\item 
+internal float \mbox{\hyperlink{class_client_a4b6690d643731c2f872ef4803339aec3}{latitude}}
+\begin{DoxyCompactList}\small\item\em Latitude of the client. \end{DoxyCompactList}\item 
+internal float \mbox{\hyperlink{class_client_ae67bee3b41d13425dc3a023778cb46fd}{longitude}}
+\begin{DoxyCompactList}\small\item\em Longitude of the client. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represents a client connected to the server. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_client_a0853fff639f944efdb84e2537dd79328}\label{class_client_a0853fff639f944efdb84e2537dd79328}} 
+\index{Client@{Client}!CloseConnection@{CloseConnection}}
+\index{CloseConnection@{CloseConnection}!Client@{Client}}
+\subsubsection{\texorpdfstring{CloseConnection()}{CloseConnection()}}
+{\footnotesize\ttfamily void Client.\+Close\+Connection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Closes the connection between server and client. 
+
+\mbox{\Hypertarget{class_client_aec3eb642e59dcdd301840d640a773165}\label{class_client_aec3eb642e59dcdd301840d640a773165}} 
+\index{Client@{Client}!OnReceiveData@{OnReceiveData}}
+\index{OnReceiveData@{OnReceiveData}!Client@{Client}}
+\subsubsection{\texorpdfstring{OnReceiveData()}{OnReceiveData()}}
+{\footnotesize\ttfamily void Client.\+On\+Receive\+Data (\begin{DoxyParamCaption}\item[{I\+Async\+Result}]{result }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Receives data from client and offloads data to \mbox{\hyperlink{class_server_handle_data}{Server\+Handle\+Data}} instance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em result} & The result of the asynchronous operation.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_client_a4d27949eb305b5b84772396a3dac9c76}\label{class_client_a4d27949eb305b5b84772396a3dac9c76}} 
+\index{Client@{Client}!Start@{Start}}
+\index{Start@{Start}!Client@{Client}}
+\subsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Client.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Begins the callback method used to listen for incoming data from the client. 
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_client_a6ab52bf1fa672997e9243de8387e7571}\label{class_client_a6ab52bf1fa672997e9243de8387e7571}} 
+\index{Client@{Client}!index@{index}}
+\index{index@{index}!Client@{Client}}
+\subsubsection{\texorpdfstring{index}{index}}
+{\footnotesize\ttfamily internal int Client.\+index\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The index of the client in the list of clients. 
+
+\mbox{\Hypertarget{class_client_a0dd1d2611594605d76dc9c6b99182edd}\label{class_client_a0dd1d2611594605d76dc9c6b99182edd}} 
+\index{Client@{Client}!ip@{ip}}
+\index{ip@{ip}!Client@{Client}}
+\subsubsection{\texorpdfstring{ip}{ip}}
+{\footnotesize\ttfamily internal string Client.\+ip\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+IP address of the client. 
+
+\mbox{\Hypertarget{class_client_a4b6690d643731c2f872ef4803339aec3}\label{class_client_a4b6690d643731c2f872ef4803339aec3}} 
+\index{Client@{Client}!latitude@{latitude}}
+\index{latitude@{latitude}!Client@{Client}}
+\subsubsection{\texorpdfstring{latitude}{latitude}}
+{\footnotesize\ttfamily internal float Client.\+latitude\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Latitude of the client. 
+
+\mbox{\Hypertarget{class_client_ae67bee3b41d13425dc3a023778cb46fd}\label{class_client_ae67bee3b41d13425dc3a023778cb46fd}} 
+\index{Client@{Client}!longitude@{longitude}}
+\index{longitude@{longitude}!Client@{Client}}
+\subsubsection{\texorpdfstring{longitude}{longitude}}
+{\footnotesize\ttfamily internal float Client.\+longitude\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Longitude of the client. 
+
+\mbox{\Hypertarget{class_client_ac49f1e7df64018a7f6589fa216f1628e}\label{class_client_ac49f1e7df64018a7f6589fa216f1628e}} 
+\index{Client@{Client}!myStream@{myStream}}
+\index{myStream@{myStream}!Client@{Client}}
+\subsubsection{\texorpdfstring{myStream}{myStream}}
+{\footnotesize\ttfamily internal Network\+Stream Client.\+my\+Stream\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The stream used to read and write data between the server and client. 
+
+\mbox{\Hypertarget{class_client_ab0bcc2e82b84e460013e0789e485bb05}\label{class_client_ab0bcc2e82b84e460013e0789e485bb05}} 
+\index{Client@{Client}!readBuff@{readBuff}}
+\index{readBuff@{readBuff}!Client@{Client}}
+\subsubsection{\texorpdfstring{readBuff}{readBuff}}
+{\footnotesize\ttfamily byte \mbox{[}$\,$\mbox{]} Client.\+read\+Buff\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Used to store incoming data from the client. 
+
+\mbox{\Hypertarget{class_client_a01727b6e955e0735f26d6ccc8ba7b4c0}\label{class_client_a01727b6e955e0735f26d6ccc8ba7b4c0}} 
+\index{Client@{Client}!socket@{socket}}
+\index{socket@{socket}!Client@{Client}}
+\subsubsection{\texorpdfstring{socket}{socket}}
+{\footnotesize\ttfamily internal Tcp\+Client Client.\+socket\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The socket that connects to the client. 
+
+\mbox{\Hypertarget{class_client_a39cd630c426203cd9b745af7e69260a9}\label{class_client_a39cd630c426203cd9b745af7e69260a9}} 
+\index{Client@{Client}!username@{username}}
+\index{username@{username}!Client@{Client}}
+\subsubsection{\texorpdfstring{username}{username}}
+{\footnotesize\ttfamily internal string Client.\+username\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The username the client entered. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Documents/\+Unity\+Projects/\+Final Year Game/\+Server/\+Server/\+Server\+Application/Client.\+cs\end{DoxyCompactItemize}

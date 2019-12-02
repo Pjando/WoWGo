@@ -1,0 +1,206 @@
+\hypertarget{class_enemy_manager}{}\section{Enemy\+Manager Class Reference}
+\label{class_enemy_manager}\index{EnemyManager@{EnemyManager}}
+
+
+Manages which enemy prefabs to spawn.  
+
+
+
+
+Inheritance diagram for Enemy\+Manager\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=165pt]{class_enemy_manager__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Enemy\+Manager\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=252pt]{class_enemy_manager__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Game\+Object \mbox{\hyperlink{class_enemy_manager_ad5167208aff00ff86822bdc4d723aaad}{wizard}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_wizard}{Wizard}} prefab to be spawned. \end{DoxyCompactList}\item 
+Game\+Object \mbox{\hyperlink{class_enemy_manager_a986d0a001378a0d35579cd956138b601}{skeleton}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_skeleton}{Skeleton}} prefab to be spawned. \end{DoxyCompactList}\item 
+Game\+Object \mbox{\hyperlink{class_enemy_manager_a21f4d33210514d104e7a3ee0fe839a59}{enemy\+Parent}}
+\begin{DoxyCompactList}\small\item\em The parent Game object of the prefabs. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_enemy_manager_a1cef1d17733d1be85f5c266371566caf}{current\+Enemy}}
+\begin{DoxyCompactList}\small\item\em The enemy name that has be tapped to enter the battle scene. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_enemy_manager}{Enemy\+Manager}} \mbox{\hyperlink{class_enemy_manager_ae75fbb59ff35752dfbf65f6e6ae633a5}{instance}}
+\begin{DoxyCompactList}\small\item\em Global Singleton instance of class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_enemy_manager_a9a95e72112a8e624588bb8283d66698e}{Awake}} ()
+\begin{DoxyCompactList}\small\item\em Initialises Singleton instance. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_enemy_manager_afcf3de6b6a3f197fe343fc43592b46d5}{Start}} ()
+\begin{DoxyCompactList}\small\item\em Sets the methods to be executed when events are triggered in other classes. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_enemy_manager_a5071674c83c4cf81fe90dd2655713828}{Battle\+Scene}} (string name)
+\begin{DoxyCompactList}\small\item\em Method to be executed when \char`\"{}\+Trigger\char`\"{} event in \mbox{\hyperlink{class_camera_controller}{Camera\+Controller}} is triggered. \end{DoxyCompactList}\item 
+I\+Enumerator \mbox{\hyperlink{class_enemy_manager_aa24657bcb9c290a4f21c5e861f8f60e1}{Load\+Asynchronously}} (string name)
+\begin{DoxyCompactList}\small\item\em Loads the battle scene. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_enemy_manager_a0c3680c45bec759982150be5c613dd88}{Spawn}} (List$<$ \mbox{\hyperlink{class_enemy}{Enemy}} $>$ enemies)
+\begin{DoxyCompactList}\small\item\em Spawns new enemies when they are sent from the server. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_map_reader}{Map\+Reader}} \mbox{\hyperlink{class_enemy_manager_acb5c779b01cdfa40fddf6d2377dab3c5}{map}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_map_reader}{Map\+Reader}} component. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Manages which enemy prefabs to spawn. 
+
+\begin{DoxyAuthor}{Author}
+Pavan Jando
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_enemy_manager_a9a95e72112a8e624588bb8283d66698e}\label{class_enemy_manager_a9a95e72112a8e624588bb8283d66698e}} 
+\index{EnemyManager@{EnemyManager}!Awake@{Awake}}
+\index{Awake@{Awake}!EnemyManager@{EnemyManager}}
+\subsubsection{\texorpdfstring{Awake()}{Awake()}}
+{\footnotesize\ttfamily void Enemy\+Manager.\+Awake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Initialises Singleton instance. 
+
+\mbox{\Hypertarget{class_enemy_manager_a5071674c83c4cf81fe90dd2655713828}\label{class_enemy_manager_a5071674c83c4cf81fe90dd2655713828}} 
+\index{EnemyManager@{EnemyManager}!BattleScene@{BattleScene}}
+\index{BattleScene@{BattleScene}!EnemyManager@{EnemyManager}}
+\subsubsection{\texorpdfstring{BattleScene()}{BattleScene()}}
+{\footnotesize\ttfamily void Enemy\+Manager.\+Battle\+Scene (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Method to be executed when \char`\"{}\+Trigger\char`\"{} event in \mbox{\hyperlink{class_camera_controller}{Camera\+Controller}} is triggered. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & String name of the current enemy.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_enemy_manager_aa24657bcb9c290a4f21c5e861f8f60e1}\label{class_enemy_manager_aa24657bcb9c290a4f21c5e861f8f60e1}} 
+\index{EnemyManager@{EnemyManager}!LoadAsynchronously@{LoadAsynchronously}}
+\index{LoadAsynchronously@{LoadAsynchronously}!EnemyManager@{EnemyManager}}
+\subsubsection{\texorpdfstring{LoadAsynchronously()}{LoadAsynchronously()}}
+{\footnotesize\ttfamily I\+Enumerator Enemy\+Manager.\+Load\+Asynchronously (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Loads the battle scene. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & String name of the current enemy.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns null whilst waiting for scene to load.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_enemy_manager_a0c3680c45bec759982150be5c613dd88}\label{class_enemy_manager_a0c3680c45bec759982150be5c613dd88}} 
+\index{EnemyManager@{EnemyManager}!Spawn@{Spawn}}
+\index{Spawn@{Spawn}!EnemyManager@{EnemyManager}}
+\subsubsection{\texorpdfstring{Spawn()}{Spawn()}}
+{\footnotesize\ttfamily void Enemy\+Manager.\+Spawn (\begin{DoxyParamCaption}\item[{List$<$ \mbox{\hyperlink{class_enemy}{Enemy}} $>$}]{enemies }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Spawns new enemies when they are sent from the server. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em enemies} & List of type \mbox{\hyperlink{class_enemy}{Enemy}} of all the enemies to be spawned.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_enemy_manager_afcf3de6b6a3f197fe343fc43592b46d5}\label{class_enemy_manager_afcf3de6b6a3f197fe343fc43592b46d5}} 
+\index{EnemyManager@{EnemyManager}!Start@{Start}}
+\index{Start@{Start}!EnemyManager@{EnemyManager}}
+\subsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Enemy\+Manager.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Sets the methods to be executed when events are triggered in other classes. 
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_enemy_manager_a1cef1d17733d1be85f5c266371566caf}\label{class_enemy_manager_a1cef1d17733d1be85f5c266371566caf}} 
+\index{EnemyManager@{EnemyManager}!currentEnemy@{currentEnemy}}
+\index{currentEnemy@{currentEnemy}!EnemyManager@{EnemyManager}}
+\subsubsection{\texorpdfstring{currentEnemy}{currentEnemy}}
+{\footnotesize\ttfamily string Enemy\+Manager.\+current\+Enemy}
+
+
+
+The enemy name that has be tapped to enter the battle scene. 
+
+\mbox{\Hypertarget{class_enemy_manager_a21f4d33210514d104e7a3ee0fe839a59}\label{class_enemy_manager_a21f4d33210514d104e7a3ee0fe839a59}} 
+\index{EnemyManager@{EnemyManager}!enemyParent@{enemyParent}}
+\index{enemyParent@{enemyParent}!EnemyManager@{EnemyManager}}
+\subsubsection{\texorpdfstring{enemyParent}{enemyParent}}
+{\footnotesize\ttfamily Game\+Object Enemy\+Manager.\+enemy\+Parent}
+
+
+
+The parent Game object of the prefabs. 
+
+\mbox{\Hypertarget{class_enemy_manager_ae75fbb59ff35752dfbf65f6e6ae633a5}\label{class_enemy_manager_ae75fbb59ff35752dfbf65f6e6ae633a5}} 
+\index{EnemyManager@{EnemyManager}!instance@{instance}}
+\index{instance@{instance}!EnemyManager@{EnemyManager}}
+\subsubsection{\texorpdfstring{instance}{instance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_enemy_manager}{Enemy\+Manager}} Enemy\+Manager.\+instance\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Global Singleton instance of class. 
+
+\mbox{\Hypertarget{class_enemy_manager_acb5c779b01cdfa40fddf6d2377dab3c5}\label{class_enemy_manager_acb5c779b01cdfa40fddf6d2377dab3c5}} 
+\index{EnemyManager@{EnemyManager}!map@{map}}
+\index{map@{map}!EnemyManager@{EnemyManager}}
+\subsubsection{\texorpdfstring{map}{map}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_map_reader}{Map\+Reader}} Enemy\+Manager.\+map\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\mbox{\hyperlink{class_map_reader}{Map\+Reader}} component. 
+
+\mbox{\Hypertarget{class_enemy_manager_a986d0a001378a0d35579cd956138b601}\label{class_enemy_manager_a986d0a001378a0d35579cd956138b601}} 
+\index{EnemyManager@{EnemyManager}!skeleton@{skeleton}}
+\index{skeleton@{skeleton}!EnemyManager@{EnemyManager}}
+\subsubsection{\texorpdfstring{skeleton}{skeleton}}
+{\footnotesize\ttfamily Game\+Object Enemy\+Manager.\+skeleton}
+
+
+
+\mbox{\hyperlink{class_skeleton}{Skeleton}} prefab to be spawned. 
+
+\mbox{\Hypertarget{class_enemy_manager_ad5167208aff00ff86822bdc4d723aaad}\label{class_enemy_manager_ad5167208aff00ff86822bdc4d723aaad}} 
+\index{EnemyManager@{EnemyManager}!wizard@{wizard}}
+\index{wizard@{wizard}!EnemyManager@{EnemyManager}}
+\subsubsection{\texorpdfstring{wizard}{wizard}}
+{\footnotesize\ttfamily Game\+Object Enemy\+Manager.\+wizard}
+
+
+
+\mbox{\hyperlink{class_wizard}{Wizard}} prefab to be spawned. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Documents/\+Unity\+Projects/\+Final Year Game/\+Wo\+W\+Go!/\+Assets/\+Project/\+Scripts/Enemy\+Manager.\+cs\end{DoxyCompactItemize}

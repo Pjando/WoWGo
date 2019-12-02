@@ -1,0 +1,224 @@
+\hypertarget{class_inventory}{}\section{Inventory Class Reference}
+\label{class_inventory}\index{Inventory@{Inventory}}
+
+
+Manages the inventory and which weapon is equipped.  
+
+
+
+
+Inheritance diagram for Inventory\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=163pt]{class_inventory__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Inventory\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{class_inventory__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_inventory_ae303988e27a0af99552f8d3c954df0c2}{Add\+Item}} (\mbox{\hyperlink{class_item}{Item}} item)
+\begin{DoxyCompactList}\small\item\em Adds an item to the inventory. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_inventory_a9ac6471939fdbe154c35eed678c6976b}{Remove\+Item}} (\mbox{\hyperlink{class_item}{Item}} item)
+\begin{DoxyCompactList}\small\item\em Remove an item from the inventory. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_item}{Item}} \mbox{\hyperlink{class_inventory_adc1befc890a2f08843b92ca78ef02758}{get\+Equipped}} ()
+\begin{DoxyCompactList}\small\item\em Gets the currently equipped item. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_inventory_a951725050ee3ffb094ba575a0ccdd566}{Equip}} (string name)
+\begin{DoxyCompactList}\small\item\em Equips an item and unequips any other items. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{class_item}{Item}} $>$ \mbox{\hyperlink{class_inventory_a8b355dd7bd1fab5ca34729f1530db9ee}{Get\+Items}} ()
+\begin{DoxyCompactList}\small\item\em Returns all the inventory items. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const int \mbox{\hyperlink{class_inventory_aff412f987227c8b93c3165ba7dbdf9bc}{S\+I\+ZE}} = 3
+\begin{DoxyCompactList}\small\item\em Number of items that can be in the inventory. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_inventory}{Inventory}} \mbox{\hyperlink{class_inventory_ae88b8381f35fc496d2b9db36b09b962b}{instance}}
+\begin{DoxyCompactList}\small\item\em Global Singleton instance variable. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_inventory_a88da279faf84d529af011f7e25bea01b}{Awake}} ()
+\begin{DoxyCompactList}\small\item\em Create Singleton instance and adds axe, mace and dagger to inventory list. By default equips the axe weapon. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \mbox{\hyperlink{class_item}{Item}} $>$ \mbox{\hyperlink{class_inventory_a293c252e7e0964f7df6cce377d22f247}{items}} = new List$<$\mbox{\hyperlink{class_item}{Item}}$>$(\mbox{\hyperlink{class_inventory_aff412f987227c8b93c3165ba7dbdf9bc}{S\+I\+ZE}})
+\begin{DoxyCompactList}\small\item\em List of type \mbox{\hyperlink{class_item}{Item}} containing each item in the inventory. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_axe}{Axe}} \mbox{\hyperlink{class_inventory_ac7ef00d494dbe60e3e9ea30e08cd30fe}{axe}} = new \mbox{\hyperlink{class_axe}{Axe}}()
+\begin{DoxyCompactList}\small\item\em An axe object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_mace}{Mace}} \mbox{\hyperlink{class_inventory_a3bf7a92ae58edc99043f877221812e80}{mace}} = new \mbox{\hyperlink{class_mace}{Mace}}()
+\begin{DoxyCompactList}\small\item\em A mace object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_dagger}{Dagger}} \mbox{\hyperlink{class_inventory_a1b8f3f640399e85ca055d2119817a2a2}{dagger}} = new \mbox{\hyperlink{class_dagger}{Dagger}}()
+\begin{DoxyCompactList}\small\item\em A dagger object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Manages the inventory and which weapon is equipped. 
+
+\begin{DoxyAuthor}{Author}
+Pavan Jando
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_inventory_ae303988e27a0af99552f8d3c954df0c2}\label{class_inventory_ae303988e27a0af99552f8d3c954df0c2}} 
+\index{Inventory@{Inventory}!AddItem@{AddItem}}
+\index{AddItem@{AddItem}!Inventory@{Inventory}}
+\subsubsection{\texorpdfstring{AddItem()}{AddItem()}}
+{\footnotesize\ttfamily void Inventory.\+Add\+Item (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_item}{Item}}}]{item }\end{DoxyParamCaption})}
+
+
+
+Adds an item to the inventory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & \mbox{\hyperlink{class_item}{Item}} to be added\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_inventory_a88da279faf84d529af011f7e25bea01b}\label{class_inventory_a88da279faf84d529af011f7e25bea01b}} 
+\index{Inventory@{Inventory}!Awake@{Awake}}
+\index{Awake@{Awake}!Inventory@{Inventory}}
+\subsubsection{\texorpdfstring{Awake()}{Awake()}}
+{\footnotesize\ttfamily void Inventory.\+Awake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Create Singleton instance and adds axe, mace and dagger to inventory list. By default equips the axe weapon. 
+
+\mbox{\Hypertarget{class_inventory_a951725050ee3ffb094ba575a0ccdd566}\label{class_inventory_a951725050ee3ffb094ba575a0ccdd566}} 
+\index{Inventory@{Inventory}!Equip@{Equip}}
+\index{Equip@{Equip}!Inventory@{Inventory}}
+\subsubsection{\texorpdfstring{Equip()}{Equip()}}
+{\footnotesize\ttfamily void Inventory.\+Equip (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})}
+
+
+
+Equips an item and unequips any other items. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the item to be equipped\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_inventory_adc1befc890a2f08843b92ca78ef02758}\label{class_inventory_adc1befc890a2f08843b92ca78ef02758}} 
+\index{Inventory@{Inventory}!getEquipped@{getEquipped}}
+\index{getEquipped@{getEquipped}!Inventory@{Inventory}}
+\subsubsection{\texorpdfstring{getEquipped()}{getEquipped()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_item}{Item}} Inventory.\+get\+Equipped (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the currently equipped item. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_item}{Item}} where \mbox{\hyperlink{class_item_afad013640f1c29591ae9977169888fec}{Item.\+is\+Equipped}} == true.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_inventory_a8b355dd7bd1fab5ca34729f1530db9ee}\label{class_inventory_a8b355dd7bd1fab5ca34729f1530db9ee}} 
+\index{Inventory@{Inventory}!GetItems@{GetItems}}
+\index{GetItems@{GetItems}!Inventory@{Inventory}}
+\subsubsection{\texorpdfstring{GetItems()}{GetItems()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_item}{Item}}$>$ Inventory.\+Get\+Items (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns all the inventory items. 
+
+\begin{DoxyReturn}{Returns}
+List of type \mbox{\hyperlink{class_item}{Item}} containing all items
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_inventory_a9ac6471939fdbe154c35eed678c6976b}\label{class_inventory_a9ac6471939fdbe154c35eed678c6976b}} 
+\index{Inventory@{Inventory}!RemoveItem@{RemoveItem}}
+\index{RemoveItem@{RemoveItem}!Inventory@{Inventory}}
+\subsubsection{\texorpdfstring{RemoveItem()}{RemoveItem()}}
+{\footnotesize\ttfamily void Inventory.\+Remove\+Item (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_item}{Item}}}]{item }\end{DoxyParamCaption})}
+
+
+
+Remove an item from the inventory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & \mbox{\hyperlink{class_item}{Item}} to be removed.\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_inventory_ac7ef00d494dbe60e3e9ea30e08cd30fe}\label{class_inventory_ac7ef00d494dbe60e3e9ea30e08cd30fe}} 
+\index{Inventory@{Inventory}!axe@{axe}}
+\index{axe@{axe}!Inventory@{Inventory}}
+\subsubsection{\texorpdfstring{axe}{axe}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_axe}{Axe}} Inventory.\+axe = new \mbox{\hyperlink{class_axe}{Axe}}()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+An axe object. 
+
+\mbox{\Hypertarget{class_inventory_a1b8f3f640399e85ca055d2119817a2a2}\label{class_inventory_a1b8f3f640399e85ca055d2119817a2a2}} 
+\index{Inventory@{Inventory}!dagger@{dagger}}
+\index{dagger@{dagger}!Inventory@{Inventory}}
+\subsubsection{\texorpdfstring{dagger}{dagger}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_dagger}{Dagger}} Inventory.\+dagger = new \mbox{\hyperlink{class_dagger}{Dagger}}()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+A dagger object. 
+
+\mbox{\Hypertarget{class_inventory_ae88b8381f35fc496d2b9db36b09b962b}\label{class_inventory_ae88b8381f35fc496d2b9db36b09b962b}} 
+\index{Inventory@{Inventory}!instance@{instance}}
+\index{instance@{instance}!Inventory@{Inventory}}
+\subsubsection{\texorpdfstring{instance}{instance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_inventory}{Inventory}} Inventory.\+instance\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Global Singleton instance variable. 
+
+\mbox{\Hypertarget{class_inventory_a293c252e7e0964f7df6cce377d22f247}\label{class_inventory_a293c252e7e0964f7df6cce377d22f247}} 
+\index{Inventory@{Inventory}!items@{items}}
+\index{items@{items}!Inventory@{Inventory}}
+\subsubsection{\texorpdfstring{items}{items}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_item}{Item}}$>$ Inventory.\+items = new List$<$\mbox{\hyperlink{class_item}{Item}}$>$(\mbox{\hyperlink{class_inventory_aff412f987227c8b93c3165ba7dbdf9bc}{S\+I\+ZE}})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+List of type \mbox{\hyperlink{class_item}{Item}} containing each item in the inventory. 
+
+\mbox{\Hypertarget{class_inventory_a3bf7a92ae58edc99043f877221812e80}\label{class_inventory_a3bf7a92ae58edc99043f877221812e80}} 
+\index{Inventory@{Inventory}!mace@{mace}}
+\index{mace@{mace}!Inventory@{Inventory}}
+\subsubsection{\texorpdfstring{mace}{mace}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_mace}{Mace}} Inventory.\+mace = new \mbox{\hyperlink{class_mace}{Mace}}()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+A mace object. 
+
+\mbox{\Hypertarget{class_inventory_aff412f987227c8b93c3165ba7dbdf9bc}\label{class_inventory_aff412f987227c8b93c3165ba7dbdf9bc}} 
+\index{Inventory@{Inventory}!SIZE@{SIZE}}
+\index{SIZE@{SIZE}!Inventory@{Inventory}}
+\subsubsection{\texorpdfstring{SIZE}{SIZE}}
+{\footnotesize\ttfamily const int Inventory.\+S\+I\+ZE = 3}
+
+
+
+Number of items that can be in the inventory. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Documents/\+Unity\+Projects/\+Final Year Game/\+Wo\+W\+Go!/\+Assets/\+Project/\+Scripts/\+Inventory/Inventory.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,156 @@
+\hypertarget{class_server_handle_data}{}\section{Server\+Handle\+Data Class Reference}
+\label{class_server_handle_data}\index{ServerHandleData@{ServerHandleData}}
+
+
+Handles incoming data from various clients.  
+
+
+
+
+Collaboration diagram for Server\+Handle\+Data\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=232pt]{class_server_handle_data__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_server_handle_data_a81cc7ca39a0389d206ad6547a729f9f0}{Init\+Messages}} ()
+\begin{DoxyCompactList}\small\item\em Adds the data handling methods with each a unique integer identifier. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_server_handle_data_adf1710050ac6dca514e7be03c9bf7d89}{Handle\+Data}} (int index, byte\mbox{[}$\,$\mbox{]} data)
+\begin{DoxyCompactList}\small\item\em Base data handling method, offloads to other methods based of the integer indentifier. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_server_handle_data}{Server\+Handle\+Data}} \mbox{\hyperlink{class_server_handle_data_a53d7acb38385f73c248f5d3e3168f4d1}{instance}} = new \mbox{\hyperlink{class_server_handle_data}{Server\+Handle\+Data}}()
+\begin{DoxyCompactList}\small\item\em Global variable. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+delegate void \mbox{\hyperlink{class_server_handle_data_ae901e6592461e1e8403b0161e4a6c6a6}{Packet\+\_\+}} (int index, byte\mbox{[}$\,$\mbox{]} data)
+\begin{DoxyCompactList}\small\item\em Delegate that defines the base method for handling data. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_server_handle_data_a2abdef3f8569c15c1bccae82bd04457e}{Handle\+G\+PS}} (int index, byte\mbox{[}$\,$\mbox{]} data)
+\begin{DoxyCompactList}\small\item\em Handles the G\+PS coordinates retrieved from the server. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_server_handle_data_a4c8dd95c63e24e150f4d80b89c0b8188}{Handle\+Login}} (int index, byte\mbox{[}$\,$\mbox{]} data)
+\begin{DoxyCompactList}\small\item\em Handles the username submitted by the user from the client. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Dictionary$<$ int, \mbox{\hyperlink{class_server_handle_data_ae901e6592461e1e8403b0161e4a6c6a6}{Packet\+\_\+}} $>$ \mbox{\hyperlink{class_server_handle_data_a072f1064e1d192b4001b1aaf2bfc3059}{packets}}
+\begin{DoxyCompactList}\small\item\em Dictionary mapping integer identifiers for each data handling method. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Handles incoming data from various clients. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_server_handle_data_adf1710050ac6dca514e7be03c9bf7d89}\label{class_server_handle_data_adf1710050ac6dca514e7be03c9bf7d89}} 
+\index{ServerHandleData@{ServerHandleData}!HandleData@{HandleData}}
+\index{HandleData@{HandleData}!ServerHandleData@{ServerHandleData}}
+\subsubsection{\texorpdfstring{HandleData()}{HandleData()}}
+{\footnotesize\ttfamily void Server\+Handle\+Data.\+Handle\+Data (\begin{DoxyParamCaption}\item[{int}]{index,  }\item[{byte \mbox{[}$\,$\mbox{]}}]{data }\end{DoxyParamCaption})}
+
+
+
+Base data handling method, offloads to other methods based of the integer indentifier. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & Integer index of the client from the list of clients.\\
+\hline
+{\em data} & Data retrieved from the client.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_server_handle_data_a2abdef3f8569c15c1bccae82bd04457e}\label{class_server_handle_data_a2abdef3f8569c15c1bccae82bd04457e}} 
+\index{ServerHandleData@{ServerHandleData}!HandleGPS@{HandleGPS}}
+\index{HandleGPS@{HandleGPS}!ServerHandleData@{ServerHandleData}}
+\subsubsection{\texorpdfstring{HandleGPS()}{HandleGPS()}}
+{\footnotesize\ttfamily void Server\+Handle\+Data.\+Handle\+G\+PS (\begin{DoxyParamCaption}\item[{int}]{index,  }\item[{byte \mbox{[}$\,$\mbox{]}}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Handles the G\+PS coordinates retrieved from the server. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & Integer index of the client from the list of clients.\\
+\hline
+{\em data} & Data retrieved from the client.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_server_handle_data_a4c8dd95c63e24e150f4d80b89c0b8188}\label{class_server_handle_data_a4c8dd95c63e24e150f4d80b89c0b8188}} 
+\index{ServerHandleData@{ServerHandleData}!HandleLogin@{HandleLogin}}
+\index{HandleLogin@{HandleLogin}!ServerHandleData@{ServerHandleData}}
+\subsubsection{\texorpdfstring{HandleLogin()}{HandleLogin()}}
+{\footnotesize\ttfamily void Server\+Handle\+Data.\+Handle\+Login (\begin{DoxyParamCaption}\item[{int}]{index,  }\item[{byte \mbox{[}$\,$\mbox{]}}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Handles the username submitted by the user from the client. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & Integer index of the client from the list of clients.\\
+\hline
+{\em data} & Data retrieved from the client.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_server_handle_data_a81cc7ca39a0389d206ad6547a729f9f0}\label{class_server_handle_data_a81cc7ca39a0389d206ad6547a729f9f0}} 
+\index{ServerHandleData@{ServerHandleData}!InitMessages@{InitMessages}}
+\index{InitMessages@{InitMessages}!ServerHandleData@{ServerHandleData}}
+\subsubsection{\texorpdfstring{InitMessages()}{InitMessages()}}
+{\footnotesize\ttfamily void Server\+Handle\+Data.\+Init\+Messages (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Adds the data handling methods with each a unique integer identifier. 
+
+\mbox{\Hypertarget{class_server_handle_data_ae901e6592461e1e8403b0161e4a6c6a6}\label{class_server_handle_data_ae901e6592461e1e8403b0161e4a6c6a6}} 
+\index{ServerHandleData@{ServerHandleData}!Packet\_@{Packet\_}}
+\index{Packet\_@{Packet\_}!ServerHandleData@{ServerHandleData}}
+\subsubsection{\texorpdfstring{Packet\_()}{Packet\_()}}
+{\footnotesize\ttfamily delegate void Server\+Handle\+Data.\+Packet\+\_\+ (\begin{DoxyParamCaption}\item[{int}]{index,  }\item[{byte \mbox{[}$\,$\mbox{]}}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Delegate that defines the base method for handling data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & Integer index of the client from the list of clients.\\
+\hline
+{\em data} & Data retrieved from the client.\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_server_handle_data_a53d7acb38385f73c248f5d3e3168f4d1}\label{class_server_handle_data_a53d7acb38385f73c248f5d3e3168f4d1}} 
+\index{ServerHandleData@{ServerHandleData}!instance@{instance}}
+\index{instance@{instance}!ServerHandleData@{ServerHandleData}}
+\subsubsection{\texorpdfstring{instance}{instance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_server_handle_data}{Server\+Handle\+Data}} Server\+Handle\+Data.\+instance = new \mbox{\hyperlink{class_server_handle_data}{Server\+Handle\+Data}}()\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Global variable. 
+
+\mbox{\Hypertarget{class_server_handle_data_a072f1064e1d192b4001b1aaf2bfc3059}\label{class_server_handle_data_a072f1064e1d192b4001b1aaf2bfc3059}} 
+\index{ServerHandleData@{ServerHandleData}!packets@{packets}}
+\index{packets@{packets}!ServerHandleData@{ServerHandleData}}
+\subsubsection{\texorpdfstring{packets}{packets}}
+{\footnotesize\ttfamily Dictionary$<$int, \mbox{\hyperlink{class_server_handle_data_ae901e6592461e1e8403b0161e4a6c6a6}{Packet\+\_\+}}$>$ Server\+Handle\+Data.\+packets\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Dictionary mapping integer identifiers for each data handling method. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Documents/\+Unity\+Projects/\+Final Year Game/\+Server/\+Server/\+Server\+Application/Server\+Handle\+Data.\+cs\end{DoxyCompactItemize}

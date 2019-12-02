@@ -1,0 +1,68 @@
+\begin{thebibliography}{10}
+
+\bibitem{GPP}
+Robert Nystrom.
+\newblock {\em Game Programming Patterns}.
+\newblock November 2, 2014.
+
+\bibitem{GOF}
+Ralph Johnson Richard~Helm Erich~Gamma, John~Vlissides.
+\newblock {\em Design Patterns: Elements of Reusable Object-Oriented Software}.
+\newblock October 21, 1994.
+
+\bibitem{GA}
+Jason Gregory.
+\newblock {\em Game Engine Architectures}.
+\newblock 2009.
+
+\bibitem{Unity}
+Unity Technologies.
+\newblock Unity manual.
+\newblock \url{https://docs.unity3d.com/Manual/index.html/}.
+\newblock February, 2018.
+
+\bibitem{Server}
+Microsoft.
+\newblock Microsoft docs.
+\newblock
+  \url{https://docs.microsoft.com/en-us/dotnet/framework/network-programming/}.
+\newblock March 30, 2017.
+
+\bibitem{API}
+Open-Source.
+\newblock Api v0.6.
+\newblock \url{https://wiki.openstreetmap.org/wiki/}.
+\newblock August 1, 2018.
+
+\bibitem{Mono}
+Mono.
+\newblock About mono.
+\newblock \url{https://www.mono-project.com/docs/about-mono/}.
+\newblock 2018.
+
+\bibitem{Factory}
+Ranjeet Patra.
+\newblock Factory method design pattern in c.
+\newblock
+  \url{https://www.c-sharpcorner.com/article/factory-method-design-pattern-in-c-sharp/}.
+\newblock September 5, 2018.
+
+\bibitem{MRE}
+Dot~Net Pattern.
+\newblock Manualresetevent.
+\newblock \url{http://dotnetpattern.com/threading-manualresetevent}.
+\newblock 2018.
+
+\bibitem{Sloan}
+Sloan Kelly.
+\newblock Gta in unity!? use real world maps!
+\newblock \url{https://www.youtube.com/watch?v=780Ia5e8LHQ}.
+\newblock March 9, 2017.
+
+\bibitem{GPS}
+N3K EN.
+\newblock Unity mobile gps - real world location - unity 3d [tutorial].
+\newblock \url{https://www.youtube.com/watch?v=g04jaC-Tpn0}.
+\newblock February 12, 2017.
+
+\end{thebibliography}

@@ -1,0 +1,6 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$class_base_osm.html" title="The base class for each Osm attribute." alt="" coords="5,56,85,83"/>
+<area shape="rect" id="node2" href="$class_osm_bounds.html" title="Represents the boudaries of the map data." alt="" coords="133,5,228,32"/>
+<area shape="rect" id="node3" href="$class_osm_node.html" title="Represents a point on the map." alt="" coords="141,56,221,83"/>
+<area shape="rect" id="node4" href="$class_osm_way.html" title="Represents a way which is either a road or building." alt="" coords="142,107,219,133"/>
+</map>

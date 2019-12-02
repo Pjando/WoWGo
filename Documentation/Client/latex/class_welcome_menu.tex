@@ -1,0 +1,162 @@
+\hypertarget{class_welcome_menu}{}\section{Welcome\+Menu Class Reference}
+\label{class_welcome_menu}\index{WelcomeMenu@{WelcomeMenu}}
+
+
+Controls the user interface in the main menu.  
+
+
+
+
+Inheritance diagram for Welcome\+Menu\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=163pt]{class_welcome_menu__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Welcome\+Menu\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=163pt]{class_welcome_menu__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_welcome_menu_a9846e9fbed6c907ed83f6137b7a82b86}{Close\+Error\+Panel}} ()
+\begin{DoxyCompactList}\small\item\em Closes the error panel. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_welcome_menu_a32c738d5cd2259a5ca5a40a41f96a501}{Play\+Game}} (int scene\+Index)
+\begin{DoxyCompactList}\small\item\em Sends the username to the server and loads the map scene and loading menu. Error panel shows if no username was entered. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Game\+Object \mbox{\hyperlink{class_welcome_menu_ab63c6cc689c30a12f0e3e00cc5b584e8}{loading\+Menu}}
+\begin{DoxyCompactList}\small\item\em The loading menu game object. \end{DoxyCompactList}\item 
+Game\+Object \mbox{\hyperlink{class_welcome_menu_a9fca6731d74309a517ff9e027c2eb7f3}{home\+Menu}}
+\begin{DoxyCompactList}\small\item\em The home menu game object. \end{DoxyCompactList}\item 
+Game\+Object \mbox{\hyperlink{class_welcome_menu_a61a3e2ae97be88313e06aed7e65b9af4}{error\+Panel}}
+\begin{DoxyCompactList}\small\item\em The error panel game object. \end{DoxyCompactList}\item 
+Slider \mbox{\hyperlink{class_welcome_menu_a05c5a113d36a31c141bb686cd8242d92}{slider}}
+\begin{DoxyCompactList}\small\item\em Slider for loading screen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_welcome_menu_a43e33ee422f098215d0741a68afa5e2f}{Awake}} ()
+\begin{DoxyCompactList}\small\item\em Shows the home menu. \end{DoxyCompactList}\item 
+I\+Enumerator \mbox{\hyperlink{class_welcome_menu_a2ff8c7bf9424de134a1ec63723841220}{Load\+Asynchronously}} (int scene\+Index)
+\begin{DoxyCompactList}\small\item\em Loads the map scene and updates loading bar. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Controls the user interface in the main menu. 
+
+\begin{DoxyAuthor}{Author}
+Pavan Jando
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_welcome_menu_a43e33ee422f098215d0741a68afa5e2f}\label{class_welcome_menu_a43e33ee422f098215d0741a68afa5e2f}} 
+\index{WelcomeMenu@{WelcomeMenu}!Awake@{Awake}}
+\index{Awake@{Awake}!WelcomeMenu@{WelcomeMenu}}
+\subsubsection{\texorpdfstring{Awake()}{Awake()}}
+{\footnotesize\ttfamily void Welcome\+Menu.\+Awake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Shows the home menu. 
+
+\mbox{\Hypertarget{class_welcome_menu_a9846e9fbed6c907ed83f6137b7a82b86}\label{class_welcome_menu_a9846e9fbed6c907ed83f6137b7a82b86}} 
+\index{WelcomeMenu@{WelcomeMenu}!CloseErrorPanel@{CloseErrorPanel}}
+\index{CloseErrorPanel@{CloseErrorPanel}!WelcomeMenu@{WelcomeMenu}}
+\subsubsection{\texorpdfstring{CloseErrorPanel()}{CloseErrorPanel()}}
+{\footnotesize\ttfamily void Welcome\+Menu.\+Close\+Error\+Panel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Closes the error panel. 
+
+\mbox{\Hypertarget{class_welcome_menu_a2ff8c7bf9424de134a1ec63723841220}\label{class_welcome_menu_a2ff8c7bf9424de134a1ec63723841220}} 
+\index{WelcomeMenu@{WelcomeMenu}!LoadAsynchronously@{LoadAsynchronously}}
+\index{LoadAsynchronously@{LoadAsynchronously}!WelcomeMenu@{WelcomeMenu}}
+\subsubsection{\texorpdfstring{LoadAsynchronously()}{LoadAsynchronously()}}
+{\footnotesize\ttfamily I\+Enumerator Welcome\+Menu.\+Load\+Asynchronously (\begin{DoxyParamCaption}\item[{int}]{scene\+Index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Loads the map scene and updates loading bar. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scene\+Index} & Integer index of the scene to be loaded.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_welcome_menu_a32c738d5cd2259a5ca5a40a41f96a501}\label{class_welcome_menu_a32c738d5cd2259a5ca5a40a41f96a501}} 
+\index{WelcomeMenu@{WelcomeMenu}!PlayGame@{PlayGame}}
+\index{PlayGame@{PlayGame}!WelcomeMenu@{WelcomeMenu}}
+\subsubsection{\texorpdfstring{PlayGame()}{PlayGame()}}
+{\footnotesize\ttfamily void Welcome\+Menu.\+Play\+Game (\begin{DoxyParamCaption}\item[{int}]{scene\+Index }\end{DoxyParamCaption})}
+
+
+
+Sends the username to the server and loads the map scene and loading menu. Error panel shows if no username was entered. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scene\+Index} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_welcome_menu_a61a3e2ae97be88313e06aed7e65b9af4}\label{class_welcome_menu_a61a3e2ae97be88313e06aed7e65b9af4}} 
+\index{WelcomeMenu@{WelcomeMenu}!errorPanel@{errorPanel}}
+\index{errorPanel@{errorPanel}!WelcomeMenu@{WelcomeMenu}}
+\subsubsection{\texorpdfstring{errorPanel}{errorPanel}}
+{\footnotesize\ttfamily Game\+Object Welcome\+Menu.\+error\+Panel}
+
+
+
+The error panel game object. 
+
+\mbox{\Hypertarget{class_welcome_menu_a9fca6731d74309a517ff9e027c2eb7f3}\label{class_welcome_menu_a9fca6731d74309a517ff9e027c2eb7f3}} 
+\index{WelcomeMenu@{WelcomeMenu}!homeMenu@{homeMenu}}
+\index{homeMenu@{homeMenu}!WelcomeMenu@{WelcomeMenu}}
+\subsubsection{\texorpdfstring{homeMenu}{homeMenu}}
+{\footnotesize\ttfamily Game\+Object Welcome\+Menu.\+home\+Menu}
+
+
+
+The home menu game object. 
+
+\mbox{\Hypertarget{class_welcome_menu_ab63c6cc689c30a12f0e3e00cc5b584e8}\label{class_welcome_menu_ab63c6cc689c30a12f0e3e00cc5b584e8}} 
+\index{WelcomeMenu@{WelcomeMenu}!loadingMenu@{loadingMenu}}
+\index{loadingMenu@{loadingMenu}!WelcomeMenu@{WelcomeMenu}}
+\subsubsection{\texorpdfstring{loadingMenu}{loadingMenu}}
+{\footnotesize\ttfamily Game\+Object Welcome\+Menu.\+loading\+Menu}
+
+
+
+The loading menu game object. 
+
+\mbox{\Hypertarget{class_welcome_menu_a05c5a113d36a31c141bb686cd8242d92}\label{class_welcome_menu_a05c5a113d36a31c141bb686cd8242d92}} 
+\index{WelcomeMenu@{WelcomeMenu}!slider@{slider}}
+\index{slider@{slider}!WelcomeMenu@{WelcomeMenu}}
+\subsubsection{\texorpdfstring{slider}{slider}}
+{\footnotesize\ttfamily Slider Welcome\+Menu.\+slider}
+
+
+
+Slider for loading screen. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Documents/\+Unity\+Projects/\+Final Year Game/\+Wo\+W\+Go!/\+Assets/\+Project/\+Scripts/Welcome\+Menu.\+cs\end{DoxyCompactItemize}

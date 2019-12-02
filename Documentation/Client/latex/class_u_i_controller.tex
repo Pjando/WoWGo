@@ -1,0 +1,130 @@
+\hypertarget{class_u_i_controller}{}\section{U\+I\+Controller Class Reference}
+\label{class_u_i_controller}\index{UIController@{UIController}}
+
+
+Controls the user interface elements in the map scene.  
+
+
+
+
+Inheritance diagram for U\+I\+Controller\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=163pt]{class_u_i_controller__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for U\+I\+Controller\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=163pt]{class_u_i_controller__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_u_i_controller_a18e9df9cf6f6b018a0c9e2baa8f4e0c9}{Open\+Inventory}} ()
+\begin{DoxyCompactList}\small\item\em Connected to the inventory icon and toggles the inventory menu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_u_i_controller_a27a528e3022c45a9b94cce0d9b072762}{Equip\+Item}} (string weapon)
+\begin{DoxyCompactList}\small\item\em Equips the item that the user has selected. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Game\+Object \mbox{\hyperlink{class_u_i_controller_a4c46a34bd06dccf8d8824da40c677fdb}{inventory\+UI}}
+\begin{DoxyCompactList}\small\item\em The parent object for the inventory menu. \end{DoxyCompactList}\item 
+Game\+Object \mbox{\hyperlink{class_u_i_controller_a5cd04315c42b8c0acf858e49c7d955be}{parent\+Items}}
+\begin{DoxyCompactList}\small\item\em The parent object of the inventory slots. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_u_i_controller_a676b3b972c33885db4565ee43f23e459}{Start}} ()
+\begin{DoxyCompactList}\small\item\em Calls \mbox{\hyperlink{class_u_i_controller_a9ea46066b8e67d6f3c65a69e94ad3b53}{check\+Item()}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_u_i_controller_a9ea46066b8e67d6f3c65a69e94ad3b53}{check\+Item}} ()
+\begin{DoxyCompactList}\small\item\em Puts a check symbol above the currently equipped item. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Controls the user interface elements in the map scene. 
+
+\begin{DoxyAuthor}{Author}
+Pavan Jando
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_u_i_controller_a9ea46066b8e67d6f3c65a69e94ad3b53}\label{class_u_i_controller_a9ea46066b8e67d6f3c65a69e94ad3b53}} 
+\index{UIController@{UIController}!checkItem@{checkItem}}
+\index{checkItem@{checkItem}!UIController@{UIController}}
+\subsubsection{\texorpdfstring{checkItem()}{checkItem()}}
+{\footnotesize\ttfamily void U\+I\+Controller.\+check\+Item (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Puts a check symbol above the currently equipped item. 
+
+\mbox{\Hypertarget{class_u_i_controller_a27a528e3022c45a9b94cce0d9b072762}\label{class_u_i_controller_a27a528e3022c45a9b94cce0d9b072762}} 
+\index{UIController@{UIController}!EquipItem@{EquipItem}}
+\index{EquipItem@{EquipItem}!UIController@{UIController}}
+\subsubsection{\texorpdfstring{EquipItem()}{EquipItem()}}
+{\footnotesize\ttfamily void U\+I\+Controller.\+Equip\+Item (\begin{DoxyParamCaption}\item[{string}]{weapon }\end{DoxyParamCaption})}
+
+
+
+Equips the item that the user has selected. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em weapon} & String name of the weapon selected.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_u_i_controller_a18e9df9cf6f6b018a0c9e2baa8f4e0c9}\label{class_u_i_controller_a18e9df9cf6f6b018a0c9e2baa8f4e0c9}} 
+\index{UIController@{UIController}!OpenInventory@{OpenInventory}}
+\index{OpenInventory@{OpenInventory}!UIController@{UIController}}
+\subsubsection{\texorpdfstring{OpenInventory()}{OpenInventory()}}
+{\footnotesize\ttfamily void U\+I\+Controller.\+Open\+Inventory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Connected to the inventory icon and toggles the inventory menu. 
+
+\mbox{\Hypertarget{class_u_i_controller_a676b3b972c33885db4565ee43f23e459}\label{class_u_i_controller_a676b3b972c33885db4565ee43f23e459}} 
+\index{UIController@{UIController}!Start@{Start}}
+\index{Start@{Start}!UIController@{UIController}}
+\subsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void U\+I\+Controller.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Calls \mbox{\hyperlink{class_u_i_controller_a9ea46066b8e67d6f3c65a69e94ad3b53}{check\+Item()}} 
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_u_i_controller_a4c46a34bd06dccf8d8824da40c677fdb}\label{class_u_i_controller_a4c46a34bd06dccf8d8824da40c677fdb}} 
+\index{UIController@{UIController}!inventoryUI@{inventoryUI}}
+\index{inventoryUI@{inventoryUI}!UIController@{UIController}}
+\subsubsection{\texorpdfstring{inventoryUI}{inventoryUI}}
+{\footnotesize\ttfamily Game\+Object U\+I\+Controller.\+inventory\+UI}
+
+
+
+The parent object for the inventory menu. 
+
+\mbox{\Hypertarget{class_u_i_controller_a5cd04315c42b8c0acf858e49c7d955be}\label{class_u_i_controller_a5cd04315c42b8c0acf858e49c7d955be}} 
+\index{UIController@{UIController}!parentItems@{parentItems}}
+\index{parentItems@{parentItems}!UIController@{UIController}}
+\subsubsection{\texorpdfstring{parentItems}{parentItems}}
+{\footnotesize\ttfamily Game\+Object U\+I\+Controller.\+parent\+Items}
+
+
+
+The parent object of the inventory slots. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Documents/\+Unity\+Projects/\+Final Year Game/\+Wo\+W\+Go!/\+Assets/\+Project/\+Scripts/U\+I\+Controller.\+cs\end{DoxyCompactItemize}
