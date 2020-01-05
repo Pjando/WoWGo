@@ -1,0 +1,14 @@
+D:\Documents\UnityProjects\zdac086\Final Year Game\Server\Server\ServerApplication\bin\Debug\ServerApplication.exe.config
+D:\Documents\UnityProjects\zdac086\Final Year Game\Server\Server\ServerApplication\bin\Debug\ServerApplication.exe
+D:\Documents\UnityProjects\zdac086\Final Year Game\Server\Server\ServerApplication\bin\Debug\ServerApplication.pdb
+D:\Documents\UnityProjects\zdac086\Final Year Game\Server\Server\ServerApplication\obj\Debug\ServerApplication.csprojAssemblyReference.cache
+D:\Documents\UnityProjects\zdac086\Final Year Game\Server\Server\ServerApplication\obj\Debug\ServerApplication.csproj.CoreCompileInputs.cache
+D:\Documents\UnityProjects\zdac086\Final Year Game\Server\Server\ServerApplication\obj\Debug\ServerApplication.exe
+D:\Documents\UnityProjects\zdac086\Final Year Game\Server\Server\ServerApplication\obj\Debug\ServerApplication.pdb
+D:\Documents\UnityProjects\Final Year Game\Server\Server\ServerApplication\bin\Debug\ServerApplication.exe.config
+D:\Documents\UnityProjects\Final Year Game\Server\Server\ServerApplication\bin\Debug\ServerApplication.exe
+D:\Documents\UnityProjects\Final Year Game\Server\Server\ServerApplication\bin\Debug\ServerApplication.pdb
+D:\Documents\UnityProjects\Final Year Game\Server\Server\ServerApplication\obj\Debug\ServerApplication.csprojAssemblyReference.cache
+D:\Documents\UnityProjects\Final Year Game\Server\Server\ServerApplication\obj\Debug\ServerApplication.csproj.CoreCompileInputs.cache
+D:\Documents\UnityProjects\Final Year Game\Server\Server\ServerApplication\obj\Debug\ServerApplication.exe
+D:\Documents\UnityProjects\Final Year Game\Server\Server\ServerApplication\obj\Debug\ServerApplication.pdb
