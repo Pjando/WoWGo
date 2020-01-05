@@ -14,7 +14,7 @@ See Appendix of final report.pdf for more details for running the game.
 
 Server:
     1) Run on a Windows machine.
-    2) Navigate to Server/Server/ServerApplication/bin/debug/ServerApplication.exe and double click to start
+    2) Navigate to Server/ServerApplication/bin/debug/ServerApplication.exe and double click to start
 Unity:
     1) Install Unity from https://store.unity.com/products/unity-personal and click Android and iOS build support in the wizard.
     1) Once installed open Unity and open the WoWGo! folder in the source directory. 
@@ -43,7 +43,7 @@ Proof of Concepts
 ------------------
 There are five proof of concepts in the form of Unity and Visual Studio projects. Each proof of concept is described in the Interim Report.
     
-        -/Battle - 1 Unity project for the battle scene.
+    -/Battle - 1 Unity project for the battle scene.
     -/Camera and Map generation - 1 unity project with 2 proof of concepts in.
     -/GPS Location - 1 unity project for GPS location
     -/Server/Client - Visual studio project
